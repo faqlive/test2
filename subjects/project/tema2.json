@@ -1,0 +1,126 @@
+{
+    "tema": 2,
+    "name": "Metodologías ágiles",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Qué valores prioriza el manifiesto ágil?",
+            "options": [
+                { "op": "A", "desc": "Individuos e interacciones sobre procesos y herramientas." },
+                { "op": "B", "desc": "Software funcionando sobre documentación exhaustiva." },
+                { "op": "C", "desc": "Colaboración con el cliente sobre negociación contractual." },
+                { "op": "D", "desc": "Respuesta ante el cambio sobre seguir un plan." }
+            ],
+            "correct": [{ "op": "A" }, { "op": "B" }, { "op": "C" }, { "op": "D" }],
+            "just": "El manifiesto ágil prioriza personas, software funcional, colaboración y adaptabilidad."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Cuáles son principios del manifiesto ágil?",
+            "options": [
+                { "op": "A", "desc": "Entrega temprana y continua de software." },
+                { "op": "B", "desc": "Atención al detalle sobre resultados funcionales." },
+                { "op": "C", "desc": "Cambios de última hora sin afectaciones graves." },
+                { "op": "D", "desc": "Independencia en cada equipo respecto a otros." }
+            ],
+            "correct": [{ "op": "A" }, { "op": "C" }],
+            "just": "El manifiesto ágil promueve entrega continua y flexibilidad ante cambios."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Qué características definen Scrum como marco de trabajo ágil?",
+            "options": [
+                { "op": "A", "desc": "Iteraciones de trabajo llamadas sprints." },
+                { "op": "B", "desc": "Reuniones diarias llamadas Daily Scrum." },
+                { "op": "C", "desc": "Planificación inicial sin adaptación en el desarrollo." },
+                { "op": "D", "desc": "Retroalimentación en revisiones y retrospectivas." }
+            ],
+            "correct": [{ "op": "A" }, { "op": "B" }, { "op": "D" }],
+            "just": "Scrum se centra en iteraciones, reuniones diarias y mejora continua."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Cuál es el objetivo principal de las metodologías ágiles?",
+            "options": [
+                { "op": "A", "desc": "Crear planes de desarrollo a largo plazo." },
+                { "op": "B", "desc": "Adaptarse al cambio y entregar valor continuamente." },
+                { "op": "C", "desc": "Documentar exhaustivamente cada etapa." },
+                { "op": "D", "desc": "Definir roles estrictos en el equipo." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Las metodologías ágiles buscan adaptabilidad y entrega de valor constante."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Qué representa el marco Kanban?",
+            "options": [
+                { "op": "A", "desc": "Enfoque ágil centrado en visualización del flujo de trabajo." },
+                { "op": "B", "desc": "Un método para estructurar roles jerárquicos." },
+                { "op": "C", "desc": "Un sistema de priorización lineal de tareas." },
+                { "op": "D", "desc": "Una herramienta que limita la flexibilidad del proyecto." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Kanban se centra en la visualización y gestión del flujo de trabajo."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué define el framework SAFe (Scaled Agile Framework)?",
+            "options": [
+                { "op": "A", "desc": "Un marco ágil escalado para proyectos grandes." },
+                { "op": "B", "desc": "Una metodología para proyectos locales." },
+                { "op": "C", "desc": "Un modelo híbrido entre ágil y tradicional." },
+                { "op": "D", "desc": "Un sistema de control de cambios iterativo." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "SAFe permite implementar metodologías ágiles a gran escala."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Cómo se relacionan Lean y Scrum?",
+            "options": [
+                { "op": "A", "desc": "Ambos priorizan eliminar desperdicios y aportar valor al cliente." },
+                { "op": "B", "desc": "Son enfoques opuestos en la gestión ágil." },
+                { "op": "C", "desc": "Scrum depende de Lean para funcionar." },
+                { "op": "D", "desc": "Lean carece de iteraciones como en Scrum." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Lean y Scrum comparten principios centrados en eficiencia y valor al cliente."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Se pueden combinar las metodologías ágiles?",
+            "options": [
+                { "op": "A", "desc": "Sí, siempre que se adapten al proyecto." },
+                { "op": "B", "desc": "No, son incompatibles." },
+                { "op": "C", "desc": "Sí, pero ralentizan el desarrollo." },
+                { "op": "D", "desc": "Solo si son metodologías similares." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "La combinación de metodologías ágiles puede aportar flexibilidad y adaptabilidad."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Qué ventajas tiene combinar diferentes metodologías ágiles?",
+            "options": [
+                { "op": "A", "desc": "Permite ajustar el enfoque según el proyecto." },
+                { "op": "B", "desc": "Aumenta la complejidad y reduce efectividad." },
+                { "op": "C", "desc": "Genera conflictos entre equipos." },
+                { "op": "D", "desc": "Limita la personalización del flujo de trabajo." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Combinar metodologías permite personalizar enfoques y mejorar resultados."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cuándo se aplica un framework de escalado ágil?",
+            "options": [
+                { "op": "A", "desc": "En proyectos pequeños con pocos equipos." },
+                { "op": "B", "desc": "En proyectos grandes con varios equipos y dependencias." },
+                { "op": "C", "desc": "Cuando se necesita documentar cada iteración." },
+                { "op": "D", "desc": "Cuando no hay cambios en los requisitos." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Los frameworks de escalado ágil son ideales para proyectos complejos con múltiples equipos."
+        }
+    ]
+}

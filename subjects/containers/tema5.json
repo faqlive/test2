@@ -1,0 +1,126 @@
+{
+    "tema": 5,
+    "name": "Orquestación con el modo Swarm",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Qué nodos pueden ejecutar tareas en el modo Swarm?",
+            "options": [
+                { "op": "A", "desc": "Solo los nodos tipo worker." },
+                { "op": "B", "desc": "Solo los nodos tipo mánager." },
+                { "op": "C", "desc": "Todos los nodos del clúster siempre podrán ejecutar tareas." },
+                { "op": "D", "desc": "Todos los nodos del clúster, siempre que no tengan disponibilidad drain." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los nodos en estado drain no ejecutan tareas, pero todos los demás, sean mánager o worker, sí pueden hacerlo."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Qué ocurre con las tareas en ejecución de un nodo cuando ponemos su disponibilidad a drain?",
+            "options": [
+                { "op": "A", "desc": "Las tareas en ejecución de servicios replicados se paran y se planifican en otros nodos. Las tareas de servicios globales siguen ejecutándose." },
+                { "op": "B", "desc": "Todas las tareas continúan su ejecución, pero el nodo no admitirá más tareas del planificador." },
+                { "op": "C", "desc": "Las tareas son pausadas, pero no se planifican en otros nodos. Se reanudarán cuando el nodo vuelva a estar activo." },
+                { "op": "D", "desc": "Las tareas en ejecución de servicios replicados se paran y se planifican en otros nodos. Las tareas de servicios globales simplemente se paran." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El estado drain detiene tareas replicadas y las mueve a otros nodos, mientras que las tareas globales se detienen."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Cómo se transmiten entre los nodos de un clúster en modo Swarm los objetos config y secret?",
+            "options": [
+                { "op": "A", "desc": "Los objetos config se transmiten en claro, los secret encriptados." },
+                { "op": "B", "desc": "Los objetos config se transmiten encriptados, pero los secret solo existen en el nodo donde se crearon y no pueden enviarse." },
+                { "op": "C", "desc": "Tanto los objetos config como los secret se transmiten encriptados." },
+                { "op": "D", "desc": "Ninguno de ellos pueden enviarse entre los nodos." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Tanto los objetos config como los secret se transmiten de forma encriptada para mantener la seguridad."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Qué ocurre si definimos opciones de configuración build para un servicio en un fichero docker-compose.yaml y lo desplegamos con el comando docker stack deploy?",
+            "options": [
+                { "op": "A", "desc": "Se construirán las imágenes y se publicarán automáticamente en el registro antes de hacer el despliegue." },
+                { "op": "B", "desc": "Las imágenes no se construirán, pero si existen se publicarán automáticamente en el registro antes de hacer el despliegue." },
+                { "op": "C", "desc": "Dará un error porque la configuración build no está soportada por docker stack." },
+                { "op": "D", "desc": "Mostrará un mensaje avisando que al no estar soportada la configuración build será ignorada, y continuará con el despliegue." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Docker stack ignora las configuraciones build, pero continúa con el despliegue."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Cómo podemos convertir un nodo worker de un clúster en modo Swarm a nodo mánager?",
+            "options": [
+                { "op": "A", "desc": "Con el comando docker node upgrade." },
+                { "op": "B", "desc": "Con el comando docker node promote." },
+                { "op": "C", "desc": "Con el comando docker swarm update." },
+                { "op": "D", "desc": "No es posible convertirlo, habría que eliminarlo del clúster y volver a añadirlo." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El comando docker node promote permite promover un nodo worker a mánager."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Cuál de las siguientes afirmaciones no es correcta?",
+            "options": [
+                { "op": "A", "desc": "Podríamos tener un clúster en modo Swarm sin nodos worker." },
+                { "op": "B", "desc": "El modo Swarm está integrado en Docker Engine a partir de la versión 1.12." },
+                { "op": "C", "desc": "Se ejecutará una tarea de los servicios globales en cada nodo activo del clúster, ya sea mánager o worker." },
+                { "op": "D", "desc": "Todos los nodos del clúster pueden atender llamadas al API de Swarm." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Solo los nodos mánager pueden atender llamadas al API de Swarm."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Qué comando debemos ejecutar en una máquina con Docker instalado para añadirlo como nodo worker a un clúster de Swarm?",
+            "options": [
+                { "op": "A", "desc": "docker swarm join --manager <host_manager> worker." },
+                { "op": "B", "desc": "docker swarm join-worker <host_manager>." },
+                { "op": "C", "desc": "El comando lo obtendremos al ejecutar docker swarm join worker en cualquier nodo del clúster." },
+                { "op": "D", "desc": "El comando lo obtendremos al ejecutar docker swarm join-token worker en un nodo mánager." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El comando docker swarm join-token worker genera las instrucciones para añadir un worker al clúster."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Qué comando nos permite desplegar en un clúster en modo Swarm una aplicación definida en un fichero docker-compose.yaml?",
+            "options": [
+                { "op": "A", "desc": "docker-compose up --stack-file docker-compose.yml <nombre-stack>." },
+                { "op": "B", "desc": "docker-compose deploy --stack-file docker-compose.yml <nombre-stack>." },
+                { "op": "C", "desc": "docker stack up --compose-file docker-compose.yml <nombre-stack>." },
+                { "op": "D", "desc": "docker stack deploy --compose-file docker-compose.yml <nombre-stack>." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El comando docker stack deploy permite desplegar una pila en un clúster Swarm."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Cómo podemos añadir un objeto secret a un servicio existente en un clúster en modo Swarm?",
+            "options": [
+                { "op": "A", "desc": "docker secret add --secret my-secret my-service." },
+                { "op": "B", "desc": "docker service update --secret-add my-secret my-service." },
+                { "op": "C", "desc": "docker stack update --secret-add my-secret my-service." },
+                { "op": "D", "desc": "No es posible añadir secrets a un servicio ya creado." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El comando docker service update --secret-add permite añadir secrets a servicios existentes."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cuál de las siguientes afirmaciones no es correcta?",
+            "options": [
+                { "op": "A", "desc": "Un clúster con N nodos mánager tolera fallos de (N-1)/2 managers como máximo." },
+                { "op": "B", "desc": "Los servicios globales se ejecutan en todos los nodos del clúster, ya sean mánager o worker." },
+                { "op": "C", "desc": "Los clústeres Swarm utilizan TLS para las comunicaciones entre los nodos." },
+                { "op": "D", "desc": "Un nodo que pertenece a un clúster no puede ejecutar contenedores independientes fuera del clúster." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los nodos en un clúster Swarm pueden ejecutar contenedores independientes además de tareas del clúster."
+        }
+    ]
+}

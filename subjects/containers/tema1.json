@@ -1,0 +1,131 @@
+{
+    "tema": 1,
+    "name": "Itroducción a Docker",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "Los registros de Docker sirven para:",
+            "options": [
+                { "op": "A", "desc": "Mantener un control de los contenedores en ejecución." },
+                { "op": "B", "desc": "Almacenar y distribuir imágenes de Docker." },
+                { "op": "C", "desc": "Permitir la comunicación entre dos contenedores Docker." },
+                { "op": "D", "desc": "Instalar host de Docker remotos." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Los registros de Docker se utilizan para almacenar y distribuir imágenes."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Qué es Docker Hub?",
+            "options": [
+                { "op": "A", "desc": "Una herramienta para crear servidores Docker remotos." },
+                { "op": "B", "desc": "Proceso que ejecuta los contenedores Docker." },
+                { "op": "C", "desc": "Un registro público de imágenes Docker." },
+                { "op": "D", "desc": "El formato de contenedor utilizado por Docker." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Docker Hub es un registro público que permite almacenar y compartir imágenes de Docker."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Qué es Docker Desktop?",
+            "options": [
+                { "op": "A", "desc": "Un registro público de imágenes Docker." },
+                { "op": "B", "desc": "Herramienta oficial de Docker para su instalación en Linux." },
+                { "op": "C", "desc": "Aplicación para instalar Docker en Windows y Mac OS." },
+                { "op": "D", "desc": "Herramienta para gestionar instalaciones de Docker remotas." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Docker Desktop permite instalar y gestionar Docker en sistemas Windows y Mac OS."
+        },
+        {
+            "id": 4,
+            "enunciado": "Los contenedores de Docker:",
+            "options": [
+                { "op": "A", "desc": "Permiten aprovechar mejor el hardware de la máquina host." },
+                { "op": "B", "desc": "Son más pesados en tamaño que las máquinas virtuales." },
+                { "op": "C", "desc": "No son convenientes para trabajar con microservicios." },
+                { "op": "D", "desc": "Se inician más lento que las máquinas virtuales, pero son más seguros." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Los contenedores son ligeros y permiten un uso eficiente del hardware."
+        },
+        {
+            "id": 5,
+            "enunciado": "Los espacios de nombres (o namespaces):",
+            "options": [
+                { "op": "A", "desc": "Proporcionan capas de aislamiento a los contenedores." },
+                { "op": "B", "desc": "Se utilizan para dar nombre a las imágenes Docker." },
+                { "op": "C", "desc": "Son sistemas de archivos compartidos." },
+                { "op": "D", "desc": "Sirven para clasificar imágenes Docker." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Los namespaces son una de las tecnologías clave para el aislamiento en contenedores."
+        },
+        {
+            "id": 6,
+            "enunciado": "Relacione los siguientes conceptos:",
+            "options": [
+                { "op": "A", "desc": "Permite montar un sistema de archivo formado por la union de otros." },
+                { "op": "B", "desc": "Permite imponer límites y restricciones a los recursos de los contenedores." },
+                { "op": "C", "desc": "Permite crear una capa de aislamiento a los contenedores." },
+                { "op": "D", "desc": "Formato de contenedor predeterminado de Docker." }
+            ],
+            "correct": [
+                { "ele": "namespace", "op": "C" },
+                { "ele": "libcontainer", "op": "D" },
+                { "ele": "cgroups", "op": "B" },
+                { "ele": "unionfs", "op": "A" }
+            ],
+            "just": "Cada concepto desempeña un rol clave en la arquitectura y funcionalidad de los contenedores Docker."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿En qué lenguaje de programación está escrito Docker?",
+            "options": [
+                { "op": "A", "desc": "Go." },
+                { "op": "B", "desc": "Python." },
+                { "op": "C", "desc": "Java." },
+                { "op": "D", "desc": "C++." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Docker está escrito en Go, un lenguaje eficiente y adecuado para sistemas distribuidos."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Cómo podemos indicarle a Docker Machine las credenciales de nuestro proveedor de la nube?",
+            "options": [
+                { "op": "A", "desc": "Utilizando variables de entorno." },
+                { "op": "B", "desc": "Mediante parámetros del comando docker-machine." },
+                { "op": "C", "desc": "Creando un fichero de configuración." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Docker Machine soporta múltiples métodos para configurar credenciales."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Cómo se comunica el cliente de Docker con el demonio de Docker?",
+            "options": [
+                { "op": "A", "desc": "Mediante memoria compartida." },
+                { "op": "B", "desc": "Mediante un API REST." },
+                { "op": "C", "desc": "Utilizando un sistema de cola de mensajes." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El cliente de Docker se comunica con el demonio mediante un API REST."
+        },
+        {
+            "id": 10,
+            "enunciado": "Los contenedores de Docker:",
+            "options": [
+                { "op": "A", "desc": "Tienen su propio sistema operativo completo." },
+                { "op": "B", "desc": "Requieren más recursos que las máquinas virtuales." },
+                { "op": "C", "desc": "Comparten el kernel o núcleo del sistema operativo host." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los contenedores Docker comparten el kernel del sistema operativo host para ser más ligeros."
+        }
+    ]
+}

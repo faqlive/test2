@@ -1,0 +1,136 @@
+{
+    "tema": 6,
+    "name": "Introducción a Kubernetes",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Cuál de los siguientes componentes de Kubernetes pertenecen a un nodo máster?",
+            "options": [
+                { "op": "A", "desc": "Kubelet." },
+                { "op": "B", "desc": "Kube-proxy." },
+                { "op": "C", "desc": "Container Runtime." },
+                { "op": "D", "desc": "Controller Manager." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El Controller Manager es un componente del nodo máster que gestiona la ejecución de los controladores en el clúster."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Cuál de los siguientes componentes de Kubernetes pertenecen a un nodo worker?",
+            "options": [
+                { "op": "A", "desc": "Kubelet." },
+                { "op": "B", "desc": "Controller Manager." },
+                { "op": "C", "desc": "Scheduler." },
+                { "op": "D", "desc": "API server." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El Kubelet es un componente del nodo worker que asegura que los contenedores definidos en los Pods se ejecuten correctamente."
+        },
+        {
+            "id": 3,
+            "enunciado": "Relaciona los siguientes conceptos de Kubernetes:",
+            "options": [
+                { "op": "A", "desc": "Atiende las peticiones de API server y las asigna a los nodos worker." },
+                { "op": "B", "desc": "Almacén de datos clave-valor distribuido que guarda la configuración clúster." },
+                { "op": "C", "desc": "Unidad básica de ejecución compuesta por uno o varios contenedores." },
+                { "op": "D", "desc": "Define un único punto de acceso para un conjunto de Pods." }
+            ],
+            "correct": [
+                { "ele": "Scheduler", "op": "A" },
+                { "ele": "etcd", "op": "B" },
+                { "ele": "Pod", "op": "C" },
+                { "ele": "Servicio", "op": "D" }
+            ],
+            "just": "Cada concepto tiene un rol específico en la arquitectura de Kubernetes, facilitando el despliegue y la gestión de aplicaciones."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Cuál de las siguientes afirmaciones no es cierta?",
+            "options": [
+                { "op": "A", "desc": "Los Namespaces permiten crear diferentes entornos de ejecución en el clúster." },
+                { "op": "B", "desc": "Los servicios permiten la comunicación con los Pods desde fuera del clúster." },
+                { "op": "C", "desc": "Cada Pod ejecutará un único contenedor." },
+                { "op": "D", "desc": "El algoritmo de consenso necesita que el número de nodos máster sea impar." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Un Pod puede contener uno o varios contenedores que comparten recursos y ciclo de vida."
+        },
+        {
+            "id": 5,
+            "enunciado": "Relacione los siguientes conceptos de Kubernetes:",
+            "options": [
+                { "op": "A", "desc": "Gestiona el despliegue y escalado de aplicaciones con estado." },
+                { "op": "B", "desc": "Permite ejecutar un Pod en cada uno de los nodos del clúster" },
+                { "op": "C", "desc": "Programan el despliegue de Pods para realizar tareas periodicas o planificadas" },
+                { "op": "D", "desc": "Gestionan el despliegue y escalado de apliaciones sin estado." }
+            ],
+            "correct": [
+                { "ele": "Deployments", "op": "A" },
+                { "ele": "StatefulSet", "op": "B" },
+                { "ele": "DaemonSet", "op": "D" },
+                { "ele": "CronJob", "op": "C" }
+            ],
+            "just": "Estos controladores de Kubernetes gestionan aplicaciones según sus características y necesidades específicas."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué controlador de Kubernetes está pensado para aplicaciones con estado?",
+            "options": [
+                { "op": "A", "desc": "Deployments" },
+                { "op": "B", "desc": "StatefulSets" },
+                { "op": "C", "desc": "DaemonSet" },
+                { "op": "D", "desc": "CronJob" }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Los StatefulSets son ideales para aplicaciones con estado, como bases de datos, ya que mantienen la persistencia del estado."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Qué sistema operativo soporta Minikube?",
+            "options": [
+                { "op": "A", "desc": "Windows." },
+                { "op": "B", "desc": "Linux." },
+                { "op": "C", "desc": "OSX." },
+                { "op": "D", "desc": "Todos los anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Minikube es compatible con los principales sistemas operativos como Windows, Linux y OSX."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Cuál de las siguientes afirmaciones es falsa?",
+            "options": [
+                { "op": "A", "desc": "Los Namespaces permiten crear diferentes entornos de ejecución en el clúster." },
+                { "op": "B", "desc": "Los servicios permiten la comunicación con los Pods desde fuera del clúster." },
+                { "op": "C", "desc": "Cada Pod ejecutará un único contenedor." },
+                { "op": "D", "desc": "El algoritmo de consenso necesita que el número de nodos máster sea impar." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Un Pod puede contener varios contenedores que comparten recursos y ciclo de vida."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Cuál es la herramienta de línea de comandos de Kubernetes?",
+            "options": [
+                { "op": "A", "desc": "Kubeadm" },
+                { "op": "B", "desc": "Kops" },
+                { "op": "C", "desc": "Kubectl" },
+                { "op": "D", "desc": "Kubespray" }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Kubectl es la herramienta principal de línea de comandos para gestionar un clúster de Kubernetes."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cuál es la principal función de un ReplicaSet?",
+            "options": [
+                { "op": "A", "desc": "Garantizar que nuestra aplicación tiene el número deseado de Pods." },
+                { "op": "B", "desc": "Permitir la ejecución periódica de Pods." },
+                { "op": "C", "desc": "Ejecutar un determinado Pod en todos los nodos del clúster." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El ReplicaSet asegura que el número deseado de Pods esté siempre en ejecución."
+        }
+    ]
+}

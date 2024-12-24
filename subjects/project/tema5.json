@@ -1,0 +1,126 @@
+{
+    "tema": 5,
+    "name": "Visión y Gestión del Proyecto Ágil",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "Cuando hablamos de gestión ágil de proyectos, hay que plantear una visión que considera una serie de aspectos, entre los que se encuentran:",
+            "options": [
+                { "op": "A", "desc": "Se trata de una visión relativa a cada uno de los miembros de equipo, que analiza cada detalle y va argumentando por qué considera que hay que hacer un cambio." },
+                { "op": "B", "desc": "Se habla de una visión unificada del proyecto, en la que se analiza y comprende por qué se lleva a cabo cada tarea, priorizando los requisitos, y por qué se aporta valor de negocio." },
+                { "op": "C", "desc": "Es una visión única, en la que se analiza y comprende por qué el cliente siempre tiene la razón en sus propuestas de cambio." },
+                { "op": "D", "desc": "Se trata de una visión clara, concreta y muy concisa, por la que todo debe quedar claro en la reunión inicial con el cliente." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "La gestión ágil enfatiza una visión unificada para analizar tareas y aportar valor de negocio."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿A qué nos referimos con el Product Box?",
+            "options": [
+                { "op": "A", "desc": "Es el diseño técnico que se establece para un producto." },
+                { "op": "B", "desc": "Se trata del desglose de los costes que tiene desarrollar el producto en una caja." },
+                { "op": "C", "desc": "Es una técnica que se usa para transmitir la visión unificada del proyecto." },
+                { "op": "D", "desc": "Es la pila de requisitos, que debe venir priorizada." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "El Product Box se utiliza como técnica para visualizar la visión del proyecto."
+        },
+        {
+            "id": 3,
+            "enunciado": "Las historias de usuario se usan:",
+            "options": [
+                { "op": "A", "desc": "Tanto en proyectos con enfoque ágil como tradicional." },
+                { "op": "B", "desc": "Solo en proyectos de enfoque tradicional, cuando se pueden conocer las funcionalidades del sistema a priori." },
+                { "op": "C", "desc": "En marcos de metodologías ágiles como Scrum y Kanban." },
+                { "op": "D", "desc": "Para que los clientes sepan cuáles van a ser los requisitos que el equipo de desarrollo ha decidido implementar." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Las historias de usuario son herramientas clave en metodologías ágiles como Scrum y Kanban."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Qué son las Personas cuando trabajamos en la gestión de proyectos?",
+            "options": [
+                { "op": "A", "desc": "Son los usuarios finales que tomarán las decisiones de qué se debe implementar." },
+                { "op": "B", "desc": "Es un grupo de usuarios del producto final, también considerados como un arquetipo." },
+                { "op": "C", "desc": "Son los patrocinadores del proyecto y, por tanto, hay que considerarlos como los propietarios." },
+                { "op": "D", "desc": "Son un conjunto de personas que establecen las decisiones de la priorización de requisitos." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Las Personas son arquetipos que representan usuarios del producto final."
+        },
+        {
+            "id": 5,
+            "enunciado": "Sobre los criterios de aceptación de un requisito:",
+            "options": [
+                { "op": "A", "desc": "Es preferible el no tener que indicarlos, y poder desarrollar directamente un documento de análisis y diseño de requisitos funcionales." },
+                { "op": "B", "desc": "Se deben considerar en base a unos planes de validación y pruebas del sistema." },
+                { "op": "C", "desc": "Deben tener una respuesta directa y clara sobre si están bien cubiertos o no." },
+                { "op": "D", "desc": "Se deben poder analizar de forma subjetiva por parte del responsable de negocio." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los criterios de aceptación deben ser claros y medibles para validar requisitos."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Cuáles son los niveles de priorización del modelo Kano?",
+            "options": [
+                { "op": "A", "desc": "Elementos lineales, básicos, seductores." },
+                { "op": "B", "desc": "Elementos requeridos, básicos, atractivos, además de poder considerar neutros e inversos." },
+                { "op": "C", "desc": "Elementos requeridos, básicos, neutros." },
+                { "op": "D", "desc": "Elementos requeridos, básicos, atractivos, además de poder considerar anversos y reversos." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El modelo Kano clasifica los requisitos en básicos, atractivos, y otros niveles."
+        },
+        {
+            "id": 7,
+            "enunciado": "Cuando se trabaja en las historias de usuario, pueden surgir las épicas, ¿qué son exactamente?",
+            "options": [
+                { "op": "A", "desc": "Son historias de usuario demasiado grandes." },
+                { "op": "B", "desc": "Son historias de usuario relacionadas con un conjunto de historias más pequeñas y juntas tienen más fuerza en el valor de negocio." },
+                { "op": "C", "desc": "Son requisitos que no se escriben como historias de usuario." },
+                { "op": "D", "desc": "Son historias de usuario que suponen un atractivo muy interesante para el proyecto." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Las épicas son historias de usuario demasiado grandes que pueden dividirse en más pequeñas."
+        },
+        {
+            "id": 8,
+            "enunciado": "A la hora de priorizar las historias de usuario, se pueden emplear una serie de técnicas, tales como:",
+            "options": [
+                { "op": "A", "desc": "La técnica de Moscú, Kamper y el árbol caído." },
+                { "op": "B", "desc": "La técnica de MoSCow, Kano y priorización por árboles." },
+                { "op": "C", "desc": "La técnica de MoSCoW, Kamper y priorización por ranking." },
+                { "op": "D", "desc": "La técnica de MoSCow, Kano y priorización por ranking." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "La técnica MoSCow y el modelo Kano son populares para priorización."
+        },
+        {
+            "id": 9,
+            "enunciado": "En caso de que aparezca un nuevo requisito que sea más prioritario que los ya registrados en el Backlog durante el transcurso del proyecto, ¿cómo debe considerarse?",
+            "options": [
+                { "op": "A", "desc": "Hay que incluirlo al final de la pila de requisitos, y así poder finalizar antes los que ya están registrados." },
+                { "op": "B", "desc": "No se debería incluir en ningún momento, ya que el proyecto ya está iniciado." },
+                { "op": "C", "desc": "Se deberá incluir en el Backlog como primer requisito para ser ejecutado de manera inmediata." },
+                { "op": "D", "desc": "Hay que incluirlo en el Backlog como los responsables de negocio puedan determinar, en base a la prioridad y las dependencias técnicas." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los nuevos requisitos deben evaluarse según prioridad y dependencias técnicas."
+        },
+        {
+            "id": 10,
+            "enunciado": "Cuando ya se pone en marcha el Product Backlog, se debe realizar una revisión periódica, en la que:",
+            "options": [
+                { "op": "A", "desc": "Se adapta el Backlog en base a las necesidades de los desarrolladores." },
+                { "op": "B", "desc": "Se refina el Backlog en base a las necesidades de los clientes, que en todo momento puede indicar qué quiere y qué no, independientemente de los valores de negocio y el coste." },
+                { "op": "C", "desc": "Se adapta el Backlog mediante un refinamiento adecuado para el proyecto, agrupando elementos a corto y largo plazo." },
+                { "op": "D", "desc": "Se adapta el Backlog mediante un refinamiento propio de lo que el mercado considere, agrupando elementos a corto y largo plazo." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "El refinamiento del Product Backlog es clave para mantener un proyecto organizado."
+        }
+    ]
+}

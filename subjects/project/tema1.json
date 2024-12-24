@@ -1,0 +1,126 @@
+{
+    "tema": 1,
+    "name": "Introducción a la gestión de proyectos",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Cuáles son los objetivos de la gestión de proyectos?",
+            "options": [
+                { "op": "A", "desc": "Análisis de requisitos, diseño de la arquitectura, implementación del sistema, evaluación y pruebas del resultado final." },
+                { "op": "B", "desc": "Beneficiar a las empresas siempre sobre la fase de una metodología tradicional." },
+                { "op": "C", "desc": "Entregar al cliente siempre un producto viable y cumpliendo los requisitos, sea cual sea la viabilidad del trabajo." },
+                { "op": "D", "desc": "Análisis de viabilidad del proyecto, planificación del trabajo, ejecución del proyecto, seguimiento y control del trabajo, cierre del proyecto." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los objetivos principales de la gestión de proyectos incluyen analizar la viabilidad, planificar, ejecutar, y controlar las tareas hasta el cierre del proyecto."
+        },
+        {
+            "id": 2,
+            "enunciado": "En la gestión de proyectos en la realidad, ¿cuál de las razones siguientes no se puede asegurar?",
+            "options": [
+                { "op": "A", "desc": "Los equipos de desarrollo descubren la forma más efectiva de ejecutar el trabajo cuando se realiza la ejecución." },
+                { "op": "B", "desc": "Los clientes o usuarios no saben lo que quieren hasta que no ven el software funcionando." },
+                { "op": "C", "desc": "Durante el desarrollo del proyecto los requisitos siempre serán los mismos." },
+                { "op": "D", "desc": "Cuando se desarrolla el proyecto pueden surgir cambios y hay que adaptarse." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los requisitos a menudo cambian durante un proyecto, lo que hace que la afirmación C no sea válida."
+        },
+        {
+            "id": 3,
+            "enunciado": "Una de las razones del éxito del enfoque ágil es:",
+            "options": [
+                { "op": "A", "desc": "El coste mínimo del trabajo del equipo de desarrollo." },
+                { "op": "B", "desc": "La mejora en la implementación de un proyecto tradicional." },
+                { "op": "C", "desc": "El hecho de tener una comunicación transparente y más abierta entre los equipos." },
+                { "op": "D", "desc": "La buena documentación generada." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "El enfoque ágil destaca por su transparencia y comunicación abierta, fomentando colaboración efectiva."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿En qué tipo de proyectos se recomienda el uso de la metodología ágil?",
+            "options": [
+                { "op": "A", "desc": "En los que los requisitos no varíen a lo largo del proyecto." },
+                { "op": "B", "desc": "En los que los requisitos y funcionalidades no estén del todo definidos desde el inicio y puedan tener cambios." },
+                { "op": "C", "desc": "En los que las funcionalidades varían en un nivel determinado desde el principio." },
+                { "op": "D", "desc": "En los que los clientes lo solicitan." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "La metodología ágil es ideal para proyectos con requisitos cambiantes o no definidos desde el inicio."
+        },
+        {
+            "id": 5,
+            "enunciado": "En la relación entre el desarrollo de software ágil y DevOps:",
+            "options": [
+                { "op": "A", "desc": "Solo puede hacerse uso del agilismo en DevOps cuando se conocen los cambios." },
+                { "op": "B", "desc": "En realidad no se deberían usar a la vez, o bien uno u otro paradigma." },
+                { "op": "C", "desc": "DevOps le da la posibilidad al desarrollo software a la gestión continua de los cambios." },
+                { "op": "D", "desc": "El movimiento DevOps apuesta por ciclos de desarrollo cortos con lanzamientos confiables, alineado con los objetivos de la agilidad." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "DevOps complementa el enfoque ágil promoviendo ciclos cortos y lanzamientos confiables."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué tipo de enfoque se centra en un avance iterativo e incremental?",
+            "options": [
+                { "op": "A", "desc": "El enfoque ágil." },
+                { "op": "B", "desc": "El enfoque tradicional." },
+                { "op": "C", "desc": "Una metodología mixta entre enfoque ágil y tradicional." },
+                { "op": "D", "desc": "Se puede usar cualquier tipo de enfoque, pues no depende de esto." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El enfoque ágil se caracteriza por su avance iterativo e incremental."
+        },
+        {
+            "id": 7,
+            "enunciado": "El número de personas trabajando en un equipo ágil:",
+            "options": [
+                { "op": "A", "desc": "Siempre es variable y sin un límite, dependiendo del departamento." },
+                { "op": "B", "desc": "Se suele trabajar con equipos pequeños, de entre una y cinco personas, nunca más." },
+                { "op": "C", "desc": "Se manejan equipos de trabajos pequeños, normalmente no más de quince personas, dependiendo del proyecto." },
+                { "op": "D", "desc": "Se puede usar cualquier tipo de enfoque, pues no depende de esto." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los equipos ágiles suelen estar formados por no más de 15 personas, promoviendo la colaboración efectiva."
+        },
+        {
+            "id": 8,
+            "enunciado": "La principal diferencia entre el agilismo y DevOps:",
+            "options": [
+                { "op": "A", "desc": "Se debe a que no son para nada compatibles entre ellos." },
+                { "op": "B", "desc": "Es porque DevOps solo puede usarse con metodologías tradicionales." },
+                { "op": "C", "desc": "Radica en que el agilismo trabaja con equipos reducidos, y DevOps siempre debe tener equipos amplios por la complejidad." },
+                { "op": "D", "desc": "Radica en los equipos de trabajo, porque en el agilismo los miembros se adaptan a cambios en el desarrollo y se apoyan, y en DevOps se unen equipo de desarrollo y operaciones." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "DevOps une los equipos de desarrollo y operaciones, mientras que el agilismo se centra en adaptabilidad y trabajo en equipo."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Cuándo se obtiene un producto viable mínimo?",
+            "options": [
+                { "op": "A", "desc": "Solo cuando se aplican metodologías tradicionales junto con DevOps." },
+                { "op": "B", "desc": "Solo cuando se aplican metodologías ágiles junto con DevOps." },
+                { "op": "C", "desc": "Cuando se aplican metodologías ágiles, en cada iteración y en plazos cortos." },
+                { "op": "D", "desc": "Cuando se desarrolla un proyecto mediante la idea de DevOps se asegura." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Un producto viable mínimo es característico del enfoque ágil, entregado en iteraciones cortas."
+        },
+        {
+            "id": 10,
+            "enunciado": "En DevOps se incluyen una serie de principios o prácticas en las fases de desarrollo, ¿cuáles son algunos de estos?",
+            "options": [
+                { "op": "A", "desc": "Desarrollo continuo, integración continua, entrega continua, supervisión continua." },
+                { "op": "B", "desc": "Análisis de requisitos, diseño, implementación y pruebas." },
+                { "op": "C", "desc": "Los mismos principios que los que tiene el enfoque ágil." },
+                { "op": "D", "desc": "Hacer equipos pequeños, reducir costes, no realizar cambios continuos y trabajar con metodología tradicional." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "DevOps incluye prácticas como desarrollo continuo, integración y supervisión para fomentar la eficiencia."
+        }
+    ]
+}

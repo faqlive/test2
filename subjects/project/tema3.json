@@ -1,0 +1,126 @@
+{
+    "tema": 3,
+    "name": "Marco Ágil Scrum",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Cuál es el propósito del marco de trabajo Scrum?",
+            "options": [
+                { "op": "A", "desc": "Maximizar la productividad sin reuniones intermedias." },
+                { "op": "B", "desc": "Proporcionar flexibilidad y adaptabilidad a equipos autogestionados." },
+                { "op": "C", "desc": "Eliminar la necesidad de retrospección del equipo." },
+                { "op": "D", "desc": "Aplicar metodologías tradicionales dentro de entornos ágiles." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Scrum está diseñado para fomentar la autogestión y la adaptación a los cambios."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Qué roles forman el equipo Scrum?",
+            "options": [
+                { "op": "A", "desc": "Product Owner, Scrum Master y Equipo de Desarrollo." },
+                { "op": "B", "desc": "Líder del Proyecto, Analista y Equipo de Programación." },
+                { "op": "C", "desc": "Product Manager, Scrum Facilitador y Equipo de QA." },
+                { "op": "D", "desc": "Gestor de Proyecto, Líder Técnico y Desarrolladores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El equipo Scrum está compuesto por estos tres roles fundamentales según las guías oficiales."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Qué es un Sprint en Scrum?",
+            "options": [
+                { "op": "A", "desc": "Una iteración fija de tiempo para completar tareas del backlog." },
+                { "op": "B", "desc": "Un conjunto de actividades de mantenimiento de un proyecto." },
+                { "op": "C", "desc": "El tiempo para planificar la siguiente iteración del proyecto." },
+                { "op": "D", "desc": "Una fase preliminar antes de iniciar el desarrollo formal." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Un Sprint es una iteración de tiempo fija en la que el equipo trabaja en objetivos concretos."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Qué pilares sustentan el marco de trabajo Scrum?",
+            "options": [
+                { "op": "A", "desc": "Transparencia, inspección y adaptación." },
+                { "op": "B", "desc": "Eficiencia, velocidad y automatización." },
+                { "op": "C", "desc": "Autogestión, comunicación y documentación." },
+                { "op": "D", "desc": "Planificación, ejecución y validación." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Scrum se basa en los pilares de transparencia, inspección y adaptación para garantizar el éxito."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Qué son los artefactos en Scrum y cuáles son?",
+            "options": [
+                { "op": "A", "desc": "Guías de autogestión: Product Backlog, Sprint Backlog e Incremento." },
+                { "op": "B", "desc": "Elementos visuales: Diagramas, Gráficos y Planificaciones." },
+                { "op": "C", "desc": "Roles secundarios del equipo de soporte." },
+                { "op": "D", "desc": "Componentes del proceso: Historias de usuario y diagramas UML." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Los artefactos en Scrum son Product Backlog, Sprint Backlog e Incremento."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué compromiso define un estado futuro del producto en el Product Backlog?",
+            "options": [
+                { "op": "A", "desc": "El incremento." },
+                { "op": "B", "desc": "El objetivo del producto." },
+                { "op": "C", "desc": "La definición de terminado." },
+                { "op": "D", "desc": "El objetivo del Sprint." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El objetivo del producto describe un estado futuro deseado para el producto."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Qué reuniones se llevan a cabo durante un Sprint?",
+            "options": [
+                { "op": "A", "desc": "Planificación, Daily Scrum, Revisión y Retrospectiva." },
+                { "op": "B", "desc": "Planificación, Revisión y Documentación." },
+                { "op": "C", "desc": "Daily Scrum, Documentación y Revisión Final." },
+                { "op": "D", "desc": "Planificación y un único Daily Scrum al final del Sprint." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Las reuniones clave en un Sprint son planificación, Daily Scrum, revisión y retrospectiva."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Qué define la 'Definición de Terminado' (Definition of Done)?",
+            "options": [
+                { "op": "A", "desc": "Un checklist de tareas completadas." },
+                { "op": "B", "desc": "Un estándar de calidad acordado para considerar una tarea completa." },
+                { "op": "C", "desc": "Un documento firmado por el Product Owner." },
+                { "op": "D", "desc": "Un documento que detalla los pasos para cerrar el proyecto." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "La 'Definición de Terminado' establece los estándares necesarios para considerar una tarea completada."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Qué representa el Incremento en Scrum?",
+            "options": [
+                { "op": "A", "desc": "La suma de todos los elementos completados en el Sprint." },
+                { "op": "B", "desc": "El conjunto de tareas pendientes en el Sprint Backlog." },
+                { "op": "C", "desc": "El tiempo estimado para las próximas iteraciones." },
+                { "op": "D", "desc": "Los artefactos generados por el equipo de soporte." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El Incremento incluye todos los elementos completados que están listos para su entrega al final del Sprint."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cuál es la duración típica de un Sprint?",
+            "options": [
+                { "op": "A", "desc": "1 a 4 semanas." },
+                { "op": "B", "desc": "1 a 2 días." },
+                { "op": "C", "desc": "6 a 8 semanas." },
+                { "op": "D", "desc": "Indefinido, dependiendo del proyecto." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Un Sprint tiene una duración fija de 1 a 4 semanas, según las necesidades del equipo."
+        }
+    ]
+}

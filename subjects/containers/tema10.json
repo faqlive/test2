@@ -1,0 +1,136 @@
+{
+    "tema": 10,
+    "name": "Deployments, StatefulSets y Jobs de Kubernetes",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "Relacione los siguientes conceptos:",
+            "options": [
+                { "op": "A", "desc": "Tareas de corta duración planificadas." },
+                { "op": "B", "desc": "Tareas de corta duración bajo demanda." },
+                { "op": "C", "desc": "Permiten desplegar apliaciones sin estado." },
+                { "op": "D", "desc": "Permiten desplegar aplicaciones con estado." }
+            ],
+            "correct": [
+                { "ele": "Deployment", "op": "C" },
+                { "ele": "StatefulSet", "op": "D" },
+                { "ele": "Jobs", "op": "B" },
+                { "ele": "CronJob", "op": "A" }
+            ],
+            "just": "Cada recurso en Kubernetes está diseñado para una tarea específica, como planificar tareas (CronJob), desplegar sin pérdida de servicio (Deployment), gestionar tareas únicas (Job), y manejar aplicaciones con estado (StatefulSet)."
+        },
+        {
+            "id": 2,
+            "enunciado": "Los recursos Job de Kubernetes:",
+            "options": [
+                { "op": "A", "desc": "Permiten la planificación de los Jobs para su ejecución a una hora concreta o de forma periódica." },
+                { "op": "B", "desc": "Soportan estrategias de despliegue progresivo que permiten actualizar la aplicación sin pérdida de servicio." },
+                { "op": "C", "desc": "Soportan políticas de reinicio para la gestión de errores en la ejecución." },
+                { "op": "D", "desc": "Están diseñados para el despliegue de aplicaciones con estado." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los Jobs están diseñados para ejecutar tareas únicas, soportando políticas de reinicio para manejar fallos durante su ejecución."
+        },
+        {
+            "id": 3,
+            "enunciado": "Los recursos CronJob de Kubernetes:",
+            "options": [
+                { "op": "A", "desc": "Permiten la planificación de los Jobs para su ejecución a una hora concreta o de forma periódica." },
+                { "op": "B", "desc": "Soportan estrategias de despliegue progresivo que permiten actualizar la aplicación sin pérdida de servicio." },
+                { "op": "C", "desc": "Crean un Replicaset para la gestión de las réplicas." },
+                { "op": "D", "desc": "Están diseñados para el despliegue de aplicaciones con estado." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Los CronJobs permiten planificar y ejecutar tareas en momentos específicos o de manera periódica."
+        },
+        {
+            "id": 4,
+            "enunciado": "Los recursos Deployment de Kubernetes:",
+            "options": [
+                { "op": "A", "desc": "Permiten el despliegue progresivo de actualizaciones, realizando el proceso sin pérdida de servicio." },
+                { "op": "B", "desc": "Soportan revertir un despliegue de actualizaciones a un estado anterior." },
+                { "op": "C", "desc": "Están diseñados para el despliegue de aplicaciones sin estado." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los Deployments son versátiles y permiten despliegues progresivos, reversión a estados anteriores y están diseñados para aplicaciones sin estado."
+        },
+        {
+            "id": 5,
+            "enunciado": "Los recursos StatefulSets de Kubernetes:",
+            "options": [
+                { "op": "A", "desc": "Los Pods de las réplicas tendrán hostname e IP únicos." },
+                { "op": "B", "desc": "Las réplicas se crean y destruyen ordenadamente." },
+                { "op": "C", "desc": "Están diseñados para el despliegue de aplicaciones con estado." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los StatefulSets manejan aplicaciones con estado, proporcionando identidades únicas a cada réplica y garantizando su creación/ eliminación ordenada."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Cuál de los siguientes objetos de Kubernetes crea un Replicaset para gestionar las réplicas?",
+            "options": [
+                { "op": "A", "desc": "Deployments." },
+                { "op": "B", "desc": "StatefulSets." },
+                { "op": "C", "desc": "Jobs." },
+                { "op": "D", "desc": "CronJobs." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Los Deployments son los responsables de crear y gestionar Replicasets para mantener la cantidad deseada de Pods."
+        },
+        {
+            "id": 7,
+            "enunciado": "Relacione los siguientes comandos aplicados a un Deployment de Kubernetes:",
+            "options": [
+                { "op": "A", "desc": "Pasue las acutalizaciones de un Deployment, permitiendo aplicar varias modificaciones a la vez al reanudarlo." },
+                { "op": "B", "desc": "Permite consultar el estado en el que se encuentra el despliegue de los Pods al crear o actualizar un Deployment." },
+                { "op": "C", "desc": "Permite modfcar el número de réplicas." },
+                { "op": "D", "desc": "Tras una actualización, permite volver a un estado anterior." }
+            ],
+            "correct": [
+                { "ele": "kubectl rollout status", "op": "B" },
+                { "ele": "kubectl rollout undo", "op": "D" },
+                { "ele": "Kubectl rollout pause", "op": "A" },
+                { "ele": "kubectl scale", "op": "C" }
+            ],
+            "just": "Cada comando tiene un propósito específico para gestionar y modificar los Deployments de Kubernetes."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Cuál de las siguientes propiedades de un manifiesto YAML permite establecer un tiempo límite de ejecución de un Job en Kubernetes?",
+            "options": [
+                { "op": "A", "desc": "spec.backoffLimit." },
+                { "op": "B", "desc": "spec.completions." },
+                { "op": "C", "desc": "spec.activeDeadlineSeconds." },
+                { "op": "D", "desc": "spec.schedule." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "La propiedad `spec.activeDeadlineSeconds` define el tiempo límite de ejecución de un Job en segundos."
+        },
+        {
+            "id": 9,
+            "enunciado": "En Kubernetes los objetos Service de tipo headless:",
+            "options": [
+                { "op": "A", "desc": "No realizan balanceo de carga entre los Pods." },
+                { "op": "B", "desc": "Devuelven la lista de IPs de los Pods." },
+                { "op": "C", "desc": "No tendrán una Cluster IP asociada." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los servicios headless no tienen Cluster IP, no realizan balanceo y devuelven las IPs de los Pods asociados."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cuál de los siguientes objetos de Kubernetes permite la ejecución de un Pod periódicamente?",
+            "options": [
+                { "op": "A", "desc": "Deployments." },
+                { "op": "B", "desc": "StatefulSets." },
+                { "op": "C", "desc": "Jobs." },
+                { "op": "D", "desc": "CronJobs." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los CronJobs permiten programar la ejecución periódica de Pods basándose en un horario definido."
+        }
+    ]
+}

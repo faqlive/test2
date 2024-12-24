@@ -1,0 +1,131 @@
+{
+    "tema": 9,
+    "name": "Almacenamiento y configuración en Kubernetes",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "Relacione los siguientes conceptos:",
+            "options": [
+                { "op": "A", "desc": "Permiten desacoplar la infraestructura de almacenamiento de la definición del Pod." },
+                { "op": "B", "desc": "Permiten montar un volumen EBS de Amazon en los Pods." },
+                { "op": "C", "desc": "Montan volúmenes vacíos y están ligados a la vida útil del pod." },
+                { "op": "D", "desc": "Permiten montar un directirio o archivo específico del sistema de ficheros del nodo" }
+            ],
+            "correct": [
+                { "ele": "emptyDir", "op": "C" },
+                { "ele": "hostPath", "op": "D" },
+                { "ele": "awsElasticBlockStore", "op": "B" },
+                { "ele": "PersistentVolume", "op": "A" }
+            ],
+            "just": "Cada tipo de volumen tiene un propósito específico: PersistentVolume desacopla almacenamiento, awsElasticBlockStore monta volúmenes EBS, emptyDir crea volúmenes temporales, y hostPath accede a archivos locales del nodo."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Cuál de las siguientes afirmaciones sobre los ConfigMaps es falsa?",
+            "options": [
+                { "op": "A", "desc": "Permiten desacoplar de los Pods sus opciones de configuración." },
+                { "op": "B", "desc": "Están compuestos por pares clave/valor." },
+                { "op": "C", "desc": "Se asocian a un Namespace." },
+                { "op": "D", "desc": "Son globales al clúster." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los ConfigMaps no son globales al clúster; están asociados a un Namespace específico."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Cuál de las siguientes afirmaciones sobre los ConfigMaps es falsa?",
+            "options": [
+                { "op": "A", "desc": "Podemos montar el contenido de los ConfigMaps en un volumen de los Pods." },
+                { "op": "B", "desc": "El volumen montado a partir de un ConfigMap se actualizará automáticamente cuando se hagan cambios en este último." },
+                { "op": "C", "desc": "Es posible establecer dinámicamente variables de entorno y argumentos del comando de inicio con los valores almacenados en el ConfigMap." },
+                { "op": "D", "desc": "Las variables de entorno establecidas a partir de un ConfigMap se actualizarán automáticamente cuando se hagan cambios en este último." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Las variables de entorno no se actualizan automáticamente; es necesario reiniciar el Pod para aplicar los cambios."
+        },
+        {
+            "id": 4,
+            "enunciado": "Los volúmenes hostPath:",
+            "options": [
+                { "op": "A", "desc": "Permiten montar en el Pod un directorio o archivo específico del sistema de ficheros del nodo." },
+                { "op": "B", "desc": "Se crean inicialmente vacíos, y serán eliminados cuando el Pod finalice su ejecución." },
+                { "op": "C", "desc": "Permiten desacoplar la infraestructura de almacenamiento de la definición del Pod." },
+                { "op": "D", "desc": "Están diseñados para inyectar datos de configuración en los Pods." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Los volúmenes hostPath montan directorios específicos del nodo en el Pod."
+        },
+        {
+            "id": 5,
+            "enunciado": "Los volúmenes emptyDir:",
+            "options": [
+                { "op": "A", "desc": "Permiten desacoplar la infraestructura de almacenamiento de la definición del Pod." },
+                { "op": "B", "desc": "Permiten montar en el Pod un directorio o archivo específico del sistema de ficheros del nodo." },
+                { "op": "C", "desc": "Se crean inicialmente vacíos, y serán eliminados cuando el Pod finalice su ejecución." },
+                { "op": "D", "desc": "Están diseñados para inyectar datos de configuración en los Pods." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los volúmenes emptyDir se crean vacíos y se eliminan al finalizar la vida del Pod."
+        },
+        {
+            "id": 6,
+            "enunciado": "Los PersistentVolumes:",
+            "options": [
+                { "op": "A", "desc": "Permiten desacoplar la infraestructura de almacenamiento de la definición del Pod." },
+                { "op": "B", "desc": "Son recursos globales del clúster. No están asociados a un Namespace específico." },
+                { "op": "C", "desc": "Tendrán definidos los modos de acceso permitidos." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los PersistentVolumes desacoplan almacenamiento, son globales y definen modos de acceso permitidos."
+        },
+        {
+            "id": 7,
+            "enunciado": "Los PersistentVolumeClaims:",
+            "options": [
+                { "op": "A", "desc": "Se utilizan para solicitar almacenamiento." },
+                { "op": "B", "desc": "Permiten especificar el modo de acceso requerido al almacenamiento." },
+                { "op": "C", "desc": "Pueden definirse referenciando a un StorageClass para permitir el aprovisionamiento dinámico de almacenamiento." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los PersistentVolumeClaims permiten solicitar almacenamiento, definir modos de acceso y soportan aprovisionamiento dinámico mediante StorageClass."
+        },
+        {
+            "id": 8,
+            "enunciado": "Las StorageClass:",
+            "options": [
+                { "op": "A", "desc": "Definen un tipo de almacenamiento en un proveedor específico." },
+                { "op": "B", "desc": "Se utilizan para el aprovisionamiento dinámico de almacenamiento." },
+                { "op": "C", "desc": "Se creará un nuevo PersistentVolume cada vez que se solicite almacenamiento referenciando a un objeto StorageClass." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Las StorageClass permiten definir y aprovisionar almacenamiento dinámico con un proveedor específico."
+        },
+        {
+            "id": 9,
+            "enunciado": "Los ConfigMaps:",
+            "options": [
+                { "op": "A", "desc": "Se almacenan codificados en base64, pero no cifrados." },
+                { "op": "B", "desc": "Son recursos globales a todo el clúster." },
+                { "op": "C", "desc": "Se crean en un determinado Namespace, pudiendo ser utilizados solo por recursos de este." },
+                { "op": "D", "desc": "Solo existen a nivel del Pod, una vez finalice su ejecución, el ConfigMap será eliminado." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los ConfigMaps se crean a nivel de Namespace y son utilizados por recursos en dicho Namespace."
+        },
+        {
+            "id": 10,
+            "enunciado": "Los objetos Secrets de Kubernetes:",
+            "options": [
+                { "op": "A", "desc": "Se almacenan en etcd y su información estará cifrada." },
+                { "op": "B", "desc": "Se almacenan codificados en base64, pero no cifrados." },
+                { "op": "C", "desc": "Son recursos globales a todo el clúster." },
+                { "op": "D", "desc": "Solo existen a nivel del Pod, una vez finalice su ejecución, el Secret será eliminado." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Los Secrets se almacenan codificados en base64, pero no están cifrados."
+        }
+    ]
+}

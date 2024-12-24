@@ -1,0 +1,135 @@
+{
+    "tema": 8,
+    "name": "ReplicaSets, DaemonSets y Servicios de Kubernetes",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Cómo podemos evitar que los Pods gestionados por un ReplicaSet sean eliminados al eliminar el ReplicaSet?",
+            "options": [
+                { "op": "A", "desc": "Por defecto no se eliminan los Pods al eliminar el ReplicaSet." },
+                { "op": "B", "desc": "No es posible, la vida de los Pods está ligada a la del ReplicaSet." },
+                { "op": "C", "desc": "Con la opción --cascade=false del cliente kubectl." },
+                { "op": "D", "desc": "Escalando el ReplicaSet a cero réplicas." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "La opción --cascade=false evita que los Pods sean eliminados al borrar el ReplicaSet."
+        },
+        {
+            "id": 2,
+            "enunciado": "Relacione los siguientes conceptos:",
+            "options": [
+                { "op": "A", "desc": "Utiliza reglas de enrutamiento para gestionar el acceso externo a múltiples servicios." },
+                { "op": "B", "desc": "Define un conjunto lógico de Pods y una politac para cceer a ellos." },
+                { "op": "C", "desc": "Garantiza que un número especificado de réplicas de Pods estén ejecutándose." },
+                { "op": "D", "desc": "Asegura que en todos los nodos se ejecuta un Pod especificado." }
+            ],
+            "correct": [
+                { "ele": "ReplicaSet", "op": "C" },
+                { "ele": "DaemonSet", "op": "D" },
+                { "ele": "Service", "op": "B" },
+                { "ele": "Ingress", "op": "A" }
+            ],
+            "just": "Cada objeto de Kubernetes tiene un propósito claro: ReplicaSet para réplicas, DaemonSet para Pods en nodos, Service para acceso a Pods, e Ingress para enrutamiento de servicios."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Qué tipo de recurso de Kubernetes se encarga de que un número especificado de réplicas de Pods esté ejecutándose en el clúster?",
+            "options": [
+                { "op": "A", "desc": "ReplicaSet." },
+                { "op": "B", "desc": "DaemonSet." },
+                { "op": "C", "desc": "Service." },
+                { "op": "D", "desc": "Ingress." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El ReplicaSet asegura que un número deseado de réplicas de Pods esté en ejecución."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Qué tipo de recurso de Kubernetes utiliza reglas de enrutamiento para gestionar el acceso externo a múltiples servicios?",
+            "options": [
+                { "op": "A", "desc": "ReplicaSet." },
+                { "op": "B", "desc": "DaemonSet." },
+                { "op": "C", "desc": "Service." },
+                { "op": "D", "desc": "Ingress." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El recurso Ingress utiliza reglas de enrutamiento para exponer servicios externos en Kubernetes."
+        },
+        {
+            "id": 5,
+            "enunciado": "Relacione los siguientes tipos de servicio de Kubernetes con su función:",
+            "options": [
+                { "op": "A", "desc": "Expone el servicio en una direccion IP interna del clúster, por lo que solamente será accesible desde dentro del clúster.." },
+                { "op": "B", "desc": "Expone el servicio a traves de un nombre especificado en la definición, asociándolo con un ombre de dominio mediante un registro CNAME.." },
+                { "op": "C", "desc": "Crea un balanceador de carga externo y se asignará una dirección IP fija al servicio.." },
+                { "op": "D", "desc": "Expone el servicio fuera del clúster a través de la direccion IP de cada nodo utilizando el mismo puerto en cada uno de ellos.." }
+            ],
+            "correct": [
+                { "ele": "ExternalName", "op": "B" },
+                { "ele": "NodePort", "op": "D" },
+                { "ele": "ClusterIP", "op": "A" },
+                { "ele": "LoadBalancer", "op": "C" }
+            ],
+            "just": "Los servicios de Kubernetes ofrecen diferentes formas de exponer Pods, dependiendo de las necesidades de red y acceso."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué tipo de servicio de Kubernetes expone el servicio fuera del clúster a través de la dirección IP de cada nodo, utilizando el mismo puerto en cada uno de ellos?",
+            "options": [
+                { "op": "A", "desc": "ClusterIP." },
+                { "op": "B", "desc": "NodePort." },
+                { "op": "C", "desc": "ExternalName." },
+                { "op": "D", "desc": "Todos los anteriores." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "NodePort permite exponer servicios externamente a través de las IP de los nodos."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Cómo podemos seleccionar en qué nodos se despliegan los Pods de un DaemonSet?",
+            "options": [
+                { "op": "A", "desc": "No es posible, los Pods de un DaemonSet siempre se desplegarán en todos los nodos." },
+                { "op": "B", "desc": "Definiendo la lista de nodos a ignorar en la propiedad ignoreNodes del fichero YAML." },
+                { "op": "C", "desc": "Definiendo un selector de nodo basado en etiquetas en la definición del Pod en la propiedad nodeSelector del fichero YAML." },
+                { "op": "D", "desc": "Cambiando al nodo de Namespace." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "El campo nodeSelector permite limitar los nodos en los que se ejecutan los Pods de un DaemonSet."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Qué ocurre con los Pods de un ReplicaSet desplegados en un nodo cuando dicho nodo deja de estar operativo?",
+            "options": [
+                { "op": "A", "desc": "Los Pods quedan en estado «no disponible» hasta que el nodo vuelve a estar operativo." },
+                { "op": "B", "desc": "Los Pods son automáticamente replanificados en otros nodos disponibles." },
+                { "op": "C", "desc": "El número de réplicas configurado en el ReplicaSet es decrementado en el número de Pods." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Cuando un nodo falla, los Pods gestionados por un ReplicaSet son automáticamente replanificados en otros nodos."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Cuál de las siguientes afirmaciones acerca de los tipos de servicio de Kubernetes es falsa?",
+            "options": [
+                { "op": "A", "desc": "NodePort expone el servicio fuera del clúster a través de la dirección IP de cada nodo al utilizar el mismo puerto en cada uno de ellos." },
+                { "op": "B", "desc": "LoadBalancer crea un balanceador de carga externo y se asignará una dirección IP fija al servicio." },
+                { "op": "C", "desc": "ClusterIP expone el servicio en una dirección IP única externa del clúster, siendo accesible dentro y fuera del clúster." },
+                { "op": "D", "desc": "ExternalName expone el servicio a través de un nombre especificado en la definición, asociándolo con un nombre de dominio mediante un registro CNAME." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "ClusterIP expone servicios únicamente dentro del clúster, no externamente."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cuál de las siguientes afirmaciones acerca de los recursos Horizontal Pod Autoscaler (HPA) de Kubernetes es falsa?",
+            "options": [
+                { "op": "A", "desc": "Permite modificar automáticamente el número de réplicas de Pods de un ReplicaSet en base a ciertas métricas." },
+                { "op": "B", "desc": "Kubernetes nos permite utilizar por defecto el uso de CPU y el consumo de memoria como métricas para el autoescalado de un HPA." },
+                { "op": "C", "desc": "El comando kubectl autoscale permite crear de manera imperativa un Horizontal Pod Autoscaler (HPA)." },
+                { "op": "D", "desc": "No es posible definir métricas personalizadas diferentes a las ofrecidas por Kubernetes." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Kubernetes permite definir métricas personalizadas además de las ofrecidas por defecto."
+        }
+    ]
+}

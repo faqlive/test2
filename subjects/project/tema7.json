@@ -1,0 +1,126 @@
+{
+    "tema": 7,
+    "name": "Mejoras Continuas",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Qué representa el concepto de mejora continua?",
+            "options": [
+                { "op": "A", "desc": "Un esfuerzo periódico para mejorar procesos existentes." },
+                { "op": "B", "desc": "La búsqueda constante de innovaciones disruptivas." },
+                { "op": "C", "desc": "La mejora que se realiza únicamente al final del proyecto." },
+                { "op": "D", "desc": "Un sistema que evita cualquier cambio en los procesos establecidos." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "La mejora continua implica un esfuerzo constante y sistemático para optimizar los procesos en curso."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Cuál es una herramienta utilizada frecuentemente en la mejora continua?",
+            "options": [
+                { "op": "A", "desc": "Ciclo PDCA (Plan-Do-Check-Act)." },
+                { "op": "B", "desc": "Modelo en cascada." },
+                { "op": "C", "desc": "Análisis SWOT." },
+                { "op": "D", "desc": "Gráficos de Gantt." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El ciclo PDCA es ampliamente reconocido como una herramienta clave en la mejora continua."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Qué papel juega el feedback en la mejora continua?",
+            "options": [
+                { "op": "A", "desc": "Permite validar los avances y ajustar los procesos." },
+                { "op": "B", "desc": "Es opcional y no tiene un impacto significativo." },
+                { "op": "C", "desc": "Solo es útil durante las etapas iniciales del proyecto." },
+                { "op": "D", "desc": "Se centra en las opiniones subjetivas de los clientes." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El feedback es esencial para verificar el progreso y realizar ajustes necesarios en los procesos."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Qué enfoque caracteriza la mejora continua en metodologías ágiles?",
+            "options": [
+                { "op": "A", "desc": "La realización de reuniones diarias y retrospectivas periódicas." },
+                { "op": "B", "desc": "La finalización estricta de entregas planificadas." },
+                { "op": "C", "desc": "Un enfoque lineal y secuencial." },
+                { "op": "D", "desc": "Optimización exclusivamente al cierre del proyecto." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Las metodologías ágiles priorizan reuniones como las retrospectivas para impulsar la mejora continua."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Qué tipo de cambio se persigue con la mejora continua?",
+            "options": [
+                { "op": "A", "desc": "Incremental y sostenido." },
+                { "op": "B", "desc": "Disruptivo y esporádico." },
+                { "op": "C", "desc": "Revolucionario y costoso." },
+                { "op": "D", "desc": "Experimental y no sistemático." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "La mejora continua busca cambios graduales y sostenibles en los procesos existentes."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué indicador clave se utiliza para evaluar el impacto de la mejora continua?",
+            "options": [
+                { "op": "A", "desc": "Tiempo de ciclo." },
+                { "op": "B", "desc": "Número de reuniones realizadas." },
+                { "op": "C", "desc": "Cantidad de empleados involucrados." },
+                { "op": "D", "desc": "Presupuesto asignado." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El tiempo de ciclo es un indicador fundamental para medir la eficiencia mejorada de un proceso."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Cómo contribuyen las retrospectivas a la mejora continua?",
+            "options": [
+                { "op": "A", "desc": "Facilitan la identificación de áreas de mejora en el equipo y los procesos." },
+                { "op": "B", "desc": "Se centran exclusivamente en evaluar el rendimiento individual." },
+                { "op": "C", "desc": "Son opcionales y no afectan directamente la productividad." },
+                { "op": "D", "desc": "Permiten introducir cambios únicamente al final del proyecto." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Las retrospectivas son fundamentales para identificar oportunidades de mejora en un entorno colaborativo."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Cuál es la relación entre Lean y mejora continua?",
+            "options": [
+                { "op": "A", "desc": "Lean proporciona herramientas y principios que impulsan la mejora continua." },
+                { "op": "B", "desc": "Lean reemplaza completamente la necesidad de mejora continua." },
+                { "op": "C", "desc": "Lean solo aplica a procesos industriales, no a gestión de proyectos." },
+                { "op": "D", "desc": "Lean es incompatible con la mejora continua en metodologías ágiles." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Lean está diseñado para fomentar la mejora continua mediante la eliminación de desperdicios y la optimización de procesos."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Qué técnica se utiliza en Lean para implementar mejoras incrementales?",
+            "options": [
+                { "op": "A", "desc": "Kaizen." },
+                { "op": "B", "desc": "Six Sigma." },
+                { "op": "C", "desc": "Análisis SWOT." },
+                { "op": "D", "desc": "Ciclo de vida del proyecto." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Kaizen es una técnica clave en Lean para lograr mejoras incrementales continuas."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Qué enfoque debe adoptar un equipo para garantizar la mejora continua?",
+            "options": [
+                { "op": "A", "desc": "Centrarse en la colaboración y el aprendizaje constante." },
+                { "op": "B", "desc": "Evitar cambios para mantener la estabilidad." },
+                { "op": "C", "desc": "Delegar completamente la responsabilidad al líder del equipo." },
+                { "op": "D", "desc": "Revisar los procesos únicamente al finalizar el proyecto." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "La colaboración y el aprendizaje constante son esenciales para mantener la mejora continua."
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "tema": 10,
+    "name": "Evolución en la Gestión de Proyectos",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Cuál de las siguientes es una posible desventaja del enfoque ágil?",
+            "options": [
+                { "op": "A", "desc": "Se requieren más personas para realizar el trabajo." },
+                { "op": "B", "desc": "Suele implicar un coste superior para poder completar el proyecto." },
+                { "op": "C", "desc": "Se requiere aplicar una tecnología más versátil." },
+                { "op": "D", "desc": "Suele implicar el no tener tan claro qué se debe hacer a largo plazo." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El enfoque ágil puede carecer de una planificación detallada a largo plazo, lo que puede ser visto como una desventaja en ciertos contextos." 
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Cuál es la actitud más adecuada respecto a los cambios en los proyectos?",
+            "options": [
+                { "op": "A", "desc": "Se debe entender que son necesarios y beneficiosos." },
+                { "op": "B", "desc": "Se debe replanificar cuando se produzca una petición de cambio, al instante." },
+                { "op": "C", "desc": "No se debe establecer líneas base, ya que los cambios harán que no sean útiles." },
+                { "op": "D", "desc": "Se deben evitar los cambios si no mejoran nada, según prevea el equipo." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "En los proyectos ágiles, los cambios se consideran beneficiosos y necesarios para adaptarse a nuevas circunstancias y necesidades del cliente." 
+        },
+        {
+            "id": 3,
+            "enunciado": "El enfoque tradicional pierde importancia respecto al ágil, debido a:",
+            "options": [
+                { "op": "A", "desc": "Que el enfoque tradicional resulta más caro de poner en marcha que el ágil." },
+                { "op": "B", "desc": "Que se requieren más personas en el equipo de trabajo del tradicional." },
+                { "op": "C", "desc": "Que el enfoque tradicional es menos adaptable." },
+                { "op": "D", "desc": "Que hay más personas formadas en el enfoque ágil." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "El enfoque tradicional es menos adaptable a los cambios rápidos del entorno, lo que lo hace menos relevante en ciertos proyectos." 
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Cuál es la característica principal del enfoque ágil respecto al tradicional?",
+            "options": [
+                { "op": "A", "desc": "El enfoque ágil resulta más económico de aplicar que el tradicional." },
+                { "op": "B", "desc": "El enfoque ágil requiere una tecnología más avanzada." },
+                { "op": "C", "desc": "El enfoque ágil requiere menos perfiles técnicos que el tradicional." },
+                { "op": "D", "desc": "El enfoque ágil implica menos planificación detallada al inicio." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El enfoque ágil se basa en ciclos iterativos y no depende de una planificación exhaustiva desde el inicio." 
+        },
+        {
+            "id": 5,
+            "enunciado": "La planificación de un proyecto debe ser:",
+            "options": [
+                { "op": "A", "desc": "Lo más realista posible." },
+                { "op": "B", "desc": "Lo más comprimida posible." },
+                { "op": "C", "desc": "Lo más detallada y concreta posible." },
+                { "op": "D", "desc": "Lo más técnica posible, con uso de herramientas software." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Una planificación realista permite que el proyecto sea alcanzable y se adapte a las limitaciones existentes." 
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Cuál es la evolución del riesgo en un proyecto ágil respecto al tradicional?",
+            "options": [
+                { "op": "A", "desc": "En el enfoque ágil se mantiene el riesgo en niveles más elevados que el tradicional." },
+                { "op": "B", "desc": "En el enfoque ágil no hay riesgos durante el ciclo de vida del proyecto." },
+                { "op": "C", "desc": "En el enfoque ágil se reduce el riesgo con mayor medida que el tradicional." },
+                { "op": "D", "desc": "En el enfoque ágil se aumenta el riesgo cuando hay que hacer cambios." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "El enfoque ágil permite gestionar y mitigar riesgos de manera iterativa, lo que reduce el impacto a lo largo del proyecto." 
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Cuál de las siguientes alternativas es más importante como centro fundamental en la gestión de proyectos con enfoque ágil?",
+            "options": [
+                { "op": "A", "desc": "El cumplir la planificación del proyecto aprobada por el cliente." },
+                { "op": "B", "desc": "El valor del resultado desde el punto de vista de negocio." },
+                { "op": "C", "desc": "El cumplir la restricción de tiempo, coste y alcance del proyecto." },
+                { "op": "D", "desc": "El valor del resultado desde el punto de vista del contrato." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El enfoque ágil prioriza el valor de negocio generado por el proyecto como su centro fundamental." 
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Cuáles de estos son modelos o métodos SDLC (Software Development Life Cycle)?",
+            "options": [
+                { "op": "A", "desc": "Tradicional, iterativo, DevOps y orientación a aspectos." },
+                { "op": "B", "desc": "Los modelos centralizados y distribuidos." },
+                { "op": "C", "desc": "Tradicional, prototipo, iterativo y espiral." },
+                { "op": "D", "desc": "Tradicional, prototipo, iterativo y orientación a objetos." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los métodos SDLC incluyen enfoques clásicos como el prototipo, iterativo y en espiral." 
+        },
+        {
+            "id": 9,
+            "enunciado": "El objetivo de DevOps es:",
+            "options": [
+                { "op": "A", "desc": "Aumentar la técnica y calidad del desarrollo de sistemas, mejorando la metodología tradicional." },
+                { "op": "B", "desc": "Reducir el ciclo de vida del desarrollo de sistemas y proporcionar una entrega continua, siendo complementario a lo que se hace en la metodología ágil." },
+                { "op": "C", "desc": "Mejorar la entrega de los productos, gracias a la entrega continua y planificarlo desde el inicio." },
+                { "op": "D", "desc": "Reducir el ciclo de vida del desarrollo de sistemas y proporcionar una entrega continua, siendo opuesto a lo que se hace en la metodología tradicional." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "DevOps busca complementar la metodología ágil mediante la reducción de ciclos y la entrega continua." 
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cuáles son las características básicas de RUP (Rational Unified Process)?",
+            "options": [
+                { "op": "A", "desc": "El tener cinco fases en el desarrollo del proyecto: inicio, elaboración, diseño, desarrollo, y cierre." },
+                { "op": "B", "desc": "El hecho de emplearse junto con UML, que lo hace de importancia en el uso del desarrollo de proyectos." },
+                { "op": "C", "desc": "El tener cuatro fases dentro de cada iteración: requisitos, análisis, planificación, diseño, e implementación." },
+                { "op": "D", "desc": "El estar dirigido por casos de uso, centrado en la arquitectura y ser iterativo e incremental." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "RUP se basa en casos de uso, iteraciones y un enfoque centrado en la arquitectura." 
+        }
+    ]
+}

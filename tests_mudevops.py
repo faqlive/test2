@@ -180,22 +180,28 @@ def ask_questions(all_questions):
         else:
             user_answers = {}
             correct_relations = {c["ele"]: c["op"] for c in question["correct"]}
+            parcial_score = 0
 
             for element in correct_relations:
-                print(f"\nRelaciona '{element}' con una opción (A, B, C, D): ")
+                print(f"Relaciona '{element}' con una opción (A, B, C, D): ")
                 user_answer = valid_input()
                 if user_answer in correct_relations.values():
                     user_answers[element] = user_answer
+                    if user_answers[element] == correct_relations[element]:
+                        print ("✅ ¡Correcto!" +str(user_answers[element]) + " - " + str(correct_relations[element]))
+                        parcial_score += 1 / len(correct_relations)
+                        print(f"parcial_score: {parcial_score}")
                 else:
                     print("❌ Respuesta inválida. Intenta de nuevo.")
                     user_answers[element] = None
 
+            score = score + parcial_score
             # Validar respuestas
             if user_answers == correct_relations:
                 print("✅ ¡Correcto! Relacionaste todos los elementos correctamente.")
-                score += 1
             else:
                 print("❌ Incorrecto. Las relaciones correctas eran:")
+                print(f"Haz acertado {int(parcial_score / (1 / len(correct_relations))) } de {len(correct_relations)}" if parcial_score > 0 else "No has acertado ninguna relación.")
                 for element, correct_option in correct_relations.items():
                     correct = next((o for o in question["options"] if o["op"] == correct_option), None)
                     print(f"    {element:<15} <->   {correct["op"]} - {correct['desc']}")

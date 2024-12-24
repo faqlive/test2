@@ -1,0 +1,131 @@
+{
+    "tema": 4,
+    "name": "Compose, DevOps y SDKs",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Qué hace el comando docker export?",
+            "options": [
+                { "op": "A", "desc": "Exporta la imagen base de un contenedor a un fichero TAR." },
+                { "op": "B", "desc": "Exporta una imagen a un fichero TAR." },
+                { "op": "C", "desc": "Exporta el sistema de ficheros de un contenedor a un fichero TAR." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "El comando docker export crea un fichero TAR con el sistema de ficheros del contenedor."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Qué opción de configuración de Compose permite publicar puertos del servicio al host?",
+            "options": [
+                { "op": "A", "desc": "expose" },
+                { "op": "B", "desc": "ports" },
+                { "op": "C", "desc": "publish" },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "La opción ports en Compose publica puertos del contenedor al host."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Cuál de las siguientes afirmaciones sobre Docker Hub es correcta?",
+            "options": [
+                { "op": "A", "desc": "Permite construir imágenes automáticamente cada vez que actualicemos un repositorio Git configurado." },
+                { "op": "B", "desc": "Actualmente solo soporta repositorios de GitHub y BitBucket." },
+                { "op": "C", "desc": "Los webhooks disparan un servicio externo en respuesta a un evento en el repositorio Git configurado." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Docker Hub soporta integración con Git, automatización de imágenes y webhooks para responder a eventos."
+        },
+        {
+            "id": 4,
+            "enunciado": "Relaciona los siguientes comandos de Docker con su acción:",
+            "options": [
+                { "op": "A", "desc": "docker-compose up - Inicia y crea contenedores para los servicios definidos." },
+                { "op": "B", "desc": "docker-compose build - Construye imágenes para los servicios." },
+                { "op": "C", "desc": "docker-compose down - Detiene y elimina servicios y recursos asociados." },
+                { "op": "D", "desc": "docker-compose ps - Lista los contenedores y servicios en ejecución." }
+            ],
+            "correct": [
+                { "ele": "docker-compose up", "op": "A" },
+                { "ele": "docker-compose build", "op": "B" },
+                { "ele": "docker-compose down", "op": "C" },
+                { "ele": "docker-compose ps", "op": "D" }
+            ],
+            "just": "Cada comando de Docker Compose tiene una función específica para la gestión de servicios."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Qué acciones puede realizar el comando docker-compose build?",
+            "options": [
+                { "op": "A", "desc": "Genera imágenes a partir de ficheros Dockerfile referenciados con build en Compose." },
+                { "op": "B", "desc": "Descarga de un registro las imágenes referenciadas con image en Compose." },
+                { "op": "C", "desc": "Crea los contenedores de los servicios sin ejecutarlos." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El comando docker-compose build solo genera imágenes a partir de Dockerfile referenciados."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué sección a nivel raíz de Compose nos permite definir volúmenes con nombre para ser referenciados en los servicios?",
+            "options": [
+                { "op": "A", "desc": "storage" },
+                { "op": "B", "desc": "data" },
+                { "op": "C", "desc": "volumes" },
+                { "op": "D", "desc": "mount" }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "La sección volumes permite definir volúmenes que serán utilizados en los servicios de Compose."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Cuál de las siguientes afirmaciones sobre Portainer es correcta?",
+            "options": [
+                { "op": "A", "desc": "Se despliega en contenedores." },
+                { "op": "B", "desc": "Ofrece una interfaz web de administración de Docker." },
+                { "op": "C", "desc": "Permite conectarse a un demonio de Docker tanto local como remoto." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Portainer ofrece funcionalidades completas para la administración de Docker mediante una interfaz gráfica."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Qué hace el comando docker-compose down?",
+            "options": [
+                { "op": "A", "desc": "Detiene un servicio, parando sus contenedores." },
+                { "op": "B", "desc": "Elimina un servicio, el cual debe haber sido parado previamente." },
+                { "op": "C", "desc": "Pausa los contenedores asociados al servicio." },
+                { "op": "D", "desc": "Detiene y elimina un servicio, parando y eliminando los recursos asociados." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El comando docker-compose down detiene y elimina servicios y sus recursos asociados."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Para qué lenguajes de programación Docker ofrece de manera oficial un SDK?",
+            "options": [
+                { "op": "A", "desc": "Go y Java." },
+                { "op": "B", "desc": "Go y Python." },
+                { "op": "C", "desc": "Go y Ruby." },
+                { "op": "D", "desc": "Docker no ofrece oficialmente ningún SDK." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Docker ofrece oficialmente SDKs para Go y Python."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Qué opciones de configuración de Compose permiten pasar variables de entorno a los servicios?",
+            "options": [
+                { "op": "A", "desc": "environment y env_file" },
+                { "op": "B", "desc": "variable y var_file" },
+                { "op": "C", "desc": "argument y arg_file" },
+                { "op": "D", "desc": "Ninguna. Deben ser definidas en el Dockerfile de la imagen." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Las configuraciones environment y env_file permiten definir variables de entorno en servicios de Compose."
+        }
+    ]
+}

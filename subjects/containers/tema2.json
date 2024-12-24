@@ -1,0 +1,126 @@
+{
+    "tema": 2,
+    "name": "Creación y distribución de imágenes",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Cómo podemos guardar el estado actual de un contenedor como imagen?",
+            "options": [
+                { "op": "A", "desc": "Utilizando el comando docker commit." },
+                { "op": "B", "desc": "Utilizando el comando docker build." },
+                { "op": "C", "desc": "Utilizando la instrucción WORKDIR en el fichero Dockerfile." },
+                { "op": "D", "desc": "La imagen utilizada se actualiza automáticamente con el estado actual del contenedor." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El comando docker commit permite crear una imagen a partir del estado actual de un contenedor."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Qué hace la instrucción COPY package.tar definida en un fichero Dockerfile al construir la imagen?",
+            "options": [
+                { "op": "A", "desc": "Copia el fichero package.tar en el directorio de trabajo." },
+                { "op": "B", "desc": "Descomprime los ficheros y los copia en el directorio de trabajo." },
+                { "op": "C", "desc": "Comprime los ficheros del directorio de trabajo." },
+                { "op": "D", "desc": "Genera un error, no se pueden copiar ficheros tar con COPY." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "La instrucción COPY copia el fichero tal cual en el directorio de trabajo de la imagen."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Qué formato tienen los ficheros Dockerfile?",
+            "options": [
+                { "op": "A", "desc": "YAML." },
+                { "op": "B", "desc": "JSON." },
+                { "op": "C", "desc": "Texto." },
+                { "op": "D", "desc": "XML." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los Dockerfile son ficheros de texto que contienen instrucciones en un formato específico."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Cómo podemos crear un registro Docker local?",
+            "options": [
+                { "op": "A", "desc": "Utilizando el comando docker registry create." },
+                { "op": "B", "desc": "Utilizando la imagen pública registry de Docker Hub." },
+                { "op": "C", "desc": "Descargando la aplicación Docker Registry." },
+                { "op": "D", "desc": "No es posible, los registros Docker solo tienen sentido en la nube." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Docker proporciona una imagen pública llamada 'registry' que permite crear registros locales."
+        },
+        {
+            "id": 5,
+            "enunciado": "El comando docker pull nginx:",
+            "options": [
+                { "op": "A", "desc": "Descarga todas las imágenes nginx sea cual sea su etiqueta." },
+                { "op": "B", "desc": "Descarga la imagen nginx etiquetada como latest." },
+                { "op": "C", "desc": "Descarga la imagen nginx que no esté etiquetada." },
+                { "op": "D", "desc": "Genera un error, es obligatorio indicar la etiqueta." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Si no se especifica una etiqueta, Docker asume por defecto la etiqueta 'latest'."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué comando de Docker nos permite generar una imagen?",
+            "options": [
+                { "op": "A", "desc": "docker rebuild." },
+                { "op": "B", "desc": "docker create." },
+                { "op": "C", "desc": "docker compile." },
+                { "op": "D", "desc": "docker build." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El comando docker build genera una imagen a partir de un Dockerfile."
+        },
+        {
+            "id": 7,
+            "enunciado": "Hemos empaquetado todo el sistema de ficheros de una máquina virtual existente en un fichero TAR y queremos crear una imagen Docker a partir de él. ¿Cuál sería la primera instrucción de nuestro Dockerfile?",
+            "options": [
+                { "op": "A", "desc": "FROM empty." },
+                { "op": "B", "desc": "FROM scratch." },
+                { "op": "C", "desc": "ADD filesystem.tar /." },
+                { "op": "D", "desc": "No es posible con ficheros Dockerfile." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El uso de FROM scratch indica que la imagen no tendrá una base previa."
+        },
+        {
+            "id": 8,
+            "enunciado": "El comando docker rmi myimage:",
+            "options": [
+                { "op": "A", "desc": "Elimina todas las imágenes del repositorio «myimage», sea cual sea su etiqueta." },
+                { "op": "B", "desc": "Elimina la imagen llamada «myimage» sin etiquetar o con etiqueta vacía." },
+                { "op": "C", "desc": "Elimina la imagen del repositorio «myimage» etiquetada como latest." },
+                { "op": "D", "desc": "Genera un error, es obligatorio indicar la etiqueta." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Por defecto, docker rmi elimina la imagen con etiqueta 'latest' si no se especifica otra."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Para qué sirve la instrucción ONBUILD en un fichero Dockerfile?",
+            "options": [
+                { "op": "A", "desc": "Permite indicar un registro en el cual se publicará automáticamente la imagen generada." },
+                { "op": "B", "desc": "Define una condición que debe cumplirse para poder generar la imagen." },
+                { "op": "C", "desc": "Ejecuta un comando en el host." },
+                { "op": "D", "desc": "Permite añadir a la imagen un comando que se ejecutará más adelante, al usar la imagen generada como base en otra construcción." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "ONBUILD añade un comando que se ejecutará al construir imágenes basadas en esta."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Qué comando de Docker nos permite listar las capas que componen una imagen?",
+            "options": [
+                { "op": "A", "desc": "docker images stacks." },
+                { "op": "B", "desc": "docker image details." },
+                { "op": "C", "desc": "docker search." },
+                { "op": "D", "desc": "docker image history." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El comando docker image history muestra el historial de capas de una imagen."
+        }
+    ]
+}

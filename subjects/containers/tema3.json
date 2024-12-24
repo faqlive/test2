@@ -1,0 +1,136 @@
+{
+    "tema": 5,
+    "name": "Gestión de Contenedores, Redes y Almacenamiento en Docker",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Con qué comando podemos copiar ficheros de un contenedor al sistema de ficheros local?",
+            "options": [
+                { "op": "A", "desc": "docker extract" },
+                { "op": "B", "desc": "docker cp" },
+                { "op": "C", "desc": "No hace falta, el sistema de ficheros del contenedor siempre está montado en el sistema de ficheros local." },
+                { "op": "D", "desc": "No es posible." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El comando docker cp permite copiar ficheros entre el sistema de ficheros local y un contenedor."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿En qué estado queda un contenedor cuando finaliza su ejecución?",
+            "options": [
+                { "op": "A", "desc": "Finalized." },
+                { "op": "B", "desc": "Stopped." },
+                { "op": "C", "desc": "Removed." },
+                { "op": "D", "desc": "Exited." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Cuando un contenedor finaliza, pasa al estado 'Exited'."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Cuál es el controlador de red por defecto cuando creamos una red?",
+            "options": [
+                { "op": "A", "desc": "Host" },
+                { "op": "B", "desc": "None" },
+                { "op": "C", "desc": "Bridge" },
+                { "op": "D", "desc": "Macvlan" }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Bridge es el controlador de red por defecto para las redes de Docker."
+        },
+        {
+            "id": 4,
+            "enunciado": "Relaciona los siguientes conceptos:",
+            "options": [
+                { "op": "A", "desc": "Permite conectar contenedores y/o servicios en diferentes hosts." },
+                { "op": "B", "desc": "Asigna una dirección MAC a un contenedor." },
+                { "op": "C", "desc": "No habilita conexiones de red para el contenedor." },
+                { "op": "D", "desc": "Permite eliminar el aislamiento de red entre contenedor y anfitrión." }
+            ],
+            "correct": [
+                { "ele": "Overlay", "op": "A" },
+                { "ele": "Macvlan", "op": "B" },
+                { "ele": "None", "op": "C" },
+                { "ele": "Host", "op": "D" }
+            ],
+            "just": "Cada tipo de red tiene un uso específico para diferentes escenarios de conectividad."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Qué comando nos permite eliminar las redes que no están en uso?",
+            "options": [
+                { "op": "A", "desc": "docker network purge" },
+                { "op": "B", "desc": "docker network prune" },
+                { "op": "C", "desc": "docker network clean" },
+                { "op": "D", "desc": "docker network rm --unused" }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "docker network prune elimina todas las redes que no están en uso."
+        },
+        {
+            "id": 6,
+            "enunciado": "Si ejecutamos un contenedor de la siguiente manera:\n```docker run --link contenedorA:aliasA alpine sh```",
+            "options": [
+                { "op": "A", "desc": "El contenedor B podrá llegar al A por su nombre y alias, pero no por su IP." },
+                { "op": "B", "desc": "El contenedor B podrá llegar al A por su IP, nombre y alias." },
+                { "op": "C", "desc": "El contenedor B solo podrá llegar al A si este último también está enlazado explícitamente con el primero." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El comando --link establece conexiones por IP, nombre y alias entre contenedores."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Cómo conectamos un contenedor en ejecución a una red ya existente?",
+            "options": [
+                { "op": "A", "desc": "docker network connect miRed miContenedor" },
+                { "op": "B", "desc": "docker network link miContenedor miRed" },
+                { "op": "C", "desc": "Todas las anteriores" },
+                { "op": "D", "desc": "No es posible, el contenedor ya está en ejecución." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El comando docker network connect permite conectar un contenedor a una red en ejecución."
+        },
+        {
+            "id": 8,
+            "enunciado": "Relaciona los siguientes conceptos:",
+            "options": [
+                { "op": "A", "desc": "Montará el volumen de Docker en la ruta especificada." },
+                { "op": "B", "desc": "Montará un bind mount en el contenedor." },
+                { "op": "C", "desc": "Creará un tmpfs mount y lo montará en la ruta especificada." },
+                { "op": "D", "desc": "Dará un error por no haber indicado el tipo de almacenamiento." }
+            ],
+            "correct": [
+                { "ele": "Docker Volume", "op": "A" },
+                { "ele": "Bind Mount", "op": "B" },
+                { "ele": "Tmpfs Mount", "op": "C" },
+                { "ele": "Error", "op": "D" }
+            ],
+            "just": "Cada tipo de almacenamiento tiene un propósito específico para diferentes escenarios."
+        },
+        {
+            "id": 9,
+            "enunciado": "Si ejecutamos un contenedor de la siguiente manera:\n```docker run -v mis-datos:/datos alpine sh```",
+            "options": [
+                { "op": "A", "desc": "Montará el volumen de Docker llamado «mis-datos» en la ruta /datos del contenedor." },
+                { "op": "B", "desc": "Montará el bind mount llamado «mis-datos» en la ruta /datos del host." },
+                { "op": "C", "desc": "Creará un tmpfs mount llamado «mis-datos» y lo montará en la ruta /datos del host." },
+                { "op": "D", "desc": "Dará un error por no haber indicado el tipo de almacenamiento." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "La opción -v permite montar un volumen de Docker en el contenedor."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Qué comando podríamos utilizar para obtener información sobre los procesos en ejecución de un contenedor?",
+            "options": [
+                { "op": "A", "desc": "docker top" },
+                { "op": "B", "desc": "docker stats" },
+                { "op": "C", "desc": "docker exec" },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El comando docker top muestra información sobre los procesos en ejecución de un contenedor."
+        }
+    ]
+}
