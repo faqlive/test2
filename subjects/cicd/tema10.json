@@ -1,0 +1,131 @@
+{
+    "tema": 10,
+    "name":"Modelos de despliegue",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Qué significa que un despliegue no tenga pérdida de servicio?",
+            "options": [
+                { "op": "A", "desc": "Que ofrece todas las funcionalidades durante todo el proceso de despliegue." },
+                { "op": "B", "desc": "Que puede no prestar servicio durante un período de tiempo anunciado previamente como «mantenimiento»." },
+                { "op": "C", "desc": "Que, en la mayoría de los casos, los usuarios pueden seguir accediendo, pero las respuestas del sistema pueden ser inconsistentes." },
+                { "op": "D", "desc": "Que el despliegue siempre es exitoso y nunca hay vuelta atrás." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Un despliegue sin pérdida de servicio asegura que los usuarios no experimenten interrupciones durante el proceso."
+        },
+        {
+            "id": 2,
+            "enunciado": "Relaciona el concepto con su característica principal.",
+            "options": [
+                { "op": "A", "desc": "Un porcentaje pequeño de servidores ofrece la versión nueva." },
+                { "op": "B", "desc": "Despliega dos entornos idénticos, uno para cada versión." },
+                { "op": "C", "desc": "Todos los servidores tienen el mismo código, pero una funcionalidad se puede ofrecer o no dependiendo de los detalles del usuario, la sesión, la configuración, etc." },
+                { "op": "D", "desc": "Se sustituyen servidores poco a poco, siempre y cuando los nuevos funcionen correctamente." }
+            ],
+            "correct": [
+                { "ele": "Blue/green", "op": "B" },
+                { "ele": "Actualización incremental", "op": "D" },
+                { "ele": "Canary releasing", "op": "A" },
+                { "ele": "Feature flag", "op": "C" }
+            ],
+            "just": "Cada técnica tiene una característica distintiva que define su estrategia de despliegue."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Por qué el esquema de datos se puede convertir en un problema si dos versiones conviven en el tiempo?",
+            "options": [
+                { "op": "A", "desc": "En general, no suele ser un problema. Las bases de datos se encargan de mantener el esquema." },
+                { "op": "B", "desc": "Porque dos servidores con versiones diferentes pueden escribir el mismo registro a la vez provocando un bloqueo." },
+                { "op": "C", "desc": "Porque el código nuevo puede escribir un dato con un esquema incompatible con el código antiguo." },
+                { "op": "D", "desc": "Porque habría que aplicar una subida de esquema si accede la versión nueva, y una bajada de esquema si accede la versión antigua." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Las versiones diferentes pueden generar incompatibilidades en la escritura de datos según el esquema."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Cómo se pueden actualizar sistemas dependientes sin que haya problemas de compatibilidad?",
+            "options": [
+                { "op": "A", "desc": "Ofreciendo una API que siempre sea compatible hacia atrás." },
+                { "op": "B", "desc": "Versionando la API, de forma que se pueda actualizar un sistema dependiente a la siguiente versión en cualquier momento." },
+                { "op": "C", "desc": "Actualizándolos siempre en conjunto." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Actualizar dependencias requiere estrategias que garanticen la compatibilidad en todas las situaciones."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Por qué se ha dicho que el modelo de despliegue blue/green ofrece todo o nada?",
+            "options": [
+                { "op": "A", "desc": "Porque actualiza los servidores in situ, sin desplegar ninguno nuevo." },
+                { "op": "B", "desc": "Porque en un momento dado, todos los servidores que dan servicio tienen la misma versión del código." },
+                { "op": "C", "desc": "Porque solo sirve para todos los sistemas de una aplicación." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "En blue/green, todos los servidores cambian simultáneamente a la nueva versión una vez validada."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué ventajas ofrece el Canary releasing frente a un despliegue blue/green?",
+            "options": [
+                { "op": "A", "desc": "Si se introduce un error en la nueva versión, solo afecta a los usuarios del servidor canario." },
+                { "op": "B", "desc": "Si se detecta un error, se puede detener el servidor canario o dejar de dirigirle tráfico, sin necesidad de modificar los otros servidores en funcionamiento." },
+                { "op": "C", "desc": "Puede usarse para pruebas A/B." },
+                { "op": "D", "desc": "A y B son correctas." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "El Canary releasing minimiza riesgos al limitar el impacto de errores y facilita pruebas específicas."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Cuánto tiempo conviven dos versiones en un despliegue incremental?",
+            "options": [
+                { "op": "A", "desc": "Desde que se despliega el primer servidor con la nueva versión hasta que se apaga el último de la versión antigua." },
+                { "op": "B", "desc": "No conviven ambas versiones, ya que se modifica el enrutador de tráfico instantáneamente para que apunte a la versión nueva o a la antigua." },
+                { "op": "C", "desc": "Desde que se despliega el servidor canario hasta que se sustituyen todos los demás servidores." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "En un despliegue incremental, las versiones conviven durante todo el proceso de reemplazo."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Qué significa que los despliegues y la oferta de funcionalidades deba desacoplarse?",
+            "options": [
+                { "op": "A", "desc": "Que hay que desplegar las versiones cuando se decida ofrecer una funcionalidad concreta." },
+                { "op": "B", "desc": "Que la fecha de un despliegue no tiene por qué coincidir con la exposición de una nueva funcionalidad a los usuarios." },
+                { "op": "C", "desc": "Que un despliegue debe estar disponible para todos los usuarios exactamente al mismo tiempo." },
+                { "op": "D", "desc": "Que los despliegues deben estar controlados por configuraciones definidas en una feature flag." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El desacoplamiento permite desplegar código sin activar funcionalidades hasta que sea necesario."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Qué usos se le puede dar a una feature flag?",
+            "options": [
+                { "op": "A", "desc": "Desplegar funcionalidades de manera incremental a nivel de usuario." },
+                { "op": "B", "desc": "Bloquear funcionalidades secundarias de manera global." },
+                { "op": "C", "desc": "Experimentar con usuarios reales en producción." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Las feature flags permiten control granular y pruebas en entornos reales."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cómo detecta Kubernetes si un pod ha arrancado correctamente?",
+            "options": [
+                { "op": "A", "desc": "Si hay suficientes ejecuciones exitosas consecutivas de la sonda readinessProbe." },
+                { "op": "B", "desc": "Una vez desplegado un contenedor, Kubernetes lo considera disponible automáticamente." },
+                { "op": "C", "desc": "Si el proceso no termina automáticamente tras initialDelaySeconds segundos." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Kubernetes usa readinessProbe para determinar si un pod está listo y operativo."
+        }
+    ]
+}

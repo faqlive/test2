@@ -1,0 +1,114 @@
+{
+    "tema": 7,
+    "name": "Jenkins",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Qué trabajos se pueden programar en Jenkins?",
+            "options": [
+                { "op": "A", "desc": "Compilación." },
+                { "op": "B", "desc": "Pruebas." },
+                { "op": "C", "desc": "Despliegues." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Jenkins permite programar trabajos de compilación, pruebas y despliegues, entre otros."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Cuál es la contraseña por defecto de Jenkins?",
+            "options": [
+                { "op": "A", "desc": "admin" },
+                { "op": "B", "desc": "Password1!" },
+                { "op": "C", "desc": "Es aleatoria, Jenkins la imprime por la salida estándar." },
+                { "op": "D", "desc": "No hay contraseña por defecto, el inicio de sesión es automático." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "La contraseña por defecto de Jenkins es aleatoria y se muestra en la salida estándar al iniciar."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Dónde debe definirse el código de un pipeline?",
+            "options": [
+                { "op": "A", "desc": "En un Jenkinsfile en el repositorio." },
+                { "op": "B", "desc": "En la definición del trabajo." },
+                { "op": "C", "desc": "Los trabajos se definen en un formulario web donde se escribe el código a ejecutar." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El código de un pipeline debe definirse en un Jenkinsfile para facilitar la gestión del flujo."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Sobre qué plataformas puede ejecutar un proyecto Jenkins?",
+            "options": [
+                { "op": "A", "desc": "Sobre cualquier que soporte Java." },
+                { "op": "B", "desc": "Solo sobre Linux, ya que Jenkins es de código abierto." },
+                { "op": "C", "desc": "En Windows, Debian y RedHat." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Jenkins es compatible con cualquier plataforma que soporte Java."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Para qué sirve archivar artefactos?",
+            "options": [
+                { "op": "A", "desc": "Para hacer una copia de seguridad de los informes de pruebas." },
+                { "op": "B", "desc": "Para que Jenkins pueda mostrar los informes de pruebas." },
+                { "op": "C", "desc": "Para almacenar el resultado de una compilación, una construcción o de un informe de pruebas, junto a los detalles de la ejecución." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Archivar artefactos asegura el acceso a los resultados y facilita la trazabilidad del trabajo."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Cómo se puede configurar un trabajo para que se ejecute cuando hay cambios en un repositorio?",
+            "options": [
+                { "op": "A", "desc": "Configurando un webhook en GitHub sobre Jenkins." },
+                { "op": "B", "desc": "Haciendo una comprobación periódica del repositorio." },
+                { "op": "C", "desc": "A través de una petición a la API de Jenkins desde un Githook." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Jenkins permite configurar trabajos a través de diferentes mecanismos de notificación y sincronización."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Qué configuración hay que usar para ejecutar un trabajo de Jenkins a cada hora?",
+            "options": [
+                { "op": "A", "desc": "A partir de un webhook en un sistema con cron." },
+                { "op": "B", "desc": "Un trigger periódico y una agenda 0 * * * *." },
+                { "op": "C", "desc": "Una comprobación periódica del repositorio con una agenda 0 * * * *." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El uso de una agenda cron (0 * * * *) configura la ejecución de trabajos cada hora."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Qué relación hay entre «trabajo» y «ejecución» en Jenkins?",
+            "options": [
+                { "op": "A", "desc": "Son sinónimos." },
+                { "op": "B", "desc": "Un trabajo se ejecuta en el master, mientras que los agentes se encargan de las ejecuciones." },
+                { "op": "C", "desc": "Un trabajo es una definición de un pipeline y la ejecución es cada una de las fases del pipeline." },
+                { "op": "D", "desc": "Un trabajo es una definición de una tarea que puede tener varias fases; una ejecución es una activación concreta del trabajo con unos parámetros y un resultado concretos." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Un trabajo define la tarea y la ejecución corresponde a una activación específica con un resultado concreto."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Cómo se indica que debe ser la ejecución de un trabajo en un nodo con herramientas de compilación de Java?",
+            "options": [
+                { "op": "A", "desc": "Con la sentencia label 'maven' en la sección del agente." },
+                { "op": "B", "desc": "Con la sentencia label 'java' en la sección del agente." },
+                { "op": "C", "desc": "Asignando una etiqueta concreta a los agentes con herramientas de compilación e indicando esa etiqueta en la sentencia label '<etiqueta>'." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Las etiquetas permiten seleccionar nodos específicos con las herramientas necesarias para la ejecución."
+        }
+    ]
+}

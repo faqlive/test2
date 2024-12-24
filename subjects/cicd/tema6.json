@@ -1,0 +1,126 @@
+{
+    "tema": 6,
+    "name": "Evaluación y calidad del código",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Por qué las revisiones de código deberían estar incorporadas en el flujo de integración continua?",
+            "options": [
+                { "op": "A", "desc": "Para que los compañeros del equipo puedan aportar feedback antes de que el código esté fusionado en la rama principal." },
+                { "op": "B", "desc": "Porque todos los pasos del desarrollo deben estar integrados en una única herramienta de CICD." },
+                { "op": "C", "desc": "No tienen por qué estar integradas, las revisiones deben ser siempre presenciales y antes de que se envíe el commit." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Las revisiones permiten detectar problemas y mejorar el código antes de fusionarlo."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿En qué casos es obligatorio que una revisión apruebe una pull request en GitHub para poder fusionarla?",
+            "options": [
+                { "op": "A", "desc": "En cualquier caso." },
+                { "op": "B", "desc": "Cuando se activa la protección de rama." },
+                { "op": "C", "desc": "Cuando el autor de la pull request no es administrador del repositorio." },
+                { "op": "D", "desc": "Cuando se abre la pull request en modo borrador." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "La protección de rama garantiza que las pull requests sean revisadas antes de fusionarse."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Qué tipo de reglas se tienen en cuenta en una convención de estilo?",
+            "options": [
+                { "op": "A", "desc": "La longitud máxima de línea." },
+                { "op": "B", "desc": "El formato de los nombres de variables y funciones." },
+                { "op": "C", "desc": "El número máximo de líneas de una función." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Las convenciones de estilo cubren reglas que mejoran la consistencia y legibilidad del código."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Por qué los proyectos adoptan convenciones de estilo?",
+            "options": [
+                { "op": "A", "desc": "Para que el código sea más legible." },
+                { "op": "B", "desc": "Para facilitar el mantenimiento por desarrolladores diferentes al autor." },
+                { "op": "C", "desc": "Para aumentar la consistencia entre módulos." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Las convenciones de estilo aseguran legibilidad, consistencia y facilidad de mantenimiento."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Qué mide la cobertura?",
+            "options": [
+                { "op": "A", "desc": "El número de pruebas unitarias." },
+                { "op": "B", "desc": "El número de pruebas totales, incluyendo unitarias, de integración y UI." },
+                { "op": "C", "desc": "El porcentaje de líneas que se ejecutan durante las pruebas." },
+                { "op": "D", "desc": "El número de líneas de código." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "La cobertura mide qué porcentaje de líneas se ejecutan durante las pruebas."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Es una cobertura del 100 % sinónimo de riesgo cero?",
+            "options": [
+                { "op": "A", "desc": "Claro, porque se han ejecutado todas las líneas del código durante las pruebas." },
+                { "op": "B", "desc": "Claro, porque no tiene sentido escribir más pruebas." },
+                { "op": "C", "desc": "No, porque llegar al 100 % no es posible." },
+                { "op": "D", "desc": "No, porque eso no implica que se hayan probado todas las condiciones y valores de frontera." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Una cobertura alta no garantiza que todas las condiciones y casos de borde estén probados."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Qué valor aporta Sonar a un proyecto?",
+            "options": [
+                { "op": "A", "desc": "La evaluación de la calidad del proyecto desde diferentes puntos de vista." },
+                { "op": "B", "desc": "El seguimiento de la evolución de la calidad a lo largo del tiempo." },
+                { "op": "C", "desc": "La identificación de problemas potenciales." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Sonar aporta valor al evaluar calidad, identificar problemas y monitorear la evolución del proyecto."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Por qué es deseable reducir la complejidad del código?",
+            "options": [
+                { "op": "A", "desc": "Para que el código sea más legible." },
+                { "op": "B", "desc": "Para facilitar el mantenimiento por desarrolladores diferentes al autor." },
+                { "op": "C", "desc": "La A y la B." },
+                { "op": "D", "desc": "Para poder pasar el umbral de aceptación de Sonar." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Reducir la complejidad facilita la legibilidad y el mantenimiento del código."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Qué significa que Sonar utilice un agente?",
+            "options": [
+                { "op": "A", "desc": "Que un proceso se encarga de analizar el código y de enviar los resultados a un servidor central." },
+                { "op": "B", "desc": "Que hay que subir el código a un servidor central para su análisis." },
+                { "op": "C", "desc": "Que hay que instalar un software adicional junto con el producto para poder analizarlo." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El agente de Sonar analiza el código localmente y envía los resultados al servidor central."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿En qué consisten los perfiles de calidad de Sonar?",
+            "options": [
+                { "op": "A", "desc": "En un proyecto concreto." },
+                { "op": "B", "desc": "En todas las reglas posibles de un lenguaje." },
+                { "op": "C", "desc": "En un umbral de complejidad que marca el proyecto como válido." },
+                { "op": "D", "desc": "En conjuntos de reglas que se evalúan durante el análisis de los proyectos a los que se asigna el perfil." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los perfiles de calidad son conjuntos de reglas específicas para evaluar proyectos."
+        }
+    ]
+}

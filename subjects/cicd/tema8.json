@@ -1,0 +1,126 @@
+{
+    "tema": 8,
+    "name": "Jenkins",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Qué servicios ofrece GitLab?",
+            "options": [
+                { "op": "A", "desc": "Repositorio remoto de Git." },
+                { "op": "B", "desc": "Pipelines de CICD." },
+                { "op": "C", "desc": "Registros de paquetes." },
+                { "op": "D", "desc": "Todos los anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "GitLab ofrece múltiples servicios, incluyendo repositorios, CICD y registros de paquetes."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Cómo se llama la funcionalidad de pull request de GitLab?",
+            "options": [
+                { "op": "A", "desc": "Pull request." },
+                { "op": "B", "desc": "Merge request." },
+                { "op": "C", "desc": "Join request." },
+                { "op": "D", "desc": "Branch merge." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "En GitLab, la funcionalidad de pull request se denomina 'Merge request'."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Dónde se definen las fases de un pipeline en GitLab?",
+            "options": [
+                { "op": "A", "desc": "En el fichero .gitlab-ci.yml, en la raíz del repositorio." },
+                { "op": "B", "desc": "En la interfaz de GitLab, en la sección de opciones del repositorio." },
+                { "op": "C", "desc": "En Jenkins, a través del plugin de GitLab." },
+                { "op": "D", "desc": "Todas las anteriores son opciones válidas." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El fichero .gitlab-ci.yml define las fases y pasos del pipeline en GitLab."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Dónde se ejecutan los trabajos de un pipeline en GitLab?",
+            "options": [
+                { "op": "A", "desc": "En el servidor principal, si no hay runners asociados al proyecto, o en los runners asociados." },
+                { "op": "B", "desc": "En los runners asociados al proyecto, en los compartidos entre varios proyectos." },
+                { "op": "C", "desc": "En los agentes de Jenkins a través del plugin de GitLab." },
+                { "op": "D", "desc": "En el servidor principal de GitLab." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Los trabajos de un pipeline en GitLab se ejecutan en runners, ya sean específicos o compartidos."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Cómo se determina el orden de ejecución de fases y trabajos?",
+            "options": [
+                { "op": "A", "desc": "Las fases se ejecutan secuencialmente." },
+                { "op": "B", "desc": "Los trabajos de una misma fase se ejecutan en paralelo." },
+                { "op": "C", "desc": "Los trabajos empiezan tan pronto terminan sus dependencias." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "GitLab ejecuta las fases de manera secuencial, pero los trabajos dentro de una fase pueden ejecutarse en paralelo."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Para qué sirve la directiva artifacts?",
+            "options": [
+                { "op": "A", "desc": "Para guardar archivos o directorios que serán utilizados en fases posteriores del pipeline." },
+                { "op": "B", "desc": "Para guardar archivos o directorios que deben estar disponibles para los usuarios al terminar el pipeline." },
+                { "op": "C", "desc": "Para recopilar informes de pruebas, cobertura o análisis de seguridad y mostrarlos en la interfaz de GitLab." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "La directiva artifacts permite almacenar resultados clave del pipeline para uso posterior o acceso por parte de los usuarios."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Cuándo se ejecuta un pipeline en GitLab?",
+            "options": [
+                { "op": "A", "desc": "Cuando hay un cambio en una rama, ya sean etiquetas de Git o commits nuevos." },
+                { "op": "B", "desc": "Cuando se abre una merge request a partir de una rama de un fork." },
+                { "op": "C", "desc": "Es necesario arrancarlas manualmente desde la interfaz de GitLab o con el comando gitlab-runner start." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Un pipeline se dispara automáticamente ante cambios en una rama, como etiquetas o nuevos commits."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Cuándo se borran las imágenes del registro de contenedores?",
+            "options": [
+                { "op": "A", "desc": "Manual." },
+                { "op": "B", "desc": "Al finalizar el pipeline, a menos que se etiqueten con *-latest." },
+                { "op": "C", "desc": "Tras un intervalo configurable, a menos que estén incluidas como excepción." },
+                { "op": "D", "desc": "A los noventa días." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "GitLab permite configurar intervalos para limpiar imágenes, excluyendo excepciones específicas."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Cuándo se ejecuta el contenido de before_script?",
+            "options": [
+                { "op": "A", "desc": "Al inicio del pipeline." },
+                { "op": "B", "desc": "Antes de iniciar cada trabajo, siempre y cuando el trabajo no sobreescriba la sección before_script explícitamente." },
+                { "op": "C", "desc": "Antes de iniciar cada trabajo." },
+                { "op": "D", "desc": "Al terminar cada trabajo." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "La sección before_script se ejecuta antes de cada trabajo, salvo que este la reemplace explícitamente."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cuándo se detiene un pipeline?",
+            "options": [
+                { "op": "A", "desc": "Se pueden detener manualmente." },
+                { "op": "B", "desc": "Si un trabajo falla, la siguiente fase no se ejecuta, pero los trabajos que se pongan en marcha en paralelo pueden terminar." },
+                { "op": "C", "desc": "Se pueden cancelar automáticamente si la rama recibe más cambios durante la ejecución de su pipeline." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los pipelines pueden detenerse manual o automáticamente dependiendo de las condiciones configuradas."
+        }
+    ]
+}

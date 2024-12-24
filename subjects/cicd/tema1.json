@@ -1,0 +1,126 @@
+{
+    "tema": 1,
+    "name": "Introducción",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Cuáles son los tres aspectos de ALM?",
+            "options": [
+                { "op": "A", "desc": "Gobierno, integración y despliegue." },
+                { "op": "B", "desc": "Gobierno, desarrollo y operaciones." },
+                { "op": "C", "desc": "SDLC, CICD y despliegue continuo." },
+                { "op": "D", "desc": "Desarrollo y operaciones." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "ALM incluye gobierno, desarrollo y operaciones para gestionar el ciclo de vida de las aplicaciones."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Qué significa construir, probar y desplegar automáticamente?",
+            "options": [
+                { "op": "A", "desc": "Escribir unos scripts de bash para cada tarea." },
+                { "op": "B", "desc": "Definir trabajos en Jenkins y ejecutarlos cada vez que hay un cambio." },
+                { "op": "C", "desc": "Documentar cada paso del despliegue exhaustivamente." },
+                { "op": "D", "desc": "Conseguir que los cambios de código inicien una construcción, ejecuten las pruebas y permitan un despliegue sin intervención humana." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Automatización implica construir, probar y desplegar sin intervención humana."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Por qué es útil desplegar un entorno de producción antes de que acabe el desarrollo?",
+            "options": [
+                { "op": "A", "desc": "Para probar el proceso de despliegue antes de la fecha clave." },
+                { "op": "B", "desc": "Para comprobar que el sistema funciona bien en este entorno, que puede ser y será diferente de los entornos de desarrollo." },
+                { "op": "C", "desc": "Para aumentar la fiabilidad del proceso." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Probar anticipadamente mejora la fiabilidad y asegura la compatibilidad del entorno."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Qué significa gestionar automáticamente la configuración?",
+            "options": [
+                { "op": "A", "desc": "Mantener la configuración de cada entorno separada del script de despliegue y con un control de versiones." },
+                { "op": "B", "desc": "Escribir scripts separados, uno por entorno, que no dependan de ningún otro fichero." },
+                { "op": "C", "desc": "Guardar la configuración aplicada en cada entorno en una base de datos." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Separar configuración y controlar versiones asegura consistencia en los entornos."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Cuál es el objetivo de la integración continua?",
+            "options": [
+                { "op": "A", "desc": "Obligar a los desarrolladores a integrar cambios todos los días para controlar lo que hacen." },
+                { "op": "B", "desc": "Implantar una herramienta moderna como Jenkins." },
+                { "op": "C", "desc": "Aumentar la calidad del código detectando los errores lo más pronto posible y la velocidad a la que se entrega a los clientes." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Detectar errores temprano y entregar rápido mejora la calidad del software."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Cuál es el objetivo de la entrega continua?",
+            "options": [
+                { "op": "A", "desc": "Aumentar la fiabilidad del código, reduciendo el número de errores." },
+                { "op": "B", "desc": "Reducir el tiempo necesario para entregar software en producción." },
+                { "op": "C", "desc": "Aumentar la fiabilidad de los procesos de despliegue." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Entrega continua reduce errores, acelera entregas y asegura despliegues fiables."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Qué diferencia hay entre entrega y despliegue continuos?",
+            "options": [
+                { "op": "A", "desc": "Ninguna, son sinónimos." },
+                { "op": "B", "desc": "La entrega deja el producto listo para desplegar después de cada cambio, pero no tiene por qué desplegar en producción. El despliegue continuo prosigue el flujo de la entrega múltiples veces al día hasta completar el despliegue en producción." },
+                { "op": "C", "desc": "La entrega solo compila el código, el despliegue, además, incorpora las pruebas." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Entrega prepara para despliegue; despliegue lo ejecuta en producción."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Qué se puede esperar de las construcciones de software en una organización que no ha empezado a madurar en la integración continua?",
+            "options": [
+                { "op": "A", "desc": "El pase a producción es automático, fiable e indoloro." },
+                { "op": "B", "desc": "Los cambios en la base de datos se ejecutan manualmente." },
+                { "op": "C", "desc": "La construcción es manual y no se gestionan los artefactos." },
+                { "op": "D", "desc": "No hay batería de pruebas alguna." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "La inmadurez suele implicar construcciones manuales y falta de artefactos."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿En qué debe centrar sus esfuerzos una organización que intenta mejorar su calidad de software?",
+            "options": [
+                { "op": "A", "desc": "En aquellos aspectos del proceso de integración y entrega que sean más dolorosos." },
+                { "op": "B", "desc": "En automatizar todo el proceso cuanto antes." },
+                { "op": "C", "desc": "En desplegar la aplicación sobre Kubernetes." },
+                { "op": "D", "desc": "En versionar todos los elementos de la configuración." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Priorizar aspectos dolorosos acelera mejoras significativas."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Cuál de estos elementos es fundamental para empezar a aplicar integración continua?",
+            "options": [
+                { "op": "A", "desc": "Un sistema de control de versiones." },
+                { "op": "B", "desc": "Una batería de pruebas y automatización." },
+                { "op": "C", "desc": "Aceptación del equipo." },
+                { "op": "D", "desc": "Todos los anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Todos los elementos son esenciales para iniciar integración continua."
+        }
+    ]
+}

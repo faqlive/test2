@@ -1,0 +1,107 @@
+{
+    "tema": 2,
+    "name": "Control de versiones",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿En qué consiste un commit?",
+            "options": [
+                { "op": "A", "desc": "Es el proceso de incluir un fichero en un sistema de control de cambios." },
+                { "op": "B", "desc": "Es un conjunto de cambios registrados en la historia de un sistema de control de cambios." },
+                { "op": "C", "desc": "Es una carpeta con los ficheros de una versión de la aplicación." },
+                { "op": "D", "desc": "Es el cambio a un punto anterior de la historia del repositorio." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Un commit registra un conjunto de cambios en el sistema de control de versiones."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Qué debería ser versionado?",
+            "options": [
+                { "op": "A", "desc": "El código fuente de la aplicación." },
+                { "op": "B", "desc": "La documentación." },
+                { "op": "C", "desc": "Las herramientas de despliegue." },
+                { "op": "D", "desc": "Todos los anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Versionar todos los elementos clave asegura trazabilidad y reproducibilidad."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿En qué consiste la edición simultánea?",
+            "options": [
+                { "op": "A", "desc": "Varios desarrolladores editan un mismo fichero y uno de ellos combina los cambios del resto manualmente." },
+                { "op": "B", "desc": "Un desarrollador bloquea un fichero para trabajar sobre él." },
+                { "op": "C", "desc": "Varios desarrolladores trabajan sobre el mismo repositorio y probablemente sobre los mismos ficheros y el sistema se encarga de fusionar los cambios de todos automáticamente." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "La edición simultánea moderna permite fusión automática mediante control de versiones."
+        },
+        {
+            "id": 4,
+            "enunciado": "Relaciona el concepto con su definición.",
+            "options": [
+                { "op": "A", "desc": "Almacén de los cambios de un sistema o aplicación." },
+                { "op": "B", "desc": "Conjunto de cambios registrados en la historia." },
+                { "op": "C", "desc": "Unión de dos ramas." },
+                { "op": "D", "desc": "Puntero a un conjunto de cambios consecutivos." }
+            ],
+            "correct": [
+                { "ele": "Commit", "op": "B" },
+                { "ele": "Rama", "op": "D" },
+                { "ele": "Repositorio", "op": "A" },
+                { "ele": "Fusión", "op": "C" }
+            ],
+            "just": "Cada concepto tiene un rol específico dentro del control de versiones."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Qué significa «viajar en el tiempo» en el contexto de los sistemas de control de versiones?",
+            "options": [
+                { "op": "A", "desc": "Que se pueden instalar versiones antiguas de una aplicación." },
+                { "op": "B", "desc": "Que las nuevas versiones son compatibles con las anteriores." },
+                { "op": "C", "desc": "Que un desarrollador puede trabajar en una versión antigua del repositorio." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los sistemas de control de versiones permiten revisar y modificar versiones previas."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Qué metadatos incluyen los commits?",
+            "options": [
+                { "op": "A", "desc": "Autor." },
+                { "op": "B", "desc": "Fecha." },
+                { "op": "C", "desc": "Comentarios." },
+                { "op": "D", "desc": "Todos los anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Los commits incluyen metadatos esenciales para rastrear cambios."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Cómo se recomienda versionar las dependencias de una aplicación?",
+            "options": [
+                { "op": "A", "desc": "Copiando el código fuente de la dependencia dentro de una carpeta del repositorio de la aplicación." },
+                { "op": "B", "desc": "Manteniendo un documento con instrucciones sobre cómo instalarla." },
+                { "op": "C", "desc": "Referenciando la versión de la dependencia como una librería e instalándola con un gestor de paquetes durante el despliegue." },
+                { "op": "D", "desc": "Todas los anteriores son estrategias válidas." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Referenciar dependencias asegura compatibilidad y simplicidad en el despliegue."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Cómo se crea una nueva rama llamada feature en Git?",
+            "options": [
+                { "op": "A", "desc": "git checkout -b feature." },
+                { "op": "B", "desc": "git branch feature." },
+                { "op": "C", "desc": "git create branch feature." },
+                { "op": "D", "desc": "A y B." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Ambos comandos son válidos para crear ramas en Git."
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "tema": 9,
+    "name": "Otras herramientas de CICD",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Con qué sistemas de control de versiones distribuidos es compatible Bitbucket?",
+            "options": [
+                { "op": "A", "desc": "GitHub." },
+                { "op": "B", "desc": "Git." },
+                { "op": "C", "desc": "Mercurial." },
+                { "op": "D", "desc": "SVN." }
+            ],
+            "correct": [{ "op": "B" }, { "op": "C" }],
+            "just": "Bitbucket soporta Git y Mercurial como sistemas de control de versiones distribuidos."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿En qué fichero se definen los pipelines de CircleCI?",
+            "options": [
+                { "op": "A", "desc": ".circleci/config.yml." },
+                { "op": "B", "desc": "gitlab-ci.yml." },
+                { "op": "C", "desc": "Jenkinsfile." },
+                { "op": "D", "desc": ".circle-ci.yml." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El fichero .circleci/config.yml en la raíz del repositorio define los pipelines en CircleCI."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Cómo se ejecutan los trabajos de un workflow de CircleCI?",
+            "options": [
+                { "op": "A", "desc": "Secuencialmente." },
+                { "op": "B", "desc": "En paralelo." },
+                { "op": "C", "desc": "En paralelo por defecto, salvo que se definan dependencias entre ellos." },
+                { "op": "D", "desc": "Secuencialmente por defecto, salvo que se indique que pueden ejecutarse en paralelo." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "En CircleCI, los trabajos de un workflow se ejecutan en paralelo salvo que tengan dependencias."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Se puede seguir un flujo de trabajo de GitHub con Bitbucket?",
+            "options": [
+                { "op": "A", "desc": "No, en todo caso se podría seguir el flujo de trabajo de Bitbucket." },
+                { "op": "B", "desc": "No, porque Bitbucket no soporta forks ni pull requests." },
+                { "op": "C", "desc": "No, aunque sí que soporta el flujo de trabajo de GitLab." },
+                { "op": "D", "desc": "Sí, ya que soporta la creación de forks y pull requests." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Bitbucket permite seguir un flujo de trabajo similar a GitHub al soportar forks y pull requests."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Con qué servicios de control de versiones se integra CircleCI?",
+            "options": [
+                { "op": "A", "desc": "GitHub y Bitbucket." },
+                { "op": "B", "desc": "GitHub, GitLab y Bitbucket." },
+                { "op": "C", "desc": "Con cualquiera que ofrezca un plugin, como Jenkins." },
+                { "op": "D", "desc": "Con cualquiera que use Git como sistema de control de versiones." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "CircleCI se integra directamente con GitHub y Bitbucket."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿A partir de qué cambios se ejecuta un pipeline de CircleCI?",
+            "options": [
+                { "op": "A", "desc": "Creación de ramas nuevas y cambios en ramas existentes." },
+                { "op": "B", "desc": "Creación de pull requests." },
+                { "op": "C", "desc": "Creación de etiquetas de Git, si se activan explícitamente." },
+                { "op": "D", "desc": "Cualquiera de las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "CircleCI ejecuta pipelines basados en múltiples eventos, como cambios en ramas, etiquetas y pull requests."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿En qué consiste un orb de CircleCI?",
+            "options": [
+                { "op": "A", "desc": "En una plantilla con fases habituales para un sistema concreto." },
+                { "op": "B", "desc": "En un paquete YAML reutilizable." },
+                { "op": "C", "desc": "Código reutilizable, bien privado o público, ofrecido habitualmente por las propias organizaciones." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Un orb de CircleCI es un paquete reutilizable que incluye fases comunes y puede ser público o privado."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Qué ventaja tiene usar Nexus como proxy?",
+            "options": [
+                { "op": "A", "desc": "Acelera la descarga de paquetes en una red local." },
+                { "op": "B", "desc": "Aísla a los sistemas internos de posibles caídas de servicio de repositorios públicos." },
+                { "op": "C", "desc": "Centraliza el acceso a Internet a un único sistema en sistemas privados donde esta conectividad está restringida." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Nexus como proxy mejora rendimiento, resiliencia y seguridad en entornos controlados."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Cuándo tiene sentido usar Nexus como repositorio para paquetes o imágenes?",
+            "options": [
+                { "op": "A", "desc": "Cuando los proyectos son privados y no se desea alojarlos en un repositorio público." },
+                { "op": "B", "desc": "Cuando se quiere acelerar la publicación de paquetes." },
+                { "op": "C", "desc": "Cuando no se dispone de una cuenta en el repositorio público." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Nexus es útil para proyectos privados que no deben alojarse en repositorios públicos."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Qué gestores de paquetes soporta Nexus?",
+            "options": [
+                { "op": "A", "desc": "npm." },
+                { "op": "B", "desc": "docker." },
+                { "op": "C", "desc": "apt." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Nexus soporta múltiples gestores de paquetes, incluyendo npm, Docker y apt."
+        }
+    ]
+}

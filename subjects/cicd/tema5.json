@@ -1,0 +1,131 @@
+{
+    "tema": 5,
+    "name": "Pruebas",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Cómo debería ser una prueba unitaria?",
+            "options": [
+                { "op": "A", "desc": "Rápida." },
+                { "op": "B", "desc": "Independiente del estado." },
+                { "op": "C", "desc": "Dirigida a una única función." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Las pruebas unitarias deben ser rápidas, aisladas y específicas para una función."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Qué pruebas requieren que la aplicación esté arrancada?",
+            "options": [
+                { "op": "A", "desc": "De sistema." },
+                { "op": "B", "desc": "De rendimiento." },
+                { "op": "C", "desc": "De aceptación." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Estas pruebas dependen de un entorno en ejecución para validar diferentes aspectos."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Cuáles de las siguientes se pueden considerar pruebas no funcionales?",
+            "options": [
+                { "op": "A", "desc": "De rendimiento." },
+                { "op": "B", "desc": "De cobertura." },
+                { "op": "C", "desc": "De seguridad." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Las pruebas no funcionales evalúan aspectos como rendimiento, seguridad y cobertura."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Por qué es útil que el desarrollador pueda acceder a los resultados de las pruebas?",
+            "options": [
+                { "op": "A", "desc": "En general no lo necesitan." },
+                { "op": "B", "desc": "Para poder estudiar el error y ser capaz de corregirlo." },
+                { "op": "C", "desc": "Para identificar quién ha roto el código." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "El acceso a resultados permite a los desarrolladores corregir errores eficientemente."
+        },
+        {
+            "id": 5,
+            "enunciado": "Relaciona los tipos de pruebas con sus características.",
+            "options": [
+                { "op": "A", "desc": "Comprueba cuánta carga soporta una aplicación." },
+                { "op": "B", "desc": "Evalúan la interfaz gráfica." },
+                { "op": "C", "desc": "No dependen de un estado." },
+                { "op": "D", "desc": "Requieren que la aplicación y sus dependencias estén en funcionamiento." }
+            ],
+            "correct": [
+                { "ele": "Unitarias", "op": "C" },
+                { "ele": "De sistema", "op": "D" },
+                { "ele": "De GUI", "op": "B" },
+                { "ele": "De rendimiento", "op": "A" }
+            ],
+            "just": "Cada tipo de prueba tiene objetivos y características específicas."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Para qué sirve el decorador @pytest.mark.unit?",
+            "options": [
+                { "op": "A", "desc": "Convierte una prueba de servicio en unitaria." },
+                { "op": "B", "desc": "Para evitar la ejecución de una prueba." },
+                { "op": "C", "desc": "Etiqueta la prueba en la batería de pruebas unit." },
+                { "op": "D", "desc": "Exporta el informe de la prueba en formato JUnit." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "El decorador permite clasificar pruebas como unitarias dentro de pytest."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Qué significa que una prueba de GUI se ejecute en un navegador headless?",
+            "options": [
+                { "op": "A", "desc": "En el navegador no tiene una ventana visible." },
+                { "op": "B", "desc": "Que es un navegador en modo texto, por lo que no ejecutará código JavaScript." },
+                { "op": "C", "desc": "Que el navegador se ejecuta en un servidor remoto sin pantalla." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Los navegadores headless permiten ejecutar pruebas sin una interfaz gráfica visible."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿Qué son los informes JUnit?",
+            "options": [
+                { "op": "A", "desc": "Ficheros XML exclusivos de pruebas en Java." },
+                { "op": "B", "desc": "Ficheros XML resultado de ejecución de pruebas." },
+                { "op": "C", "desc": "Ficheros XML exclusivos de pruebas unitarias." },
+                { "op": "D", "desc": "Ficheros PDF archivados por las herramientas de CICD." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Los informes JUnit son ficheros XML estándar que documentan resultados de pruebas."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Cómo se pueden paralelizar las pruebas?",
+            "options": [
+                { "op": "A", "desc": "Aprovechando la ejecución en múltiples hilos." },
+                { "op": "B", "desc": "Separando las pruebas en baterías y ejecutándolas en paralelo." },
+                { "op": "C", "desc": "Todas las anteriores." },
+                { "op": "D", "desc": "En general no se puede y deben ejecutarse en serie." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "La paralelización optimiza tiempo al distribuir pruebas entre hilos y baterías."
+        },
+        {
+            "id": 10,
+            "enunciado": "¿Para qué sirve una fixture?",
+            "options": [
+                { "op": "A", "desc": "Para fijar el resultado de una prueba." },
+                { "op": "B", "desc": "Para fijar un estado conocido antes de ejecutar una prueba y devolver el entorno al estado original al terminar." },
+                { "op": "C", "desc": "Para borrar la base de datos al terminar las pruebas." },
+                { "op": "D", "desc": "Para deshabilitar una prueba puntualmente." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Las fixtures preparan un estado controlado para pruebas y restauran el entorno al finalizar."
+        }
+    ]
+}

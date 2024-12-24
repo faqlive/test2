@@ -1,0 +1,114 @@
+{
+    "tema": 4,
+    "name": "Fases de la entrega continua",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Cuántas fases de prueba tiene un pipeline de CICD?",
+            "options": [
+                { "op": "A", "desc": "Tres: unitarias, de aceptación automáticas y de aceptación manuales." },
+                { "op": "B", "desc": "Tantas como sean necesarias en cada proyecto de desarrollo." },
+                { "op": "C", "desc": "Solo una, la inicial." },
+                { "op": "D", "desc": "Cinco: unitarias, estáticas, de aceptación automática, de aceptación manual y smoke tests." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "La cantidad de fases depende de los requerimientos y características del proyecto."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Cuándo debe detenerse un pipeline?",
+            "options": [
+                { "op": "A", "desc": "Cuando se detecta un error de sintaxis en el código." },
+                { "op": "B", "desc": "Cuando falla la compilación." },
+                { "op": "C", "desc": "Cuando falla una de las pruebas." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Un pipeline debe detenerse ante cualquier error crítico para evitar propagar problemas."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Cuándo no hace falta compilar un software?",
+            "options": [
+                { "op": "A", "desc": "Siempre es necesario compilar el software." },
+                { "op": "B", "desc": "Cuando se trata de Java, ya que el bytecode no es realmente una compilación." },
+                { "op": "C", "desc": "En lenguajes interpretados." },
+                { "op": "D", "desc": "En lenguajes compilados." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Los lenguajes interpretados no requieren compilación, ya que el código se ejecuta directamente."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Por qué es necesario empaquetar un software?",
+            "options": [
+                { "op": "A", "desc": "Solo es necesario empaquetar si el lenguaje es compilado." },
+                { "op": "B", "desc": "Para facilitar la distribución e instalación." },
+                { "op": "C", "desc": "Para incluir ficheros necesarios para el funcionamiento, como configuraciones y ficheros estáticos." },
+                { "op": "D", "desc": "B y C." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Empaquetar asegura que el software y sus dependencias estén listos para distribución."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿En qué consiste un smoke test?",
+            "options": [
+                { "op": "A", "desc": "Es una prueba sencilla que permite comprobar si un sistema ha arrancado correctamente, incluyendo todas sus dependencias." },
+                { "op": "B", "desc": "Es una prueba sin estado ni base de datos." },
+                { "op": "C", "desc": "Es una prueba manual en la que se verifican funcionalidades ofrecidas al usuario." },
+                { "op": "D", "desc": "Es una comprobación del servicio para saber si ha arrancado o no." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Un smoke test verifica que el sistema esté operativo antes de pruebas más complejas."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Por qué hay que construir una única vez?",
+            "options": [
+                { "op": "A", "desc": "Para acelerar el proceso." },
+                { "op": "B", "desc": "Para asegurar que el paquete que ha pasado las pruebas es el mismo que se despliega en producción." },
+                { "op": "C", "desc": "A y B." },
+                { "op": "D", "desc": "No es necesario. De hecho, conviene construir en cada fase para paralelizar mejor." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "Construir una sola vez asegura consistencia y acelera el flujo de trabajo."
+        },
+        {
+            "id": 7,
+            "enunciado": "¿Qué propiedades deben tener los scripts de despliegue?",
+            "options": [
+                { "op": "A", "desc": "Deben estar incluidos en el control de cambios." },
+                { "op": "B", "desc": "Se debe usar el mismo script para desplegar todos los entornos." },
+                { "op": "C", "desc": "El script debe aplicar diferentes configuraciones en cada entorno, que obtiene de una ubicación diferente (del control de cambios o de un gestor de configuraciones)." },
+                { "op": "D", "desc": "Todas las anteriores." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Versionar scripts y aplicar configuraciones asegura reproducibilidad y consistencia en todos los entornos."
+        },
+        {
+            "id": 8,
+            "enunciado": "¿En qué consiste desplegar una copia de producción?",
+            "options": [
+                { "op": "A", "desc": "En clonar el sistema de producción, antes de los despliegues, como copia de seguridad." },
+                { "op": "B", "desc": "En desplegar, en un entorno lo más parecido posible a producción, en una fase de prueba para reducir el riesgo del despliegue en producción." },
+                { "op": "C", "desc": "Esto se consigue con despliegues blue/green: se despliega una copia de producción y se apuntan los balanceadores a la nueva instancia." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Desplegar en un entorno similar reduce riesgos y permite identificar problemas antes de producción."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Por qué un pipeline no sirve para proyectos que funcionan con pull requests?",
+            "options": [
+                { "op": "A", "desc": "Sí que se pueden usar." },
+                { "op": "B", "desc": "Porque entonces no hay una construcción única del paquete." },
+                { "op": "C", "desc": "Porque el flujo no se puede adaptar." },
+                { "op": "D", "desc": "Porque es un desperdicio construir el paquete para todas las pull requests." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Los pipelines pueden ajustarse para manejar pruebas y construcciones de pull requests de manera eficiente."
+        }
+    ]
+}

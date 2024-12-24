@@ -1,0 +1,131 @@
+{
+    "tema": 3,
+    "name": "Flujos de trabajo con Git",
+    "preguntas": [
+        {
+            "id": 1,
+            "enunciado": "¿Por qué un sistema de control de versiones distribuido no necesita bloqueo de archivos?",
+            "options": [
+                { "op": "A", "desc": "Sí que lo necesita." },
+                { "op": "B", "desc": "Porque cada usuario trabaja con una copia completa del repositorio." },
+                { "op": "C", "desc": "Porque son sistemas más antiguos y limitados." },
+                { "op": "D", "desc": "Porque cada usuario es propietario de un fichero y solo ese usuario puede modificarlo." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "Los sistemas distribuidos permiten a cada usuario trabajar con su propia copia del repositorio."
+        },
+        {
+            "id": 2,
+            "enunciado": "¿Por qué no se puede aplicar el flujo de GitHub en un sistema de control de versiones centralizado?",
+            "options": [
+                { "op": "A", "desc": "Técnicamente se puede, aunque no es habitual." },
+                { "op": "B", "desc": "Porque solo funciona con GitHub, que se basa en Git, que es un sistema de control de versiones distribuido." },
+                { "op": "C", "desc": "Porque se basa en los conceptos de fork y pull requests, que solo ofrecen los sistemas distribuidos." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "C" }],
+            "just": "El flujo de GitHub se basa en conceptos específicos de los sistemas distribuidos."
+        },
+        {
+            "id": 3,
+            "enunciado": "¿Cuántas ramas soporta el flujo centralizado?",
+            "options": [
+                { "op": "A", "desc": "Solo una, master o trunk." },
+                { "op": "B", "desc": "Solo una en el repositorio principal y tantas como sean necesarias en los forks." },
+                { "op": "C", "desc": "Una principal y una de desarrollo." },
+                { "op": "D", "desc": "Una principal, una de desarrollo y tantas como sean necesarias para las funcionalidades nuevas." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "El flujo centralizado tradicionalmente utiliza una única rama principal."
+        },
+        {
+            "id": 4,
+            "enunciado": "¿Por qué una rama de hotfix se fusiona tanto a master como a develop en el Gitflow?",
+            "options": [
+                { "op": "A", "desc": "Solo se fusiona a master, no a develop." },
+                { "op": "B", "desc": "En Gitflow las modificaciones se fusionan en develop y este se fusiona sobre master, siempre." },
+                { "op": "C", "desc": "Por convenio. Técnicamente no hace falta." },
+                { "op": "D", "desc": "Porque el cambio es necesario en producción y debe estar disponible en master, pero; además, hay que incorporarlo en cualquier prueba que se esté realizando en el desarrollo de la siguiente versión." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "La fusión asegura que los cambios estén en producción y en desarrollo para próximas versiones."
+        },
+        {
+            "id": 5,
+            "enunciado": "¿Se puede implementar feature branching con GitHub sin usar pull requests?",
+            "options": [
+                { "op": "A", "desc": "No, en GitHub es obligatorio usar pull requests." },
+                { "op": "B", "desc": "Sí, porque GitHub ofrece la funcionalidad de abrir pull requests dentro de un mismo repositorio, que son otro tipo de pull requests." },
+                { "op": "C", "desc": "Sí, feature branching puede implementarse en cualquier tipo de sistema de control de versiones centralizado o distribuido." },
+                { "op": "D", "desc": "B y C." }
+            ],
+            "correct": [{ "op": "D" }],
+            "just": "Feature branching puede implementarse sin pull requests, aunque son útiles en GitHub."
+        },
+        {
+            "id": 6,
+            "enunciado": "¿Cómo se crea un fork en GitHub?",
+            "options": [
+                { "op": "A", "desc": "En la interfaz de GitHub, haciendo clic sobre el botón Fork." },
+                { "op": "B", "desc": "Con git fork new." },
+                { "op": "C", "desc": "Con git clone --fork <url-del-repositorio>." },
+                { "op": "D", "desc": "En la interfaz de GitHub, en el asistente de New repository, hay que seleccionar que se trata de un fork e indicar el repositorio principal." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "Los forks se crean directamente en la interfaz de GitHub mediante el botón 'Fork'."
+        },
+        {
+            "id": 7,
+            "enunciado": "Relaciona cada flujo con su característica.",
+            "options": [
+                { "op": "A", "desc": "Cada rama corresponde con un entorno de despliegue." },
+                { "op": "B", "desc": "Hay una única rama." },
+                { "op": "C", "desc": "Hay una rama principal y una rama nueva para cada cambio que haya que implementar." },
+                { "op": "D", "desc": "Requiere una plataforma que soporte el concepto de pull request." }
+            ],
+            "correct": [
+                { "ele": "Flujo centralizado", "op": "B" },
+                { "ele": "Feature branching workflow", "op": "C" },
+                { "ele": "Flujo de GitLab", "op": "A" },
+                { "ele": "Forking workflow", "op": "D" }
+            ],
+            "just": "Cada flujo tiene características únicas que reflejan su estructura y metodología."
+        },
+        {
+            "id": 8,
+            "enunciado": "Un desarrollador no tiene acceso de escritura al repositorio principal repo y ha trabajado en una rama new-feature en su fork. Al abrir la pull request, ¿cuál es la rama de origen y cuál es la de destino?",
+            "options": [
+                { "op": "A", "desc": "El origen es repo:new-feature y el destino es repo:master." },
+                { "op": "B", "desc": "El origen es fork/repo:new-feature y el destino es repo:master." },
+                { "op": "C", "desc": "El origen es fork/repo:new-feature y el destino es repo:new-feature." },
+                { "op": "D", "desc": "El origen es repo:new-feature y el destino es fork/repo:master." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "En sistemas distribuidos, el origen es el fork y el destino es el repositorio principal."
+        },
+        {
+            "id": 9,
+            "enunciado": "¿Qué significa que un repositorio local pueda tener varios repositorios remotos?",
+            "options": [
+                { "op": "A", "desc": "En un sistema distribuido un repositorio puede intercambiar ramas y commits con cualquier otro repositorio. Estos otros repositorios se consideran remotos, y puede definirse más de uno." },
+                { "op": "B", "desc": "Lo normal es que haya un único repositorio remoto: el fork del usuario." },
+                { "op": "C", "desc": "Git solo permite un repositorio remoto, pero Subversion permite varios." },
+                { "op": "D", "desc": "Ninguna de las anteriores." }
+            ],
+            "correct": [{ "op": "A" }],
+            "just": "En Git, un repositorio local puede intercambiar datos con múltiples repositorios remotos."
+        },
+        {
+            "id": 10,
+            "enunciado": "En Gitflow, ¿por qué se dice que cada fusión sobre master es una nueva versión?",
+            "options": [
+                { "op": "A", "desc": "No es cierto; en Gitflow se trabaja únicamente con master." },
+                { "op": "B", "desc": "Porque se añade una etiqueta con el número de la versión a esos commits." },
+                { "op": "C", "desc": "Por convenio, en master no se añaden commits que no se hayan planificado para una versión concreta." },
+                { "op": "D", "desc": "Por convenio, las ramas de características nuevas se fusionan sobre master justo antes de preparar la nueva versión. Se fusionan todas juntas, por lo que master está listo para producción." }
+            ],
+            "correct": [{ "op": "B" }],
+            "just": "En Gitflow, cada fusión a master suele etiquetarse como una nueva versión del proyecto."
+        }
+    ]
+}
