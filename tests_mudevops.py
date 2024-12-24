@@ -188,7 +188,6 @@ def ask_questions(all_questions):
                 if user_answer in correct_relations.values():
                     user_answers[element] = user_answer
                     if user_answers[element] == correct_relations[element]:
-                        print ("✅ ¡Correcto!" +str(user_answers[element]) + " - " + str(correct_relations[element]))
                         parcial_score += 1 / len(correct_relations)
                         print(f"parcial_score: {parcial_score}")
                 else:
