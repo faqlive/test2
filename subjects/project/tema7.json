@@ -1,126 +1,125 @@
 {
     "tema": 7,
-    "name": "Mejoras Continuas",
+    "name": "Planificación del Roadmap y entregas",
     "preguntas": [
-        {
-            "id": 1,
-            "enunciado": "¿Qué representa el concepto de mejora continua?",
-            "options": [
-                { "op": "A", "desc": "Un esfuerzo periódico para mejorar procesos existentes." },
-                { "op": "B", "desc": "La búsqueda constante de innovaciones disruptivas." },
-                { "op": "C", "desc": "La mejora que se realiza únicamente al final del proyecto." },
-                { "op": "D", "desc": "Un sistema que evita cualquier cambio en los procesos establecidos." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "La mejora continua implica un esfuerzo constante y sistemático para optimizar los procesos en curso."
-        },
-        {
-            "id": 2,
-            "enunciado": "¿Cuál es una herramienta utilizada frecuentemente en la mejora continua?",
-            "options": [
-                { "op": "A", "desc": "Ciclo PDCA (Plan-Do-Check-Act)." },
-                { "op": "B", "desc": "Modelo en cascada." },
-                { "op": "C", "desc": "Análisis SWOT." },
-                { "op": "D", "desc": "Gráficos de Gantt." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El ciclo PDCA es ampliamente reconocido como una herramienta clave en la mejora continua."
-        },
-        {
-            "id": 3,
-            "enunciado": "¿Qué papel juega el feedback en la mejora continua?",
-            "options": [
-                { "op": "A", "desc": "Permite validar los avances y ajustar los procesos." },
-                { "op": "B", "desc": "Es opcional y no tiene un impacto significativo." },
-                { "op": "C", "desc": "Solo es útil durante las etapas iniciales del proyecto." },
-                { "op": "D", "desc": "Se centra en las opiniones subjetivas de los clientes." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El feedback es esencial para verificar el progreso y realizar ajustes necesarios en los procesos."
-        },
-        {
-            "id": 4,
-            "enunciado": "¿Qué enfoque caracteriza la mejora continua en metodologías ágiles?",
-            "options": [
-                { "op": "A", "desc": "La realización de reuniones diarias y retrospectivas periódicas." },
-                { "op": "B", "desc": "La finalización estricta de entregas planificadas." },
-                { "op": "C", "desc": "Un enfoque lineal y secuencial." },
-                { "op": "D", "desc": "Optimización exclusivamente al cierre del proyecto." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Las metodologías ágiles priorizan reuniones como las retrospectivas para impulsar la mejora continua."
-        },
-        {
-            "id": 5,
-            "enunciado": "¿Qué tipo de cambio se persigue con la mejora continua?",
-            "options": [
-                { "op": "A", "desc": "Incremental y sostenido." },
-                { "op": "B", "desc": "Disruptivo y esporádico." },
-                { "op": "C", "desc": "Revolucionario y costoso." },
-                { "op": "D", "desc": "Experimental y no sistemático." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "La mejora continua busca cambios graduales y sostenibles en los procesos existentes."
-        },
-        {
-            "id": 6,
-            "enunciado": "¿Qué indicador clave se utiliza para evaluar el impacto de la mejora continua?",
-            "options": [
-                { "op": "A", "desc": "Tiempo de ciclo." },
-                { "op": "B", "desc": "Número de reuniones realizadas." },
-                { "op": "C", "desc": "Cantidad de empleados involucrados." },
-                { "op": "D", "desc": "Presupuesto asignado." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El tiempo de ciclo es un indicador fundamental para medir la eficiencia mejorada de un proceso."
-        },
-        {
-            "id": 7,
-            "enunciado": "¿Cómo contribuyen las retrospectivas a la mejora continua?",
-            "options": [
-                { "op": "A", "desc": "Facilitan la identificación de áreas de mejora en el equipo y los procesos." },
-                { "op": "B", "desc": "Se centran exclusivamente en evaluar el rendimiento individual." },
-                { "op": "C", "desc": "Son opcionales y no afectan directamente la productividad." },
-                { "op": "D", "desc": "Permiten introducir cambios únicamente al final del proyecto." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Las retrospectivas son fundamentales para identificar oportunidades de mejora en un entorno colaborativo."
-        },
-        {
-            "id": 8,
-            "enunciado": "¿Cuál es la relación entre Lean y mejora continua?",
-            "options": [
-                { "op": "A", "desc": "Lean proporciona herramientas y principios que impulsan la mejora continua." },
-                { "op": "B", "desc": "Lean reemplaza completamente la necesidad de mejora continua." },
-                { "op": "C", "desc": "Lean solo aplica a procesos industriales, no a gestión de proyectos." },
-                { "op": "D", "desc": "Lean es incompatible con la mejora continua en metodologías ágiles." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Lean está diseñado para fomentar la mejora continua mediante la eliminación de desperdicios y la optimización de procesos."
-        },
-        {
-            "id": 9,
-            "enunciado": "¿Qué técnica se utiliza en Lean para implementar mejoras incrementales?",
-            "options": [
-                { "op": "A", "desc": "Kaizen." },
-                { "op": "B", "desc": "Six Sigma." },
-                { "op": "C", "desc": "Análisis SWOT." },
-                { "op": "D", "desc": "Ciclo de vida del proyecto." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Kaizen es una técnica clave en Lean para lograr mejoras incrementales continuas."
-        },
-        {
-            "id": 10,
-            "enunciado": "¿Qué enfoque debe adoptar un equipo para garantizar la mejora continua?",
-            "options": [
-                { "op": "A", "desc": "Centrarse en la colaboración y el aprendizaje constante." },
-                { "op": "B", "desc": "Evitar cambios para mantener la estabilidad." },
-                { "op": "C", "desc": "Delegar completamente la responsabilidad al líder del equipo." },
-                { "op": "D", "desc": "Revisar los procesos únicamente al finalizar el proyecto." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "La colaboración y el aprendizaje constante son esenciales para mantener la mejora continua."
-        }
+    {
+        "id": 1,
+        "enunciado": "¿Qué información viene reflejada en el Roadmap de producto?",
+        "options": [
+        { "op": "A", "desc": "Se determina el número de iteraciones del proyecto y de las entregas." },
+        { "op": "B", "desc": "Las prioridades de negocio tanto en los requisitos como las iteraciones." },
+        { "op": "C", "desc": "Al ser un panel de tareas, se añaden las tarjetas para comprobar el trabajo diario del equipo." },
+        { "op": "D", "desc": "Las tareas y características útiles para poder hacer las entregas del producto." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "El Roadmap presenta la estructura en iteraciones del producto, y sobre la hoja de ruta se señalarán dónde se espera que se realicen las entregas)."
+    },
+    {
+        "id": 2,
+        "enunciado": "La mejor forma para representar un Roadmap es:",
+        "options": [
+        { "op": "A", "desc": "Mediante un Diagrama de Gantt." },
+        { "op": "B", "desc": "Mediante un mapa visual claro." },
+        { "op": "C", "desc": "Mediante una hoja Excel." },
+        { "op": "D", "desc": "Mediante un software adecuado para ello, con un mapeo de historias." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "La mejor representación de un Roadmap es un mapa visual claro que facilite la comunicación y seguimiento del progreso del proyecto."
+    },
+    {
+        "id": 3,
+        "enunciado": "¿Por qué es necesario que un proyecto ágil mantenga las iteraciones con la misma duración durante la vida del proyecto?",
+        "options": [
+        { "op": "A", "desc": "Porque así se puede medir y comparar la velocidad entre las diferentes iteraciones." },
+        { "op": "B", "desc": "Porque así se puede medir y comparar el Timebox y Tailoring entre las diferentes iteraciones." },
+        { "op": "C", "desc": "Porque se desarrollan a partir de los mismos requisitos y en el mismo entorno." },
+        { "op": "D", "desc": "Porque el Roadmap lo indica en su estructura y estrategia." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "Mantener la misma duración permite medir la velocidad del equipo y comparar el rendimiento entre iteraciones de manera efectiva."
+    },
+    {
+        "id": 4,
+        "enunciado": "¿Cuántas iteraciones tiene un proyecto ágil respecto a uno tradicional?",
+        "options": [
+        { "op": "A", "desc": "Tienen las mismas, no varía el enfoque." },
+        { "op": "B", "desc": "Tienen una iteración por cada entrega del proyecto." },
+        { "op": "C", "desc": "Se hace una entrega al mes, por tanto, una iteración al mes." },
+        { "op": "D", "desc": "Es algo que depende del proyecto, y se identifica en el Roadmap." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "El número de iteraciones en un proyecto ágil depende del contexto del proyecto y se identifica en el Roadmap."
+    },
+    {
+        "id": 5,
+        "enunciado": "¿Cuál es la principal diferencia entre el Roadmap y el Release Plan?",
+        "options": [
+        { "op": "A", "desc": "Que son horizontes de planificación diferentes, y su plan de ejecución es distinto." },
+        { "op": "B", "desc": "Que el Roadmap comunica una descripción de la estrategia de producto, y el Release Plan describe el proceso de ejecución por iteraciones." },
+        { "op": "C", "desc": "Que son horizontes de planificación incluidos en el mismo nivel, pero generando un plan de ejecución distinto." },
+        { "op": "D", "desc": "Que el Roadmap comunica una descripción de la visión de producto a nivel de entregas, y el Release Plan describe el proceso de ejecución por requisitos." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "El Roadmap describe la estrategia de producto y el Release Plan detalla la ejecución de las entregas por iteraciones."
+    },
+    {
+        "id": 6,
+        "enunciado": "La planificación de entregas se representa mediante:",
+        "options": [
+        { "op": "A", "desc": "Un mapa visual que indica los puntos de historia por iteración." },
+        { "op": "B", "desc": "Un tablero Kanban que determina los hitos a ser ejecutados por iteración." },
+        { "op": "C", "desc": "Un mapa de historias que indican las que se llevan a cabo por iteración." },
+        { "op": "D", "desc": "Una herramienta digital que identifique la planificación de la pila de requisitos." }
+        ],
+        "correct": [{ "op": "C" }],
+        "just": "La planificación de entregas se representa mediante un mapa de historias que indica qué tareas se realizan en cada iteración."
+    },
+    {
+        "id": 7,
+        "enunciado": "¿En qué consiste la técnica del Timebox en la planificación ágil?",
+        "options": [
+        { "op": "A", "desc": "Sirve para fijar las horas que tardan las iteraciones." },
+        { "op": "B", "desc": "Consiste en fijar el tiempo mínimo que debe superarse para conseguir un objetivo, o realizar una tarea, en una iteración." },
+        { "op": "C", "desc": "Sirve para priorizar y tomar la decisión de qué tarea se debe hacer primero." },
+        { "op": "D", "desc": "Consiste en fijar el tiempo máximo que no debe superarse para conseguir un objetivo, o realizar una tarea, en una iteración." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "La técnica Timebox fija un tiempo máximo para cumplir un objetivo o realizar una tarea en una iteración."
+    },
+    {
+        "id": 8,
+        "enunciado": "En la gestión ágil del cambio, la velocidad ágil se refiere a:",
+        "options": [
+        { "op": "A", "desc": "La cantidad de puntos de historia que el equipo de trabajo puede ser capaz de cumplir en cada iteración." },
+        { "op": "B", "desc": "La cantidad de historias de requisitos que el equipo de trabajo puede ser capaz de cumplir en cada iteración." },
+        { "op": "C", "desc": "La cantidad de entregas que el equipo de trabajo puede ser capaz de cumplir en cada iteración." },
+        { "op": "D", "desc": "La cantidad de reuniones que da tiempo a que el equipo de trabajo puede tener durante cada iteración." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "La velocidad ágil mide los puntos de historia que el equipo puede completar en cada iteración."
+    },
+    {
+        "id": 9,
+        "enunciado": "En el enfoque ágil, se buscan tiempos de ciclo:",
+        "options": [
+        { "op": "A", "desc": "Grandes, para así que dé tiempo a poder ejecutar todas las tareas." },
+        { "op": "B", "desc": "Cortos." },
+        { "op": "C", "desc": "Medios." },
+        { "op": "D", "desc": "En períodos de trimestre." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "En un enfoque ágil, los tiempos de ciclo cortos permiten mayor flexibilidad y adaptabilidad al cambio."
+    },
+    {
+        "id": 10,
+        "enunciado": "El valor ganado del proyecto es:",
+        "options": [
+        { "op": "A", "desc": "La estrategia usada para conocer el valor de negocio real que genera un proyecto a los usuarios." },
+        { "op": "B", "desc": "Es el valor que se gana cuando el proyecto se ha alcanzado a tiempo." },
+        { "op": "C", "desc": "La estrategia usada para conocer el valor relativo que tienen las entregas en base a las necesidades, aunque no se cumplan todos los requisitos." },
+        { "op": "D", "desc": "Es el presupuesto en base al contrato del proyecto con el cliente." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "El valor ganado del proyecto es una estrategia que mide el valor de negocio real generado por el proyecto en función de sus entregas." }
     ]
-}
+}  

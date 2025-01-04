@@ -1,126 +1,126 @@
 {
     "tema": 6,
-    "name": "Estimación y Planificación Ágil",
+    "name": "Estimación y planificación ágil",
     "preguntas": [
-        {
-            "id": 1,
-            "enunciado": "La estimación y la planificación ágil:",
-            "options": [
-                { "op": "A", "desc": "Son exactamente lo mismo, sólo que con nombres diferentes." },
-                { "op": "B", "desc": "La estimación sirve para estimar las horas y el coste del desarrollo, y la planificación para ver quién realizará las tareas." },
-                { "op": "C", "desc": "Son dos conceptos que no están nada relacionados." },
-                { "op": "D", "desc": "La estimación permite asignar puntos de historia como medidas de esfuerzo relativo, y la planificación plantea iteraciones basadas en los objetivos, de manera iterativa e incremental." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "La estimación y planificación ágil son procesos complementarios, pero no iguales."
-        },
-        {
-            "id": 2,
-            "enunciado": "En un punto de historia, el número de horas asignadas:",
-            "options": [
-                { "op": "A", "desc": "Siempre es el mismo para todos los proyectos relacionados." },
-                { "op": "B", "desc": "Puede ser distinto en cada proyecto." },
-                { "op": "C", "desc": "Nunca puede relacionarse un punto de historia con tiempo en horas." },
-                { "op": "D", "desc": "Siempre es el mismo cuando son proyectos de una misma empresa." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "Los puntos de historia son medidas relativas y no se deben asociar directamente con tiempo."
-        },
-        {
-            "id": 3,
-            "enunciado": "¿Quién es el responsable de llevar a cabo la estimación ágil de requisitos?",
-            "options": [
-                { "op": "A", "desc": "El jefe de proyecto junto con el cliente." },
-                { "op": "B", "desc": "Un responsable que actúa como líder ágil habla con el Product Owner y lo transmite al equipo." },
-                { "op": "C", "desc": "El Product Owner junto con el líder ágil y el equipo, refinando el Product Backlog." },
-                { "op": "D", "desc": "Un responsable que será el jefe de proyecto, junto con el Product Owner y el equipo." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "El refinamiento del Product Backlog es responsabilidad conjunta del Product Owner, líder ágil y equipo."
-        },
-        {
-            "id": 4,
-            "enunciado": "La técnica Planning Poker sirve para:",
-            "options": [
-                { "op": "A", "desc": "Realizar una estimación ágil haciendo uso de puntos de historia, estimando la dificultad de la tarea." },
-                { "op": "B", "desc": "Realizar una planificación ágil haciendo uso de puntos de historia, estimando la dificultad de la tarea." },
-                { "op": "C", "desc": "Realizar una estimación ágil haciendo uso de historias de usuario, estimando la dificultad de la tarea." },
-                { "op": "D", "desc": "Realizar una planificación ágil haciendo uso de historias de usuario, estimando la dificultad de la tarea." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El Planning Poker es una técnica de estimación que utiliza puntos de historia."
-        },
-        {
-            "id": 5,
-            "enunciado": "¿En qué consiste el método The Bucket System?",
-            "options": [
-                { "op": "A", "desc": "En colocar valores diferentes de los puntos de historia en una tabla, metiendo cada historia de usuario en un cubo, en base a la estimación." },
-                { "op": "B", "desc": "En indicar el tamaño relativo diferente para cada historia de usuario." },
-                { "op": "C", "desc": "En usar un tablero Kanban para indicar las historias de usuario preferidas." },
-                { "op": "D", "desc": "En colocar valores diferentes de las historias de usuario en una tabla, metiendo cada punto de historia en un cubo, en base a la estimación." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El método organiza historias de usuario en cubos basados en estimaciones."
-        },
-        {
-            "id": 6,
-            "enunciado": "Entre los beneficios de la estimación ágil, podemos encontrar:",
-            "options": [
-                { "op": "A", "desc": "Adaptabilidad, habilidad requerida, bajo coste, calidad y time-to-market." },
-                { "op": "B", "desc": "Adaptabilidad en grandes empresas, innovación, bajo coste, calidad y time-to-market." },
-                { "op": "C", "desc": "Adaptabilidad, interoperabilidad, bajo coste, calidad y time-to-market." },
-                { "op": "D", "desc": "Adaptabilidad, innovación, bajo coste, calidad y time-to-market." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "La estimación ágil fomenta la adaptabilidad, innovación y calidad."
-        },
-        {
-            "id": 7,
-            "enunciado": "¿Cuál es la principal diferencia entre la planificación ágil y la tradicional?",
-            "options": [
-                { "op": "A", "desc": "La planificación ágil es predictiva e iterativa, y la tradicional identifica los cambios." },
-                { "op": "B", "desc": "La planificación ágil es iterativa, progresiva, y se adapta a cambios, y la tradicional es predictiva y se basa en identificar tareas a priori." },
-                { "op": "C", "desc": "La planificación tradicional es iterativa y se adapta a cambios, y la ágil es predictiva y se basa en identificar tareas a priori." },
-                { "op": "D", "desc": "La planificación ágil es iterativa y se adapta a cambios, y la tradicional es incremental y va adaptándose a situaciones cambiantes sin problemas." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "La planificación ágil es iterativa y progresiva, mientras que la tradicional es predictiva."
-        },
-        {
-            "id": 8,
-            "enunciado": "Los horizontes de planificación ágil son:",
-            "options": [
-                { "op": "A", "desc": "Una serie de niveles que se usan para llegar al final del producto, entregas y reuniones diarias." },
-                { "op": "B", "desc": "Un conjunto de pruebas que se realizan para poder realizar los cambios sobre el producto final, considerando la hoja de ruta y las entregas." },
-                { "op": "C", "desc": "Una serie de niveles que llevan a cabo acciones para ir avanzando en los planes de producto, hoja de rutas, entregas e iteraciones." },
-                { "op": "D", "desc": "Una serie de métodos que se usan para realizar las planificaciones del proyecto ágil." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "Los horizontes incluyen roadmap, entregas e iteraciones."
-        },
-        {
-            "id": 9,
-            "enunciado": "La creación de una hoja de ruta o Roadmap, se puede dividir en estos pasos:",
-            "options": [
-                { "op": "A", "desc": "Asegurar la estrategia y tecnología, identificar los requisitos desde el Product Backlog, organizar los temas y entregas y determinar líneas de tiempo a bajo nivel." },
-                { "op": "B", "desc": "Asegurar la estrategia y tecnología, identificar los requisitos desde el Release Plan, organizar los temas y entregas y determinar líneas de tiempo a alto nivel." },
-                { "op": "C", "desc": "Asegurar la estrategia y objetivos, identificar los requisitos desde el Release Plan, organizar los temas y entregas y determinar líneas de tiempo a bajo nivel." },
-                { "op": "D", "desc": "Asegurar la estrategia y tecnología, identificar los requisitos desde el Product Backlog, organizar los temas y entregas y determinar líneas de tiempo a alto nivel." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El roadmap incluye asegurar estrategia, identificar requisitos y líneas de tiempo."
-        },
-        {
-            "id": 10,
-            "enunciado": "¿Cuándo se realiza la planificación de las entregas o Release Plan?",
-            "options": [
-                { "op": "A", "desc": "Cuando estamos listos para estimar los requisitos." },
-                { "op": "B", "desc": "Cuando se deben hacer las entregas de los incrementos del producto." },
-                { "op": "C", "desc": "Cuando se deben hacer los requisitos con de manera iterativa y alcanzar el producto." },
-                { "op": "D", "desc": "Cuando se deben hacer las entregas finales del producto." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "El Release Plan se centra en las entregas de incrementos."
-        }
+    {
+        "id": 1,
+        "enunciado": "La estimación y la planificación ágil:",
+        "options": [
+        { "op": "A", "desc": "Son exactamente lo mismo, sólo que con nombres diferentes." },
+        { "op": "B", "desc": "La estimación sirve para estimar las horas y el coste del desarrollo, y la planificación para ver quién realizará las tareas." },
+        { "op": "C", "desc": "Son dos conceptos que no están nada relacionados." },
+        { "op": "D", "desc": "La estimación permite asignar puntos de historia como medidas de esfuerzo relativo, y la planificación plantea iteraciones basadas en los objetivos, de manera iterativa e incremental." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "Son conceptos relacionados, pero no se estima en horas y coste, sino en puntos de historia, y planifica con fases o iteraciones. La estimación ágil permite asignar puntos de historia como medida de esfuerzo relativo, mientras que la planificación ágil se centra en iteraciones y objetivos incrementales."
+    },
+    {
+        "id": 2,
+        "enunciado": "En un punto de historia, el número de horas asignadas:",
+        "options": [
+        { "op": "A", "desc": "Siempre es el mismo para todos los proyectos relacionados." },
+        { "op": "B", "desc": "Puede ser distinto en cada proyecto." },
+        { "op": "C", "desc": "Nunca puede relacionarse un punto de historia con tiempo en horas." },
+        { "op": "D", "desc": "Siempre es el mismo cuando son proyectos de una misma empresa." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "Los puntos de historia son medidas relativas que no deben asociarse directamente a horas, sino a niveles de esfuerzo comparativo."
+    },
+    {
+        "id": 3,
+        "enunciado": "¿Quién es el responsable de llevar a cabo la estimación ágil de requisitos?",
+        "options": [
+        { "op": "A", "desc": "El jefe de proyecto junto con el cliente." },
+        { "op": "B", "desc": "Un responsable que actúa como líder ágil habla con el Product Owner y lo transmite al equipo." },
+        { "op": "C", "desc": "El Product Owner junto con el líder ágil y el equipo, refinando el Product Backlog." },
+        { "op": "D", "desc": "Un responsable que será el jefe de proyecto, junto con el Product Owner y el equipo." }
+        ],
+        "correct": [{ "op": "C" }],
+        "just": "La estimación ágil es un proceso colaborativo en el que participan el Product Owner, el líder ágil y el equipo para refinar el Product Backlog."
+    },
+    {
+        "id": 4,
+        "enunciado": "La técnica Planning Poker sirve para:",
+        "options": [
+        { "op": "A", "desc": "Realizar una estimación ágil haciendo uso de puntos de historia, estimando la dificultad de la tarea." },
+        { "op": "B", "desc": "Realizar una planificación ágil haciendo uso de puntos de historia, estimando la dificultad de la tarea." },
+        { "op": "C", "desc": "Realizar una estimación ágil haciendo uso de historias de usuario, estimando la dificultad de la tarea." },
+        { "op": "D", "desc": "Realizar una planificación ágil haciendo uso de historias de usuario, estimando la dificultad de la tarea." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "El Planning Poker es una técnica de estimación ágil en la que se utilizan puntos de historia para determinar la dificultad de las tareas."
+    },
+    {
+        "id": 5,
+        "enunciado": "¿En qué consiste el método The Bucket System?",
+        "options": [
+        { "op": "A", "desc": "En colocar valores diferentes de los puntos de historia en una tabla, metiendo cada historia de usuario en un cubo, en base a la estimación." },
+        { "op": "B", "desc": "En indicar el tamaño relativo diferente para cada historia de usuario." },
+        { "op": "C", "desc": "En usar un tablero Kanban para indicar las historias de usuario preferidas." },
+        { "op": "D", "desc": "En colocar valores diferentes de las historias de usuario en una tabla, metiendo cada punto de historia en un cubo, en base a la estimación." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "The Bucket System consiste en clasificar historias de usuario en cubos de valores de puntos de historia para facilitar la estimación relativa."
+    },
+    {
+        "id": 6,
+        "enunciado": "Entre los beneficios de la estimación ágil, podemos encontrar:",
+        "options": [
+        { "op": "A", "desc": "Adaptabilidad, habilidad requerida, bajo coste, calidad y time-to-market." },
+        { "op": "B", "desc": "Adaptabilidad en grandes empresas, innovación, bajo coste, calidad y time-to-market." },
+        { "op": "C", "desc": "Adaptabilidad, interoperabilidad, bajo coste, calidad y time-to-market." },
+        { "op": "D", "desc": "Adaptabilidad, innovación, bajo coste, calidad y time-to-market." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "La estimación ágil promueve la innovación, reduce costes, mejora la calidad y acelera el time-to-market gracias a su adaptabilidad."
+    },
+    {
+        "id": 7,
+        "enunciado": "¿Cuál es la principal diferencia entre la planificación ágil y la tradicional?",
+        "options": [
+        { "op": "A", "desc": "La planificación ágil es predictiva e iterativa, y la tradicional identifica los cambios." },
+        { "op": "B", "desc": "La planificación ágil es iterativa, progresiva, y se adapta a cambios, y la tradicional es predictiva y se basa en identificar tareas a priori." },
+        { "op": "C", "desc": "La planificación tradicional es iterativa y se adapta a cambios, y la ágil es predictiva y se basa en identificar tareas a priori." },
+        { "op": "D", "desc": "La planificación ágil es iterativa y se adapta a cambios, y la tradicional es incremental y va adaptándose a situaciones cambiantes sin problemas." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "La planificación ágil se adapta continuamente a cambios mediante iteraciones, mientras que la tradicional sigue un enfoque más rígido y predictivo."
+    },
+    {
+        "id": 8,
+        "enunciado": "Los horizontes de planificación ágil son:",
+        "options": [
+        { "op": "A", "desc": "Una serie de niveles que se usan para llegar al final del producto, entregas y reuniones diarias." },
+        { "op": "B", "desc": "Un conjunto de pruebas que se realizan para poder realizar los cambios sobre el producto final, considerando la hoja de ruta y las entregas." },
+        { "op": "C", "desc": "Una serie de niveles que llevan a cabo acciones para ir avanzando en los planes de producto, hoja de rutas, entregas e iteraciones." },
+        { "op": "D", "desc": "Una serie de métodos que se usan para realizar las planificaciones del proyecto ágil." }
+        ],
+        "correct": [{ "op": "C" }],
+        "just": "Son los niveles de planificación para ir avanzando el producto hasta producir un valor de negocio, incluyendo el Backlog - Vision, Roadmap, Release Plan, Iteraciones, Diarias."
+    },
+    {
+        "id": 9,
+        "enunciado": "La creación de una hoja de ruta o Roadmap, se puede dividir en estos pasos:",
+        "options": [
+        { "op": "A", "desc": "Asegurar la estrategia y tecnología, identificar los requisitos desde el Product Backlog, organizar los temas y entregas y determinar líneas de tiempo a bajo nivel." },
+        { "op": "B", "desc": "Asegurar la estrategia y tecnología, identificar los requisitos desde el Release Plan, organizar los temas y entregas y determinar líneas de tiempo a alto nivel." },
+        { "op": "C", "desc": "Asegurar la estrategia y objetivos, identificar los requisitos desde el Release Plan, organizar los temas y entregas y determinar líneas de tiempo a bajo nivel." },
+        { "op": "D", "desc": "Asegurar la estrategia y tecnología, identificar los requisitos desde el Product Backlog, organizar los temas y entregas y determinar líneas de tiempo a alto nivel." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "Los pasos para crear un Roadmap incluyen asegurar la estrategia, identificar los requisitos desde el Product Backlog y establecer líneas de tiempo de alto nivel."
+    },
+    {
+        "id": 10,
+        "enunciado": "¿Cuándo se realiza la planificación de las entregas o Release Plan?",
+        "options": [
+        { "op": "A", "desc": "Cuando estamos listos para estimar los requisitos." },
+        { "op": "B", "desc": "Cuando se deben hacer las entregas de los incrementos del producto." },
+        { "op": "C", "desc": "Cuando se deben hacer los requisitos de manera iterativa y alcanzar el producto." },
+        { "op": "D", "desc": "Cuando se deben hacer las entregas finales del producto." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "La planificación de las entregas o Release Plan se lleva a cabo cuando se deben realizar las entregas del producto a partir del Roadmap, y no tiene por qué ser las finales." 
+    }
     ]
 }

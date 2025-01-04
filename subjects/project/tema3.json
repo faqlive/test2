@@ -1,126 +1,286 @@
 {
     "tema": 3,
-    "name": "Marco Ágil Scrum",
+    "name": "Marco ágil Scrum",
     "preguntas": [
+    {
+        "id": 1,  
+        "enunciado": "¿Cómo se origina Scrum?",
+        "options": [
+            {
+            "op": "A",
+            "desc": "Scrum se origina tras el poco éxito de Lean, en el que se apoya para poder aplicar la metodología ágil."
+            },
+            {
+            "op": "B",
+            "desc": "Se origina como marco de trabajo ágil fundamental con aprendizaje empírico y autogestión, y se basa en el pensamiento Lean, centrándose en lo esencial."
+            },
+            {
+            "op": "C",
+            "desc": "Surge después de los errores continuos en los que incurrían los proyectos desarrollados con metodología tradicional."
+            },
+            {
+            "op": "D",
+            "desc": "Scrum se origina por la necesidad de cubrir algunos principios que no estaban incluidos en el Manifiesto Ágil."
+            }
+        ],
+        "correct": [
         {
-            "id": 1,
-            "enunciado": "¿Cuál es el propósito del marco de trabajo Scrum?",
-            "options": [
-                { "op": "A", "desc": "Maximizar la productividad sin reuniones intermedias." },
-                { "op": "B", "desc": "Proporcionar flexibilidad y adaptabilidad a equipos autogestionados." },
-                { "op": "C", "desc": "Eliminar la necesidad de retrospección del equipo." },
-                { "op": "D", "desc": "Aplicar metodologías tradicionales dentro de entornos ágiles." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "Scrum está diseñado para fomentar la autogestión y la adaptación a los cambios."
-        },
-        {
-            "id": 2,
-            "enunciado": "¿Qué roles forman el equipo Scrum?",
-            "options": [
-                { "op": "A", "desc": "Product Owner, Scrum Master y Equipo de Desarrollo." },
-                { "op": "B", "desc": "Líder del Proyecto, Analista y Equipo de Programación." },
-                { "op": "C", "desc": "Product Manager, Scrum Facilitador y Equipo de QA." },
-                { "op": "D", "desc": "Gestor de Proyecto, Líder Técnico y Desarrolladores." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El equipo Scrum está compuesto por estos tres roles fundamentales según las guías oficiales."
-        },
-        {
-            "id": 3,
-            "enunciado": "¿Qué es un Sprint en Scrum?",
-            "options": [
-                { "op": "A", "desc": "Una iteración fija de tiempo para completar tareas del backlog." },
-                { "op": "B", "desc": "Un conjunto de actividades de mantenimiento de un proyecto." },
-                { "op": "C", "desc": "El tiempo para planificar la siguiente iteración del proyecto." },
-                { "op": "D", "desc": "Una fase preliminar antes de iniciar el desarrollo formal." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Un Sprint es una iteración de tiempo fija en la que el equipo trabaja en objetivos concretos."
-        },
-        {
-            "id": 4,
-            "enunciado": "¿Qué pilares sustentan el marco de trabajo Scrum?",
-            "options": [
-                { "op": "A", "desc": "Transparencia, inspección y adaptación." },
-                { "op": "B", "desc": "Eficiencia, velocidad y automatización." },
-                { "op": "C", "desc": "Autogestión, comunicación y documentación." },
-                { "op": "D", "desc": "Planificación, ejecución y validación." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Scrum se basa en los pilares de transparencia, inspección y adaptación para garantizar el éxito."
-        },
-        {
-            "id": 5,
-            "enunciado": "¿Qué son los artefactos en Scrum y cuáles son?",
-            "options": [
-                { "op": "A", "desc": "Guías de autogestión: Product Backlog, Sprint Backlog e Incremento." },
-                { "op": "B", "desc": "Elementos visuales: Diagramas, Gráficos y Planificaciones." },
-                { "op": "C", "desc": "Roles secundarios del equipo de soporte." },
-                { "op": "D", "desc": "Componentes del proceso: Historias de usuario y diagramas UML." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Los artefactos en Scrum son Product Backlog, Sprint Backlog e Incremento."
-        },
-        {
-            "id": 6,
-            "enunciado": "¿Qué compromiso define un estado futuro del producto en el Product Backlog?",
-            "options": [
-                { "op": "A", "desc": "El incremento." },
-                { "op": "B", "desc": "El objetivo del producto." },
-                { "op": "C", "desc": "La definición de terminado." },
-                { "op": "D", "desc": "El objetivo del Sprint." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "El objetivo del producto describe un estado futuro deseado para el producto."
-        },
-        {
-            "id": 7,
-            "enunciado": "¿Qué reuniones se llevan a cabo durante un Sprint?",
-            "options": [
-                { "op": "A", "desc": "Planificación, Daily Scrum, Revisión y Retrospectiva." },
-                { "op": "B", "desc": "Planificación, Revisión y Documentación." },
-                { "op": "C", "desc": "Daily Scrum, Documentación y Revisión Final." },
-                { "op": "D", "desc": "Planificación y un único Daily Scrum al final del Sprint." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Las reuniones clave en un Sprint son planificación, Daily Scrum, revisión y retrospectiva."
-        },
-        {
-            "id": 8,
-            "enunciado": "¿Qué define la 'Definición de Terminado' (Definition of Done)?",
-            "options": [
-                { "op": "A", "desc": "Un checklist de tareas completadas." },
-                { "op": "B", "desc": "Un estándar de calidad acordado para considerar una tarea completa." },
-                { "op": "C", "desc": "Un documento firmado por el Product Owner." },
-                { "op": "D", "desc": "Un documento que detalla los pasos para cerrar el proyecto." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "La 'Definición de Terminado' establece los estándares necesarios para considerar una tarea completada."
-        },
-        {
-            "id": 9,
-            "enunciado": "¿Qué representa el Incremento en Scrum?",
-            "options": [
-                { "op": "A", "desc": "La suma de todos los elementos completados en el Sprint." },
-                { "op": "B", "desc": "El conjunto de tareas pendientes en el Sprint Backlog." },
-                { "op": "C", "desc": "El tiempo estimado para las próximas iteraciones." },
-                { "op": "D", "desc": "Los artefactos generados por el equipo de soporte." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El Incremento incluye todos los elementos completados que están listos para su entrega al final del Sprint."
-        },
-        {
-            "id": 10,
-            "enunciado": "¿Cuál es la duración típica de un Sprint?",
-            "options": [
-                { "op": "A", "desc": "1 a 4 semanas." },
-                { "op": "B", "desc": "1 a 2 días." },
-                { "op": "C", "desc": "6 a 8 semanas." },
-                { "op": "D", "desc": "Indefinido, dependiendo del proyecto." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Un Sprint tiene una duración fija de 1 a 4 semanas, según las necesidades del equipo."
+            "op": "B" 
         }
-    ]
+    ],
+    "just": "Scrum surge como marco ágil basado en principios empíricos de autogestión y mejora continua, tomando influencias del pensamiento Lean para evitar desperdicios y enfocarse en lo esencial."
+    },
+    {
+    "id": 2,
+    "enunciado": "¿Qué tipo de errores se producen en algunas organizaciones al aplicar Scrum?",
+    "options": [
+        {
+        "op": "A",
+        "desc": "No se mantiene colaboración cliente y equipo de desarrollo, hay falta de liderazgo, no hay empatía, el equipo no es maduro."
+        },
+        {
+        "op": "B",
+        "desc": "No se establece un liderazgo en el equipo de desarrollo con un jefe de proyecto."
+        },
+        {
+        "op": "C",
+        "desc": "La implementación no se basa en el diseño que se genera durante el proceso de desarrollo."
+        },
+        {
+        "op": "D",
+        "desc": "No hay una evaluación de producto final por parte del jefe de proyecto líder."
+        }
+    ],
+    "correct": [
+        {
+        "op": "A"
+        }
+    ],
+    "just": "Entre los errores comunes en la aplicación de Scrum se encuentran la falta de colaboración, el liderazgo deficiente y equipos con poca madurez que dificultan el trabajo autogestionado."
+    },
+    {
+    "id": 3,
+    "enunciado": "En La Guía de Scrum 2020 se han realizado algunos cambios respecto a la de 2017, ¿cuáles son?",
+    "options": [
+        {
+        "op": "A",
+        "desc": "Ya no se habla de Scrum Master sino de Scrum Líder."
+        },
+        {
+        "op": "B",
+        "desc": "Ahora se habla de autoorganización y el equipo se centra en el cliente."
+        },
+        {
+        "op": "C",
+        "desc": "Se ha reducido la guía y se ha añadido un cambio de filosofía, y el Sprint se centra en el Por qué."
+        },
+        {
+        "op": "D",
+        "desc": "Se ha hecho la guía menos prescriptiva, se habla de autogestión en vez de autoorganización, y en la planificación del Sprint se añade el por qué, además del qué y cómo."
+        }
+    ],
+    "correct": [
+        {
+        "op": "D"
+        }
+    ],
+    "just": "La Guía Scrum 2020 es más breve y menos prescriptiva, promueve la autogestión del equipo y enfatiza el propósito detrás de cada Sprint, además de los detalles sobre qué y cómo realizar el trabajo."
+    },
+    {
+    "id": 4,
+    "enunciado": "¿Cuáles son los pilares empíricos de Scrum?",
+    "options": [
+        {
+        "op": "A",
+        "desc": "Transparencia, inspección y adaptación."
+        },
+        {
+        "op": "B",
+        "desc": "Transparencia, inspección e interoperabilidad."
+        },
+        {
+        "op": "C",
+        "desc": "Transparencia, velocidad e interoperabilidad."
+        },
+        {
+        "op": "D",
+        "desc": "Transparencia, inspección y gestión de análisis."
+        }
+    ],
+    "correct": [
+        {
+        "op": "A"
+        }
+    ],
+    "just": "Los pilares de Scrum son transparencia para comprender el estado real del trabajo, inspección para evaluar el progreso y adaptación para realizar ajustes cuando sea necesario."
+    },
+    {
+    "id": 5,
+    "enunciado": "¿Cuáles son los valores de Scrum?",
+    "options": [
+        {
+        "op": "A",
+        "desc": "Compromiso, visibilidad, sinceridad, respeto y rapidez."
+        },
+        {
+        "op": "B",
+        "desc": "Compromiso, enfoque, sinceridad, respeto y rapidez."
+        },
+        {
+        "op": "C",
+        "desc": "Compromiso, enfoque, sinceridad, respeto y coraje."
+        },
+        {
+        "op": "D",
+        "desc": "Compromiso, enfoque, visibilidad, respeto y coraje."
+        }
+    ],
+    "correct": [
+        {
+        "op": "C"
+        }
+    ],
+    "just": "Los valores de Scrum son compromiso, enfoque, sinceridad, respeto y coraje, los cuales fomentan un entorno de trabajo basado en confianza y colaboración."
+    },
+    {
+    "id": 6,
+    "enunciado": "Cuando se habla de los roles de Scrum, se considera:",
+    "options": [
+        {
+        "op": "A",
+        "desc": "El Product Owner, el Scrum Master y el equipo DevOps."
+        },
+        {
+        "op": "B",
+        "desc": "Uno de los cambios fundamentales en la Guía de Scrum 2020 ha sido que se sustituye roles directamente por responsabilidades."
+        },
+        {
+        "op": "C",
+        "desc": "Uno de los cambios fundamentales en la Guía de Scrum 2020 ha sido que se sustituyen responsabilidades y se habla de roles."
+        },
+        {
+        "op": "D",
+        "desc": "Se habla de responsabilidades, y serían el Product Owner, el Scrum Líder y los Desarrolladores."
+        }
+    ],
+    "correct": [
+        {
+        "op": "B"
+        }
+    ],
+    "just": "En la Guía de Scrum 2020 se sustituye el término de roles por responsabilidades para reforzar la autogestión del equipo, enfatizando sus funciones más que un título de rol."
+    },
+    {
+    "id": 7,
+    "enunciado": "Entre las funciones principales del Scrum Master, se encuentran las siguientes:",
+    "options": [
+        {
+        "op": "A",
+        "desc": "Impulsar la adopción de agilidad, autogestión, multifuncionalidad, ser el líder del equipo Scrum, gestionar los problemas y delegar el aseguramiento de los eventos."
+        },
+        {
+        "op": "B",
+        "desc": "Impulsar la adopción de agilidad, autoorganización, asignar tareas, ser el líder único del equipo Scrum, gestionar los problemas y asegurar la ejecución de los eventos."
+        },
+        {
+        "op": "C",
+        "desc": "Impulsar la adopción de agilidad, autogestión, multifuncionalidad, ser el único líder del equipo Scrum, gestionar los problemas y delegar el aseguramiento de los eventos."
+        },
+        {
+        "op": "D",
+        "desc": "Impulsar la adopción de agilidad, autogestión, multifuncionalidad, ser el líder del equipo Scrum, gestionar los problemas y asegurar la ejecución de los eventos."
+        }
+    ],
+    "correct": [
+        {
+        "op": "D"
+        }
+    ],
+    "just": "El Scrum Master lidera la adopción de prácticas ágiles, fomenta la autogestión y multifuncionalidad del equipo, asegura la ejecución de eventos y trabaja para eliminar impedimentos."
+    },
+    {
+    "id": 8,
+    "enunciado": "¿Qué es un Sprint en Scrum?",
+    "options": [
+        {
+        "op": "A",
+        "desc": "El Sprint es un contenedor para los diferentes eventos del proyecto, como la planificación, Scrum diario, revisión del propio Sprint y retrospectiva de este."
+        },
+        {
+        "op": "B",
+        "desc": "El Sprint es un artefacto de Scrum que lleva información de las reuniones con el cliente para los cambios necesarios."
+        },
+        {
+        "op": "C",
+        "desc": "El Sprint es la fase en la que se lleva a cabo la iteración para establecer lo que el Product Backlog indica, y no puede tener cambios durante dicha iteración."
+        },
+        {
+        "op": "D",
+        "desc": "El Sprint es la meta a la que llega el resultado del proyecto tras las iteraciones finales."
+        }
+    ],
+    "correct": [
+        {
+        "op": "A"
+        }
+    ],
+    "just": "El Sprint es un evento base de Scrum que contiene otros eventos como la planificación, el Daily Scrum, la revisión y la retrospectiva del Sprint, asegurando entregas incrementales."
+    },
+    {
+    "id": 9,
+    "enunciado": "¿Qué son los artefactos en Scrum y cuáles son?",
+    "options": [
+        {
+        "op": "A",
+        "desc": "Son la guía de autogestión del desarrollo, y anotan los requisitos del proyecto que se van a implementar. Se tienen el Product Backlog, el Sprint Backlog y la Retrospectiva."
+        },
+        {
+        "op": "B",
+        "desc": "Son los elementos que forman la base de la productividad y calidad del proyecto. Se tienen el Product Backlog, el Sprint Backlog y el Incremento."
+        },
+        {
+        "op": "C",
+        "desc": "Son los elementos funcionales que establecen los intereses de los clientes. Se tienen el Product Backlog, el Sprint y la Retrospectiva."
+        },
+        {
+        "op": "D",
+        "desc": "Son un conjunto de componentes del proyecto que deben ser asignados a cada miembro del equipo de desarrollo. Se tienen el Product Backlog, el Sprint y la Iteración."
+        }
+    ],
+    "correct": [
+        {
+        "op": "B"
+        }
+    ],
+    "just": "Los artefactos de Scrum (Product Backlog, Sprint Backlog e Incremento) son elementos clave que representan el trabajo realizado y pendiente, ayudando a gestionar la calidad y transparencia del proyecto."
+    },
+    {
+    "id": 10,
+    "enunciado": "Entre los compromisos del Product Backlog, se tiene:",
+    "options": [
+        {
+        "op": "A",
+        "desc": "Desarrollo de entrega continua y seguimiento de iteraciones."
+        },
+        {
+        "op": "B",
+        "desc": "Análisis y gestión de los requisitos en cada iteración."
+        },
+        {
+        "op": "C",
+        "desc": "Describe un estado futuro del producto como objetivo a largo plazo y que, si no se cumple, se puede cambiar el requisito correspondiente."
+        },
+        {
+        "op": "D",
+        "desc": "Describe un estado futuro del producto como objetivo a largo plazo y que se debe cumplir antes de continuar."
+        }
+    ],
+    "correct": [
+        {
+        "op": "D"
+        }
+    ],
+    "just": "El compromiso del Product Backlog es el Product Goal, un objetivo a largo plazo que guía el desarrollo y debe cumplirse antes de tomar nuevos objetivos."
+    }
+]
 }

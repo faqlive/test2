@@ -2,125 +2,125 @@
     "tema": 4,
     "name": "Lean y Kanban",
     "preguntas": [
-        {
-            "id": 1,
-            "enunciado": "Lean es una filosofía que consiste en:",
-            "options": [
-                { "op": "A", "desc": "Que todo negocio debe maximizar el valor dado al cliente y reducir las incidencias o despilfarros." },
-                { "op": "B", "desc": "Que toda organización debe minimizar el valor dado al cliente y garantizar que no haya incidencias o despilfarros." },
-                { "op": "C", "desc": "Que todo negocio debe implicar al cliente, cubrir sus necesidades y aplicar la metodología tradicional o ágil que sea necesaria." },
-                { "op": "D", "desc": "Que todo negocio debe maximizar el valor que se le da al cliente, cubrir sus necesidades y aplicar la metodología tradicional o ágil que sea necesaria." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Lean busca maximizar el valor dado al cliente y eliminar desperdicios en procesos."
-        },
-        {
-            "id": 2,
-            "enunciado": "¿Cuál es la diferencia entre Lean Management y Lean Manufacturing?",
-            "options": [
-                { "op": "A", "desc": "Lean Management se refiere a la aplicación de las técnicas de producción y Lean Manufacturing a la gestión de implantar Lean." },
-                { "op": "B", "desc": "Lean Management se refiere a gestión de implantar Lean y Lean Manufacturing a la aplicación de las técnicas de implementación de los sistemas en caliente." },
-                { "op": "C", "desc": "Lean Management se refiere a gestión de implantar Lean y Lean Manufacturing a la aplicación de las técnicas de producción." },
-                { "op": "D", "desc": "Lean Management se refiere a gestión de evaluar Lean y Lean Manufacturing a la aplicación de las técnicas de producción." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "Lean Management se enfoca en la gestión y Lean Manufacturing en la producción."
-        },
-        {
-            "id": 3,
-            "enunciado": "Entre los aspectos que suponen despilfarros o desperdicios en Lean, algunos son los siguientes:",
-            "options": [
-                { "op": "A", "desc": "Sobreproducción, porque se abarquen más requisitos de lo que se puede desarrollar, y transporte porque la logística sea complicada." },
-                { "op": "B", "desc": "Exceso de inventario, porque se generan productos que no llegan a usarse por los clientes, y esperas porque se requiera de respuestas o acciones de otros miembros del equipo para continuar." },
-                { "op": "C", "desc": "Movimientos innecesarios, por tener que trasladarse a departamentos o buscar continuamente herramientas, y esperas porque se requiera de respuestas o acciones de otros miembros del equipo para continuar." },
-                { "op": "D", "desc": "Defectos de producción, por no tener en consideración la opinión del cliente y generar productos defectuosos, y desaprovechamiento del talento por no escuchar esas ideas buenas del cliente." }
-            ],
-            "correct": [{ "op": "B" }, { "op": "C" }],
-            "just": "Los desperdicios comunes incluyen exceso de inventario, movimientos innecesarios y esperas prolongadas."
-        },
-        {
-            "id": 4,
-            "enunciado": "¿Cuáles son los principios de Lean?",
-            "options": [
-                { "op": "A", "desc": "Valor de cliente y calidad, eliminar desperdicios, mejora integra, procesos push, flexibilidad, y relación a largo plazo con proveedores." },
-                { "op": "B", "desc": "Valor de cliente y calidad, eliminar desperdicios, mejora continua, procesos push, flexibilidad, y relación a largo plazo con proveedores." },
-                { "op": "C", "desc": "Valor de cliente y calidad, eliminar desperdicios, mejora continua, procesos pull, flexibilidad, y relación a largo plazo con proveedores." },
-                { "op": "D", "desc": "Valor de cliente y calidad, eliminar desperdicios, mejora continua, procesos pull, facilidad, y relación a largo plazo con proveedores." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "Lean se basa en procesos pull, mejora continua y relaciones sostenibles."
-        },
-        {
-            "id": 5,
-            "enunciado": "Imaginemos que una empresa quiere implantar Lean en su modelo de trabajo, ¿qué aspectos debería tener en cuenta?",
-            "options": [
-                { "op": "A", "desc": "Compromiso de la dirección y los clientes, darles valor a los requisitos pedidos por el cliente, y trabajo continuo." },
-                { "op": "B", "desc": "Compromiso de la dirección, localizar el valor del producto, implicar a la gente al trabajo de coste mínimo, y pensamiento de procesos." },
-                { "op": "C", "desc": "Compromiso de la dirección, localizar el valor de la colaboración entre la dirección y el equipo de desarrollo, implicar a la gente al trabajo real, y pensamiento de procesos." },
-                { "op": "D", "desc": "Compromiso de la dirección, localizar el valor del cliente y la calidad, implicar a la gente al trabajo real, y pensamiento de procesos." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "Implantar Lean requiere compromiso, identificación del valor y trabajo en equipo."
-        },
-        {
-            "id": 6,
-            "enunciado": "¿Puede ser un Kanban utilizado sobre una herramienta digital?",
-            "options": [
-                { "op": "A", "desc": "Siempre debe ser sobre tablero físico." },
-                { "op": "B", "desc": "Sí, en el caso que participen pocas personas, para llevar mejor control." },
-                { "op": "C", "desc": "Solo en caso de usar herramientas con licencia para usar Kanban." },
-                { "op": "D", "desc": "Sí, se puede hacer tanto físico como digital." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "Kanban puede ser usado tanto en físico como en digital."
-        },
-        {
-            "id": 7,
-            "enunciado": "Los principios en los que se fundamenta Kanban incluyen:",
-            "options": [
-                { "op": "A", "desc": "Objetivos de cambios incrementales, cada miembro es líder, mejora continua y colaborativa, proceso claro, virtualizar y gestionar el flujo de trabajo." },
-                { "op": "B", "desc": "Objetivos de cambios iterativos, cada miembro tiene un jefe como líder, mejora continua y colaborativa, proceso claro, virtualizar y gestionar los requisitos dados por el cliente." },
-                { "op": "C", "desc": "Objetivos de cambios incrementales, cada miembro es líder, mejora colaborativa, proceso claro, virtualizar y gestionar los requisitos dados por el cliente." },
-                { "op": "D", "desc": "Objetivos de cambios incrementales, cada miembro tiene un jefe como líder, mejora continua y colaborativa, proceso claro, virtualizar y gestionar el flujo de trabajo." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "Kanban se fundamenta en cambios incrementales, mejora continua y gestión del flujo."
-        },
-        {
-            "id": 8,
-            "enunciado": "¿Qué aspectos debe considerar un tablero Kanban con un buen diseño?",
-            "options": [
-                { "op": "A", "desc": "Que indique las diferentes tareas que se deben realizar, que use bastantes colores para identificarlas y que se ponga información de los tiempos de ejecución de las tareas." },
-                { "op": "B", "desc": "Se pueden usar colores, pero no de manera excesiva, pues puede dar lugar a confusión." },
-                { "op": "C", "desc": "Un buen diseño puede ser estructurado, con la información que sea fácil de leer, visible, entendible, que no use excesiva cantidad de colores y que se identifique bien las asignaciones a miembros." },
-                { "op": "D", "desc": "Identificar claramente quién hace cada tarea y quién es el responsable de cada miembro del equipo de desarrollo." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "Un tablero Kanban debe ser claro, fácil de leer y estructurado."
-        },
-        {
-            "id": 9,
-            "enunciado": "¿Cuál de las siguientes opciones puede ser la mejor para reflejar quién está haciendo una tarea en Kanban?",
-            "options": [
-                { "op": "A", "desc": "Asignar la tarea al Scrum Master." },
-                { "op": "B", "desc": "Indicarlo con un número en la tarjeta." },
-                { "op": "C", "desc": "Indicarlo al Product Owner, y que decida." },
-                { "op": "D", "desc": "Asignar la tarea al facilitador." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "El facilitador puede reflejar la gestión de dependencias en Kanban."
-        },
-        {
-            "id": 10,
-            "enunciado": "Cuando se usa Kanban en un proyecto, ¿cuál de estas no incluye buenas prácticas?",
-            "options": [
-                { "op": "A", "desc": "Una tarea solo se asigna a una persona, las tareas se mueven hacia la derecha, pocas tareas en cada columna y no más de tres o cuatro personas asignadas a la vez a una tarea." },
-                { "op": "B", "desc": "No se pueden producir cambios dentro de un Timebox una vez comience una iteración." },
-                { "op": "C", "desc": "Debe haber pocas tareas asignadas por persona simultáneamente, y las tareas pueden ir hacia la derecha, o retroceder si ocurren errores o inconvenientes." },
-                { "op": "D", "desc": "Una tarea solo se asigna a una persona en principio, si esta no puede llevarla a cabo entonces se coge al siguiente en la lista y se le asigna, mientras todo se queda bloqueado." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "No realizar cambios dentro de un Timebox es una práctica recomendada."
-        }
+    {
+        "id": 1,
+        "enunciado": "¿Cuál es el objetivo principal de la filosofía Lean?",
+        "options": [
+            { "op": "A", "desc": "Maximizar el valor dado al cliente y reducir los despilfarros." },
+            { "op": "B", "desc": "Minimizar el valor dado al cliente y garantizar que no haya incidencias." },
+            { "op": "C", "desc": "Cubrir las necesidades del cliente y aplicar cualquier metodología disponible." },
+            { "op": "D", "desc": "Maximizar la rentabilidad a expensas de la calidad del producto." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "La filosofía Lean busca proporcionar el máximo valor al cliente eliminando todo tipo de desperdicio o actividades que no generan valor."
+    },
+    {
+        "id": 2,
+        "enunciado": "¿Cuál es la diferencia entre Lean Management y Lean Manufacturing?",
+        "options": [
+            { "op": "A", "desc": "Lean Management se refiere a la aplicación de técnicas de producción, y Lean Manufacturing, a la gestión de proyectos Lean." },
+            { "op": "B", "desc": "Lean Management implica la gestión de la implementación de Lean en toda la organización, mientras que Lean Manufacturing se centra en los procesos de producción." },
+            { "op": "C", "desc": "Lean Management se limita a gestionar recursos humanos y Lean Manufacturing a las máquinas y materiales." },
+            { "op": "D", "desc": "No existe diferencia, son términos equivalentes." }
+        ],
+        "correct": [{ "op": "C" }],
+        "just": "Lean Management busca optimizar la gestión en toda la empresa, mientras que Lean Manufacturing se enfoca en aplicar estos principios al proceso de fabricación."
+    },
+    {
+        "id": 3,
+        "enunciado": "¿Cuáles son algunos de los tipos de desperdicios según Lean?",
+        "options": [
+            { "op": "A", "desc": "Sobreproducción, porque se abarquen más requisitos de lo que se puede desarrollar, y transporte porque la logística sea complicada.." },
+            { "op": "B", "desc": "Exceso de inventario, porque se generan productos que no llegan a usarse por los clientes, y esperas porque se requiera de respuestas o acciones de otros miembros del equipo para continuar" },
+            { "op": "C", "desc": "Costes innecesarios, por tener que trasladarse a departamentos o buscar continuamente herramientas, y esperas porque se requiera de respuestas o acciones de otros miembros del equipo para continuar." },
+            { "op": "D", "desc": "Defectos de producción, por no tener en consideración la opinión del cliente y generar productos defectuosos, y desaprovechamiento del talento por no escuchar esas ideas buenas del cliente." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "PREGUNTA CON MATICES. REVISAR FOROS (https://campusonline.unir.net/mod/forum/discuss.php?d=120091)"
+    },
+    {
+        "id": 4,
+        "enunciado": "¿Cuáles son los principios de Lean?",
+        "options": [
+            { "op": "A", "desc": "Valor de cliente y calidad, eliminar desperdicios, mejora integra, procesos push, flexibilidad, y relación a largo plazo con proveedores." },
+            { "op": "B", "desc": "Valor de cliente y calidad, eliminar desperdicios, mejora continua, procesos push, flexibilidad, y relación a largo plazo con proveedores." },
+            { "op": "C", "desc": "Valor de cliente y calidad, eliminar desperdicios, mejora continua, procesos pull, flexibilidad, y relación a largo plazo con proveedores." },
+            { "op": "D", "desc": "Valor de cliente y calidad, eliminar desperdicios, mejora continua, procesos pull, facilidad, y relación a largo plazo con proveedores." }
+        ],
+        "correct": [{ "op": "C" }], 
+        "just": "Estos son los pilares principios básicos de Lean."
+    },
+    {
+        "id": 5,
+        "enunciado": "Imaginemos que una empresa quiere implantar Lean en su modelo de trabajo, ¿qué aspectos debería tener en cuenta?",
+        "options": [
+            { "op": "A", "desc": "Compromiso de la dirección y los clientes, darles valor a los requisitos pedidos por el cliente, y trabajo continuo." },
+            { "op": "B", "desc": "Compromiso de la dirección, localizar el valor del producto, implicar a la gente al trabajo de coste mínimo, y pensamiento de procesos." },
+            { "op": "C", "desc": "Compromiso de la dirección, localizar el valor de la colaboración entre la dirección y el equipo de desarrollo, implicar a la gente al trabajo real, y pensamiento de procesos." },
+            { "op": "D", "desc": "Compromiso de la dirección, localizar el valor del cliente y la calidad, implicar a la gente al trabajo real, y pensamiento de procesos." }
+        ],
+        "correct": [{ "op": "D" }], 
+        "just": ""
+    },
+    {
+        "id": 6,
+        "enunciado": "¿Puede ser un Kanban utilizado sobre una herramienta digital?",
+        "options": [
+            { "op": "A", "desc": "Siempre debe ser sobre tablero físico." },
+            { "op": "B", "desc": "Sí, en el caso que participen pocas personas, para llevar mejor control." },
+            { "op": "C", "desc": "Solo en caso de usar herramientas con licencia para usar Kanban." },
+            { "op": "D", "desc": "Sí, se puede hacer tanto físico como digital." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "Es de hecho una realidad que, debido a la deslocalización de los equipos de trabajo, cada día se hace más uso de herramientas digitales."
+    },
+    {
+        "id": 7,
+        "enunciado": "Los principios en los que se fundamenta Kanban incluyen:",
+        "options": [
+            { "op": "A", "desc": "Objetivos de cambios incrementales, cada miembro es líder, mejora continua y colaborativa, proceso claro, virtualizar y gestionar el flujo de trabajo." },
+            { "op": "B", "desc": "Objetivos de cambios iterativos, cada miembro tiene un jefe como líder, mejora continua y colaborativa, proceso claro, virtualizar y gestionar los requisitos dados por el cliente." },
+            { "op": "C", "desc": "Objetivos de cambios incrementales, cada miembro es líder, mejora colaborativa, proceso claro, virtualizar y gestionar los requisitos dados por el cliente." },
+            { "op": "D", "desc": "PObjetivos de cambios incrementales, cada miembro tiene un jefe como líder, mejora continua y colaborativa, proceso claro, virtualizar y gestionar el flujo de trabajo." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "Los principios de Kanban se basan en la mejora continua y colaborativa, la transparencia en el proceso de trabajo y la gestión del flujo de trabajo."
+    },
+    {
+        "id": 8,
+        "enunciado": "¿Qué aspectos debe considerar un tablero Kanban con un buen diseño?",
+        "options": [
+            { "op": "A", "desc": "Que indique las diferentes tareas que se deben realizar, que use bastantes colores para identificarlas y que se ponga información de los tiempos de ejecución de las tareas." },
+            { "op": "B", "desc": "Se pueden usar colores, pero no de manera excesiva, pues puede dar lugar a confusión." },
+            { "op": "C", "desc": "Un buen diseño puede ser estructurado, con la información que sea fácil de leer, visible, entendible, que no use excesiva cantidad de colores y que se identifique bien las asignaciones a miembros. (No hay una regla única para un buen diseño, sobretodo se alcanza con la práctica, pero sí que se puede considerar evitar algunos aspectos como los indicados)" },
+            { "op": "D", "desc": "Identificar claramente quién hace cada tarea y quién es el responsable de cada miembro del equipo de desarrollo." }
+        ],
+        "correct": [{ "op": "C" }],
+        "just": "Un buen diseño de un tablero Kanban debe ser estructurado, con la información que sea fácil de leer, visible, entendible, que no use excesiva cantidad de colores y que se identifique bien las asignaciones a miembros."
+    },
+    {
+        "id": 9,
+        "enunciado": "¿Cuál de las siguientes opciones puede ser la mejor para reflejar quién está haciendo una tarea en Kanban?",
+        "options": [
+            { "op": "A", "desc": "Asignar la tarea al Scrum Master." },
+            { "op": "B", "desc": "Indicarlo con un número en la tarjeta." },
+            { "op": "C", "desc": "Indicarlo al Product Owner, y que decida." },
+            { "op": "D", "desc": "Asignar la tarea al facilitador." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "Una de las tareas del facilitador es que debe hacerse cargo de la gestión de las dependencias con otras organizaciones o proyectos. "
+    },
+    {
+        "id": 10,
+        "enunciado": "En relación con el uso de kanban en un proyecto, ¿cuál de estas opciones incluye buenas prácticas?",
+        "options": [
+            { "op": "A", "desc": "Una tarea solo se asigna a una persona, las tareas se mueven hacia la derecha, pocas tareas en cada columna y no más de tres o cuatro personas asignadas a la vez a una tarea." },
+            { "op": "B", "desc": "No se pueden producir cambios dentro de un Timebox una vez comience una iteración, aunque las tareas se pueden distribuir en tantas personas del equipo como miembros haya trabajado en el proyecto, para agilizar el proceso." },
+            { "op": "C", "desc": "Debe haber pocas tareas asignadas por persona simultáneamente, y las tareas pueden ir hacia la derecha, o retroceder si ocurren errores o inconvenientes." },
+            { "op": "D", "desc": "Una tarea solo se asigna a una persona en principio, si esta no puede llevarla a cabo entonces se coge al siguiente en la lista y se le asigna, mientras todo se queda bloqueado." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "Asignar múltiples tareas sin límite a una persona puede sobrecargarla y afectar negativamente el flujo de trabajo."
+    }
     ]
 }

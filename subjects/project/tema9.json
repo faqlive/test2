@@ -1,126 +1,126 @@
 {
     "tema": 9,
-    "name": "Seguimiento del Proyecto Ágil",
+    "name": "Seguimiento del proyecto ágil",
     "preguntas": [
-        {
-            "id": 1,
-            "enunciado": "La técnica de valor ganado en los proyectos ágiles es:",
-            "options": [
-                { "op": "A", "desc": "La estrategia donde se hace lo que el cliente indica con el valor adecuado y real del proyecto ágil." },
-                { "op": "B", "desc": "La estrategia que se usa para conocer el valor de negocio del proyecto y es del 100 % real en proyectos ágiles." },
-                { "op": "C", "desc": "La estrategia que define si los productos entregados en cada iteración ágil se terminan a tiempo." },
-                { "op": "D", "desc": "La estrategia de análisis aplicando la velocidad al valor económico de cada persona del equipo ágil." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "La técnica de valor ganado en proyectos ágiles mide el valor real generado por un proyecto, basándose en resultados entregados y no en avances parciales." 
-        },
-        {
-            "id": 2,
-            "enunciado": "Cuando se habla del estado global del proyecto ágil:",
-            "options": [
-                { "op": "A", "desc": "Se valora el estado respecto a un alcance determinado." },
-                { "op": "B", "desc": "Se valora el estado desde el punto de vista del valor generado." },
-                { "op": "C", "desc": "Se valora el estado respecto a los puntos de historia prioritarios." },
-                { "op": "D", "desc": "Se valora el estado respecto a las tareas asignadas a las personas." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "En proyectos ágiles, el estado global se mide por el valor generado, no por un alcance predefinido." 
-        },
-        {
-            "id": 3,
-            "enunciado": "¿Qué suele representar el burndown de una Release?",
-            "options": [
-                { "op": "A", "desc": "El número de requisitos a realizar, según los previstos en la Release." },
-                { "op": "B", "desc": "El número de horas que quedan aún por realizar, de los previstos en la Release." },
-                { "op": "C", "desc": "El número de tareas que queda por realizar, de las previstas en la Release." },
-                { "op": "D", "desc": "El número de puntos de historia que quedan por realizar, según las previstas en la Release." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "El burndown chart representa el progreso hacia completar los puntos de historia restantes en una Release." 
-        },
-        {
-            "id": 4,
-            "enunciado": "Un gráfico de burnup de una Release representa:",
-            "options": [
-                { "op": "A", "desc": "El número de requisitos que se han realizado ya, según los previstos en la Release." },
-                { "op": "B", "desc": "El número de puntos de historia que se han realizado ya, según las previstas en la release." },
-                { "op": "C", "desc": "El número de tareas que se han realizado ya, de las previstas en la release." },
-                { "op": "D", "desc": "El número de horas que se han realizado ya, de los previstos en la release." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "El gráfico burnup muestra el avance acumulado en puntos de historia completados en una Release." 
-        },
-        {
-            "id": 5,
-            "enunciado": "¿Cómo se deben disponer las tarjetas en un radiador de información?",
-            "options": [
-                { "op": "A", "desc": "No importa mucho el orden mientras sea importante lo que se informa." },
-                { "op": "B", "desc": "Se puede ir rellenando todo el espacio físico disponible." },
-                { "op": "C", "desc": "Se debe ocupar el mínimo espacio posible." },
-                { "op": "D", "desc": "De forma ordenada y limpia." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "Las tarjetas en un radiador de información deben estar organizadas de forma clara para facilitar la lectura y el análisis." 
-        },
-        {
-            "id": 6,
-            "enunciado": "Los atributos de autoorganización y autodirección de los equipos ágiles:",
-            "options": [
-                { "op": "A", "desc": "Son objetivos del enfoque ágil a medio plazo." },
-                { "op": "B", "desc": "Son estados del enfoque ágil a medio plazo." },
-                { "op": "C", "desc": "Son objetivos del enfoque ágil a largo plazo." },
-                { "op": "D", "desc": "Son estados del enfoque ágil a corto plazo." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "La autoorganización y autodirección son metas del enfoque ágil que requieren tiempo para consolidarse." 
-        },
-        {
-            "id": 7,
-            "enunciado": "Comúnmente, un equipo ágil autoorganizado:",
-            "options": [
-                { "op": "A", "desc": "Se mantiene al mismo nivel de principio a fin." },
-                { "op": "B", "desc": "Arranca como equipo de alto rendimiento." },
-                { "op": "C", "desc": "Empeora su rendimiento con el tiempo." },
-                { "op": "D", "desc": "Arranca como equipo inmaduro e irá mejorando." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "Los equipos ágiles comienzan como inmaduros, pero con el tiempo evolucionan hacia un mayor rendimiento." 
-        },
-        {
-            "id": 8,
-            "enunciado": "El estilo de liderazgo de proyecto para el empoderamiento de un equipo ágil es:",
-            "options": [
-                { "op": "A", "desc": "Facilitador." },
-                { "op": "B", "desc": "Centralizado." },
-                { "op": "C", "desc": "De orden y mando." },
-                { "op": "D", "desc": "De estilo directivo." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El liderazgo facilitador empodera al equipo, permitiendo autogestión y enfoque en los objetivos." 
-        },
-        {
-            "id": 9,
-            "enunciado": "¿Cómo puede ser definida la motivación de un equipo ágil?",
-            "options": [
-                { "op": "A", "desc": "Como un conjunto de acciones en común por parte del equipo." },
-                { "op": "B", "desc": "Como un vector de fuerzas impulsadas por el líder." },
-                { "op": "C", "desc": "Como un vector de fuerzas que impulsan al equipo." },
-                { "op": "D", "desc": "Como un conjunto de tareas al unísono, siempre con un enfoque estático." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "La motivación en un equipo ágil se define como un vector de fuerzas que alinea a los miembros hacia los objetivos." 
-        },
-        {
-            "id": 10,
-            "enunciado": "¿En qué momento se deben registrar las lecciones aprendidas?",
-            "options": [
-                { "op": "A", "desc": "Siempre al inicio del proyecto." },
-                { "op": "B", "desc": "Durante la ejecución del proyecto." },
-                { "op": "C", "desc": "Siempre al final de proyecto." },
-                { "op": "D", "desc": "Entre una iteración y la reunión de retrospectiva." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "Las lecciones aprendidas deben registrarse a lo largo de la ejecución del proyecto para capturar información relevante." 
-        }
+    {
+        "id": 1,
+        "enunciado": "La técnica de valor ganado en los proyectos ágiles es:",
+        "options": [
+        { "op": "A", "desc": "La estrategia donde se hace lo que el cliente indica con el valor adecuado y real del proyecto ágil." },
+        { "op": "B", "desc": "La estrategia que se usa para conocer el valor de negocio del proyecto y es del 100 % real en proyectos ágiles." },
+        { "op": "C", "desc": "La estrategia que define si los productos entregados en cada iteración ágil se terminan a tiempo." },
+        { "op": "D", "desc": "La estrategia de análisis aplicando la velocidad al valor económico de cada persona del equipo ágil." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "La técnica de valor ganado en los proyectos ágiles permite conocer el valor de negocio real generado y se basa en los resultados entregados."
+    },
+    {
+        "id": 2,
+        "enunciado": "Cuando se habla del estado global del proyecto ágil:",
+        "options": [
+        { "op": "A", "desc": "Se valora el estado respecto a un alcance determinado." },
+        { "op": "B", "desc": "Se valora el estado desde el punto de vista del valor generado." },
+        { "op": "C", "desc": "Se valora el estado respecto a los puntos de historia prioritarios." },
+        { "op": "D", "desc": "Se valora el estado respecto a las tareas asignadas a las personas." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "En el enfoque ágil, el estado global del proyecto se mide en función del valor generado más que por el alcance fijo."
+    },
+    {
+        "id": 3,
+        "enunciado": "¿Qué suele representar el burndown de una Release?",
+        "options": [
+        { "op": "A", "desc": "El número de requisitos a realizar, según los previstos en la Release." },
+        { "op": "B", "desc": "El número de horas que quedan aún por realizar, de los previstos en la Release." },
+        { "op": "C", "desc": "El número de tareas que queda por realizar, de las previstas en la Release." },
+        { "op": "D", "desc": "El número de puntos de historia que quedan por realizar, según las previstas en la Release." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "El burndown chart muestra los puntos de historia restantes y cómo avanzan las iteraciones hacia su finalización."
+    },
+    {
+        "id": 4,
+        "enunciado": "Un gráfico de burnup de una Release representa:",
+        "options": [
+        { "op": "A", "desc": "El número de requisitos que se han realizado ya, según los previstos en la Release." },
+        { "op": "B", "desc": "El número de puntos de historia que se han realizado ya, según las previstas en la release." },
+        { "op": "C", "desc": "El número de tareas que se han realizado ya, de las previstas en la release." },
+        { "op": "D", "desc": "El número de horas que se han realizado ya, de los previstos en la release." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "El burnup chart representa los puntos de historia acumulados conforme se van completando en cada iteración."
+    },
+    {
+        "id": 5,
+        "enunciado": "¿Cómo se deben disponer las tarjetas en un radiador de información?",
+        "options": [
+        { "op": "A", "desc": "No importa mucho el orden mientras sea importante lo que se informa." },
+        { "op": "B", "desc": "Se puede ir rellenando todo el espacio físico disponible." },
+        { "op": "C", "desc": "Se debe ocupar el mínimo espacio posible." },
+        { "op": "D", "desc": "De forma ordenada y limpia." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "Las tarjetas deben disponerse de manera ordenada y limpia para que la información sea clara y accesible."
+    },
+    {
+        "id": 6,
+        "enunciado": "Los atributos de autoorganización y autodirección de los equipos ágiles:",
+        "options": [
+        { "op": "A", "desc": "Son objetivos del enfoque ágil a medio plazo." },
+        { "op": "B", "desc": "Son estados del enfoque ágil a medio plazo." },
+        { "op": "C", "desc": "Son objetivos del enfoque ágil a largo plazo." },
+        { "op": "D", "desc": "Son estados del enfoque ágil a corto plazo." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "La autoorganización y autodirección son objetivos que se buscan alcanzar gradualmente en los equipos ágiles."
+    },
+    {
+        "id": 7,
+        "enunciado": "Comúnmente, un equipo ágil autoorganizado:",
+        "options": [
+        { "op": "A", "desc": "Se mantiene al mismo nivel de principio a fin." },
+        { "op": "B", "desc": "Arranca como equipo de alto rendimiento." },
+        { "op": "C", "desc": "Empeora su rendimiento con el tiempo." },
+        { "op": "D", "desc": "Arranca como equipo inmaduro e irá mejorando." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "Los equipos ágiles suelen comenzar con un bajo rendimiento y mejoran conforme avanzan y adquieren experiencia."
+    },
+    {
+        "id": 8,
+        "enunciado": "El estilo de liderazgo de proyecto para el empoderamiento de un equipo ágil es:",
+        "options": [
+        { "op": "A", "desc": "Facilitador." },
+        { "op": "B", "desc": "Centralizado." },
+        { "op": "C", "desc": "De orden y mando." },
+        { "op": "D", "desc": "De estilo directivo." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "El liderazgo facilitador fomenta la autonomía y el empoderamiento de los equipos ágiles, eliminando bloqueos y promoviendo la autogestión."
+    },
+    {
+        "id": 9,
+        "enunciado": "¿Cómo puede ser definida la motivación de un equipo ágil?",
+        "options": [
+        { "op": "A", "desc": "Como un conjunto de acciones en común por parte del equipo." },
+        { "op": "B", "desc": "Como un vector de fuerzas impulsadas por el líder." },
+        { "op": "C", "desc": "Como un vector de fuerzas que impulsan al equipo." },
+        { "op": "D", "desc": "Como un conjunto de tareas al unísono, siempre con un enfoque estático." }
+        ],
+        "correct": [{ "op": "C" }],
+        "just": "La motivación del equipo puede ser entendida como un conjunto de fuerzas que impulsa al equipo hacia el logro de sus objetivos."
+    },
+    {
+        "id": 10,
+        "enunciado": "¿En qué momento se deben registrar las lecciones aprendidas?",
+        "options": [
+        { "op": "A", "desc": "Siempre al inicio del proyecto." },
+        { "op": "B", "desc": "Durante la ejecución del proyecto." },
+        { "op": "C", "desc": "Siempre al final de proyecto." },
+        { "op": "D", "desc": "Entre una iteración y la reunión de retrospectiva." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "Es recomendable registrar las lecciones aprendidas de manera continua, especialmente entre iteraciones y en las reuniones de retrospectiva."
+    }
     ]
 }

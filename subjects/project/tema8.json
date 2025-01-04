@@ -1,126 +1,126 @@
 {
     "tema": 8,
-    "name": "Desarrollo del Proyecto Ágil",
+    "name": "Desarrollo del proyecto ágil",
     "preguntas": [
-        {
-            "id": 1,
-            "enunciado": "¿Cuándo termina el desarrollo de un proyecto, Definition of Done?",
-            "options": [
-                { "op": "A", "desc": "Cuando el cliente lo decide." },
-                { "op": "B", "desc": "Cuando se agota el presupuesto, aunque se haya planificado continuar." },
-                { "op": "C", "desc": "Cuando el contenido planificado se ha completado satisfactoriamente, sin necesidad de que se cumpla la fecha de entrega." },
-                { "op": "D", "desc": "Cuando los requisitos han quedado desarrollados, independientemente de si se han finalizado satisfactoriamente." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "El Definition of Done se alcanza cuando el contenido planificado se ha completado satisfactoriamente, asegurando calidad y cumplimiento." 
-        },
-        {
-            "id": 2,
-            "enunciado": "La definición de listo, Ready:",
-            "options": [
-                { "op": "A", "desc": "Muestra el camino a seguir sólo para cada iteración." },
-                { "op": "B", "desc": "Marca el momento de salida de la implementación de un proyecto." },
-                { "op": "C", "desc": "Muestra el camino que tiene que llevar a cabo un requisito." },
-                { "op": "D", "desc": "Marca el momento de salida tanto para un requisito, iteración o proyecto." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "El Definition of Ready indica cuándo un elemento está listo para iniciar su implementación, abarcando iteraciones, requisitos y proyectos." 
-        },
-        {
-            "id": 3,
-            "enunciado": "Cuando se va a comenzar una iteración:",
-            "options": [
-                { "op": "A", "desc": "No es necesario disponer de un Roadmap para el proyecto." },
-                { "op": "B", "desc": "Se planifica el detalle de todas las iteraciones siguientes." },
-                { "op": "C", "desc": "Se determinan los requisitos que se implementarán en dicha iteración." },
-                { "op": "D", "desc": "No están determinados aún los requisitos a ser implementados en la iteración." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "La planificación de una iteración incluye determinar los requisitos específicos a implementar durante esa iteración." 
-        },
-        {
-            "id": 4,
-            "enunciado": "¿Cuál es el resultado de llevar a cabo el proceso de planificación de una iteración?",
-            "options": [
-                { "op": "A", "desc": "Se establece un panel o tablero de tareas que resuelve todos los requisitos de una iteración, cada una con las horas estimadas." },
-                { "op": "B", "desc": "Se obtiene el Release Plan." },
-                { "op": "C", "desc": "Se genera el Roadmap que será usado durante la planificación de iteraciones." },
-                { "op": "D", "desc": "Se establece un panel o tablero que resuelve todos los requisitos de una iteración, contados en puntos de historia." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "La planificación de una iteración culmina con un tablero donde se reflejan los requisitos desglosados en puntos de historia." 
-        },
-        {
-            "id": 5,
-            "enunciado": "Una buena práctica para indicar el contenido de una iteración:",
-            "options": [
-                { "op": "A", "desc": "Es aplicar una estrategia de estimación a posteriori." },
-                { "op": "B", "desc": "Es establecer el tiempo que tarda cada miembro del equipo en hacer una tarea." },
-                { "op": "C", "desc": "Es crear tantas tareas para cada requisito como condiciones tenga la definición de hecho o Done." },
-                { "op": "D", "desc": "Es establecer la duración de cada tarea en base a los puntos de historia." }
-            ],
-            "correct": [{ "op": "C" }],
-            "just": "Dividir las tareas según la definición de hecho asegura que se cumplan los criterios de calidad establecidos." 
-        },
-        {
-            "id": 6,
-            "enunciado": "¿Cómo se calcula el avance de un proyecto ágil?",
-            "options": [
-                { "op": "A", "desc": "Según el número de puntos completados." },
-                { "op": "B", "desc": "Según el presupuesto y facturación." },
-                { "op": "C", "desc": "Según el número de horas que se tarda." },
-                { "op": "D", "desc": "Según las tareas finalizadas o hechas." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El progreso se mide según los puntos de historia completados, un indicador clave en el enfoque ágil." 
-        },
-        {
-            "id": 7,
-            "enunciado": "En un proyecto ágil, ¿qué variable de entrada es fundamental para planificar: el número de personas o la fecha máxima?",
-            "options": [
-                { "op": "A", "desc": "El número de personas." },
-                { "op": "B", "desc": "La fecha máxima." },
-                { "op": "C", "desc": "Ninguna de las dos." },
-                { "op": "D", "desc": "Ambas." }
-            ],
-            "correct": [{ "op": "D" }],
-            "just": "Ambas variables son fundamentales para definir la capacidad y los límites temporales del proyecto." 
-        },
-        {
-            "id": 8,
-            "enunciado": "¿Cuánto dura la reunión diaria o Daily stand-up?",
-            "options": [
-                { "op": "A", "desc": "Quince minutos como mínimo." },
-                { "op": "B", "desc": "Quince minutos como máximo." },
-                { "op": "C", "desc": "Lo que sea necesario." },
-                { "op": "D", "desc": "Dos minutos por cada miembro." }
-            ],
-            "correct": [{ "op": "B" }],
-            "just": "La reunión diaria debe ser breve y efectiva, idealmente no más de quince minutos." 
-        },
-        {
-            "id": 9,
-            "enunciado": "Entre los beneficios de la reunión de retrospectiva, se encuentran:",
-            "options": [
-                { "op": "A", "desc": "Reflexionar sobre el proceso, encontrar formas de mejorar la productividad y actualizar la definición de hecho." },
-                { "op": "B", "desc": "Mejorar y evolucionar, y construir de manera individual." },
-                { "op": "C", "desc": "Reflexionar sobre el proceso, encontrar formas de minimizar la productividad y actualizar la definición de hecho." },
-                { "op": "D", "desc": "Mejorar y preguntar todo al cliente, y construir como equipo." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "La retrospectiva permite reflexionar sobre lo aprendido y ajustar el proceso para la mejora continua." 
-        },
-        {
-            "id": 10,
-            "enunciado": "¿Cuál es el objetivo de la reunión de refinamiento?",
-            "options": [
-                { "op": "A", "desc": "Determinar cuáles son las tareas necesarias en la siguiente iteración." },
-                { "op": "B", "desc": "Introducir nuevos requisitos solicitados por el cliente en la iteración en curso." },
-                { "op": "C", "desc": "Ejecutar técnicas de estimación de tareas que refinen la iteración." },
-                { "op": "D", "desc": "Resolver dudas que puedan surgir durante la iteración." }
-            ],
-            "correct": [{ "op": "A" }],
-            "just": "El refinamiento busca preparar los elementos del backlog para la próxima iteración." 
-        }
+    {
+        "id": 1,
+        "enunciado": "¿Cuándo termina el desarrollo de un proyecto, Definition of Done?",
+        "options": [
+        { "op": "A", "desc": "Cuando el cliente lo decide." },
+        { "op": "B", "desc": "Cuando se agota el presupuesto, aunque se haya planificado continuar." },
+        { "op": "C", "desc": "Cuando el contenido planificado se ha completado satisfactoriamente, sin necesidad de que se cumpla la fecha de entrega." },
+        { "op": "D", "desc": "Cuando los requisitos han quedado desarrollados, independientemente de si se han finalizado satisfactoriamente." }
+        ],
+        "correct": [{ "op": "C" }],
+        "just": "Es este caso, en el que se da la definición de Done, que están hechas las tareas de los diferentes requisitos."
+    },
+    {
+        "id": 2,
+        "enunciado": "La definición de listo, Ready:",
+        "options": [
+        { "op": "A", "desc": "Muestra el camino a seguir sólo para cada iteración." },
+        { "op": "B", "desc": "Marca el momento de salida de la implementación de un proyecto." },
+        { "op": "C", "desc": "Muestra el camino que tiene que llevar a cabo un requisito." },
+        { "op": "D", "desc": "Marca el momento de salida tanto para un requisito, iteración o proyecto." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "La definición de Ready marca el punto de inicio claro tanto para requisitos, iteraciones como para proyectos completos."
+    },
+    {
+        "id": 3,
+        "enunciado": "Cuando se va a comenzar una iteración:",
+        "options": [
+        { "op": "A", "desc": "No es necesario disponer de un Roadmap para el proyecto." },
+        { "op": "B", "desc": "Se planifica el detalle de todas las iteraciones siguientes." },
+        { "op": "C", "desc": "Se determinan los requisitos que se implementarán en dicha iteración." },
+        { "op": "D", "desc": "No están determinados aún los requisitos a ser implementados en la iteración." }
+        ],
+        "correct": [{ "op": "C" }],
+        "just": "Antes de comenzar una iteración, se definen los requisitos específicos que se implementarán."
+    },
+    {
+        "id": 4,
+        "enunciado": "¿Cuál es el resultado de llevar a cabo el proceso de planificación de una iteración?",
+        "options": [
+        { "op": "A", "desc": "Se establece un panel o tablero de tareas que resuelve todos los requisitos de una iteración, cada una con las horas estimadas." },
+        { "op": "B", "desc": "Se obtiene el Release Plan." },
+        { "op": "C", "desc": "Se genera el Roadmap que será usado durante la planificación de iteraciones." },
+        { "op": "D", "desc": "Se establece un panel o tablero que resuelve todos los requisitos de una iteración, contados en puntos de historia." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "La planificación de la iteración se lleva a cabo para determinar las tareas, estimación y construcción del Sprint Backlog. Las horas son necesarias en este punto para ver la capacidad del equipo."
+    },
+    {
+        "id": 5,
+        "enunciado": "Una buena práctica para indicar el contenido de una iteración:",
+        "options": [
+        { "op": "A", "desc": "Es aplicar una estrategia de estimación a posteriori." },
+        { "op": "B", "desc": "Es establecer el tiempo que tarda cada miembro del equipo en hacer una tarea." },
+        { "op": "C", "desc": "Es crear tantas tareas para cada requisito como condiciones tenga la definición de hecho o Done." },
+        { "op": "D", "desc": "Es establecer la duración de cada tarea en base a los puntos de historia." }
+        ],
+        "correct": [{ "op": "C" }],
+        "just": "Se pueden encontrar distintos tipos de condiciones para la definición de hecho, por lo que se deben contemplar todas."
+    },
+    {
+        "id": 6,
+        "enunciado": "¿Cómo se calcula el avance de un proyecto ágil?",
+        "options": [
+        { "op": "A", "desc": "Según el número de puntos completados." },
+        { "op": "B", "desc": "Según el presupuesto y facturación." },
+        { "op": "C", "desc": "Según el número de horas que se tarda." },
+        { "op": "D", "desc": "Según las tareas finalizadas o hechas." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "El avance de un proyecto sobre el Roadmap se mide en base a los puntos finalizados tras cada iteración."
+    },
+    {
+        "id": 7,
+        "enunciado": "En un proyecto ágil, ¿qué variable de entrada es fundamental para planificar: el número de personas o la fecha máxima?",
+        "options": [
+        { "op": "A", "desc": "El número de personas." },
+        { "op": "B", "desc": "La fecha máxima." },
+        { "op": "C", "desc": "Ninguna de las dos." },
+        { "op": "D", "desc": "Ambas." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "Una vez que se llega a la planificación de la iteración, el número de personas del proyecto es fundamental e influye en la duración, a la par que la fecha máxima, que indica cuál debe ser la duración en sí."
+    },
+    {
+        "id": 8,
+        "enunciado": "¿Cuánto dura la reunión diaria o Daily stand-up?",
+        "options": [
+        { "op": "A", "desc": "Quince minutos como mínimo." },
+        { "op": "B", "desc": "Quince minutos como máximo." },
+        { "op": "C", "desc": "Lo que sea necesario." },
+        { "op": "D", "desc": "Dos minutos por cada miembro." }
+        ],
+        "correct": [{ "op": "B" }],
+        "just": "Se establece no más de quince minutos máximo, de manera que si se tarda menos es incluso preferible, se busca agilidad."
+    },
+    {
+        "id": 9,
+        "enunciado": "Entre los beneficios de la reunión de retrospectiva, se encuentran:",
+        "options": [
+        { "op": "A", "desc": "Reflexionar sobre el proceso, encontrar formas de mejorar la productividad y actualizar la definición de hecho." },
+        { "op": "B", "desc": "Mejorar y evolucionar, y construir de manera individual." },
+        { "op": "C", "desc": "Reflexionar sobre el proceso, encontrar formas de minimizar la productividad y actualizar la definición de hecho." },
+        { "op": "D", "desc": "Mejorar y preguntar todo al cliente, y construir como equipo." }
+        ],
+        "correct": [{ "op": "A" }],
+        "just": "La reunión de retrospectiva permite reflexionar sobre el proceso, identificar mejoras y actualizar la Definition of Done."
+    },
+    {
+        "id": 10,
+        "enunciado": "¿Cuál es el objetivo de la reunión de refinamiento?",
+        "options": [
+        { "op": "A", "desc": "Determinar cuáles son las tareas necesarias en la siguiente iteración." },
+        { "op": "B", "desc": "Introducir nuevos requisitos solicitados por el cliente en la iteración en curso." },
+        { "op": "C", "desc": "Ejecutar técnicas de estimación de tareas que refinen la iteración." },
+        { "op": "D", "desc": "Resolver dudas que puedan surgir durante la iteración." }
+        ],
+        "correct": [{ "op": "D" }],
+        "just": "El objetivo de la reunión de refinamiento es resolver dudas y revisar los elementos del Backlog para garantizar que estén listos para su implementación."
+    }
     ]
 }
