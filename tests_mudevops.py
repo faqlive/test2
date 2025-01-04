@@ -1,7 +1,9 @@
+from calendar import c
 import os
 import json
 import random
-from colorama import init, Fore, Back, Style
+import utility
+from colorama import init, Fore, Style
 
 init()
 
@@ -20,6 +22,13 @@ def load_question(file_path):
             return json.load(f)
     except FileNotFoundError:
         print(f"Error. No se encontró el archivo {file_path}")
+
+def extract_title(file):
+    """
+
+    """
+    content = load_question(file)
+    return f"{extract_topic_number(file)}. {content['name']}"if content and "name" in content else "Sin título"
 
 def extract_topic_number(topic_name):
     """
@@ -62,15 +71,18 @@ def main_menu():
             option = int(option)
             if option in subjects:
                 selected_subject = subjects[option]
-                print(f"La Materia selecionadas es {selected_subject}")
+                utility.clear_console()
+                print(f"\nLa Materia selecionadas es: {selected_subject["name"]}")
                 return selected_subject["path"]
             elif option == 0:
+                utility.clear_console()
                 print("¡Hasta luego!")
                 break
             else:
                 print(f"Opción invalidad")
         else:
-            print(f"Solo se pueden igresar números")
+            utility.clear_console()
+            print(f"{Fore.RED}Solo se pueden igresar números{Style.RESET_ALL}")
 
 def topic_menu(subject_path):
     """
@@ -82,12 +94,12 @@ def topic_menu(subject_path):
     topics = []
 
     try:
-        files = sorted([f for f in os.listdir(subject_path) if f.endswith(".json")])
+        files = sorted([f for f in os.listdir(subject_path) if f.endswith(".json")], key=extract_topic_number)
         if not files:
             print("no se ha encontrado la carpeta seleccionada")
             return []
         
-        topics = sorted([os.path.splitext(f)[0] for f in files], key=extract_topic_number)
+        topics = [extract_title(os.path.join(subject_path, f)) for f in files]
     except FileExistsError:
         print(f"La carpeta '{subject_path} no se encuntra")
     except Exception as e:
@@ -99,7 +111,7 @@ def topic_menu(subject_path):
     print("T. Repasar todos los temas")
     if topics:
         for idx, topic in enumerate(topics, start=1):
-            print(f"{idx}. {topic}")
+            print(f"{topic}")
         print("0. Volver al menú principal")
     else:
         print("No hay temas disponibles para esta materia.")
@@ -115,9 +127,9 @@ def topic_menu(subject_path):
                 return None                
             elif 1 <= topic_choice <= len(topics):
                 topic = topics[topic_choice - 1]
-                file_path = os.path.join(subject_path, f"{topic}.json")
+                file_path = os.path.join(subject_path, f"{files[topic_choice - 1]}")
                 topic = load_question(file_path)
-                print(f"El tema seleccionado es {topic["name"]}")
+                print(f"El tema seleccionado es: TEMA{topic_choice} - {topic["name"]}")
                 return topic["preguntas"]
             else:
                 print(f"Opción Invalida")

@@ -24,7 +24,7 @@
                 { "op": "D", "desc": "Cuando se desarrolla el proyecto pueden surgir cambios y hay que adaptarse." }
             ],
             "correct": [{ "op": "C" }],
-            "just": "Los requisitos a menudo cambian durante un proyecto, lo que hace que la afirmación C no sea válida."
+            "just": "No se puede asegurar que los requisitos y funcionalidades del proyecto no varíen, por lo que hay que adaptarse a lo que el cliente va requiriendo, cambios."
         },
         {
             "id": 3,
@@ -36,7 +36,7 @@
                 { "op": "D", "desc": "La buena documentación generada." }
             ],
             "correct": [{ "op": "C" }],
-            "just": "El enfoque ágil destaca por su transparencia y comunicación abierta, fomentando colaboración efectiva."
+            "just": "El enfoque ágil destaca por su transparencia y comunicación abierta, fomentando colaboración efectiva. Con el enfoque ágil, las personas son el centro, en base a su conocimiento y la propia colaboración el equipo."
         },
         {
             "id": 4,
@@ -48,7 +48,7 @@
                 { "op": "D", "desc": "En los que los clientes lo solicitan." }
             ],
             "correct": [{ "op": "B" }],
-            "just": "La metodología ágil es ideal para proyectos con requisitos cambiantes o no definidos desde el inicio."
+            "just": "La metodología ágil es ideal para proyectos con requisitos cambiantes o no definidos desde el inicio. En los proyectos donde no varían los requisitos y funcionalidades, se pueden usar metodologías tradicionales, cuando hay cambios es recomendable metodologías ágiles."
         },
         {
             "id": 5,
@@ -60,7 +60,7 @@
                 { "op": "D", "desc": "El movimiento DevOps apuesta por ciclos de desarrollo cortos con lanzamientos confiables, alineado con los objetivos de la agilidad." }
             ],
             "correct": [{ "op": "D" }],
-            "just": "DevOps complementa el enfoque ágil promoviendo ciclos cortos y lanzamientos confiables."
+            "just": "DevOps complementa el enfoque ágil promoviendo ciclos cortos y lanzamientos confiables. Es esta alineación la que hace que exista una relación importante, no cuestiones como que uno y otro tengan una dependencia, como se indica en otras respuestas."
         },
         {
             "id": 6,
@@ -72,7 +72,7 @@
                 { "op": "D", "desc": "Se puede usar cualquier tipo de enfoque, pues no depende de esto." }
             ],
             "correct": [{ "op": "A" }],
-            "just": "El enfoque ágil se caracteriza por su avance iterativo e incremental."
+            "just": "El enfoque ágil se caracteriza por su avance iterativo e incremental. En los proyectos ágiles las iteraciones se ejecutan para realizar incrementos sobre el producto generado en cada iteración."
         },
         {
             "id": 7,
@@ -84,7 +84,7 @@
                 { "op": "D", "desc": "Se puede usar cualquier tipo de enfoque, pues no depende de esto." }
             ],
             "correct": [{ "op": "C" }],
-            "just": "Los equipos ágiles suelen estar formados por no más de 15 personas, promoviendo la colaboración efectiva."
+            "just": "Los equipos ágiles suelen estar formados por no más de 15 personas, promoviendo la colaboración efectiva. No es que sea un límite de valor absoluto, pero se recomienda grupos reducidos, aunque no tiene porqué estar entre una y cinco; y si en un proyecto se requieren cien personas, se harán varios equipos de ocho-diez personas en cada equipo."
         },
         {
             "id": 8,
@@ -96,7 +96,7 @@
                 { "op": "D", "desc": "Radica en los equipos de trabajo, porque en el agilismo los miembros se adaptan a cambios en el desarrollo y se apoyan, y en DevOps se unen equipo de desarrollo y operaciones." }
             ],
             "correct": [{ "op": "D" }],
-            "just": "DevOps une los equipos de desarrollo y operaciones, mientras que el agilismo se centra en adaptabilidad y trabajo en equipo."
+            "just": "DevOps une los equipos de desarrollo y operaciones, mientras que el agilismo se centra en adaptabilidad y trabajo en equipo. Esta es la principal diferencia y, además, antes de la cultura DevOps no existía una interacción a nivel de comunicación y trabajo continuo entre el equipo de desarrollo y el de operaciones."
         },
         {
             "id": 9,
@@ -108,7 +108,7 @@
                 { "op": "D", "desc": "Cuando se desarrolla un proyecto mediante la idea de DevOps se asegura." }
             ],
             "correct": [{ "op": "C" }],
-            "just": "Un producto viable mínimo es característico del enfoque ágil, entregado en iteraciones cortas."
+            "just": "Un producto viable mínimo es característico del enfoque ágil, entregado en iteraciones cortas. En una propuesta ágil, se van obteniendo MVP en cada iteración que se enriquece en las siguientes, y no tiene por qué emplearse DevOps."
         },
         {
             "id": 10,
@@ -120,7 +120,7 @@
                 { "op": "D", "desc": "Hacer equipos pequeños, reducir costes, no realizar cambios continuos y trabajar con metodología tradicional." }
             ],
             "correct": [{ "op": "A" }],
-            "just": "DevOps incluye prácticas como desarrollo continuo, integración y supervisión para fomentar la eficiencia."
+            "just": "DevOps incluye prácticas como desarrollo continuo, integración y supervisión para fomentar la eficiencia. Estas prácticas son algunas de las que permiten una base de automatización y mejora continua en DevOps."
         }
     ]
 }
