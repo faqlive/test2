@@ -20,8 +20,8 @@
             "options": [
                 { "op": "A", "desc": "Valorar más a los individuos e interacciones sobre procesos y herramientas." },
                 { "op": "B", "desc": "Valorar más la negociación de un contrato con el cliente sobre la colaboración con dicho cliente o usuario final." },
-                { "op": "C", "desc": " Valorar más el producto entregable que funciona sobre documentación exhaustiva." },
-                { "op": "D", "desc": "alorar más la respuesta a cambios sobre seguir un plan estricto." }
+                { "op": "C", "desc": "Valorar más el producto entregable que funciona sobre documentación exhaustiva." },
+                { "op": "D", "desc": "Valorar más la respuesta a cambios sobre seguir un plan estricto." }
             ],
             "correct": [{ "op": "B" }],
             "just": "El resto de los valores son ciertos, y este es justo al revés, se debe valorar la colaboración con el cliente sobre negociar el contrato."
@@ -117,7 +117,7 @@
                 { "op": "A", "desc": "Cuando existen empresas pequeñas que no pueden aplicar los enfoques ágiles comunes." },
                 { "op": "B", "desc": "Cuando existen empresas grandes que no pueden aplicar las metodologías tradicionales." },
                 { "op": "C", "desc": "Cuando en un proyecto de grandes dimensiones no se pueden producir cambios en los requisitos." },
-                { "op": "D", "desc": "uando en un proyecto de grandes dimensiones no se pueden resolver ciertos aspectos con los enfoques ágiles, como la predictibilidad, la comercialización, la calidad y la visibilidad" }
+                { "op": "D", "desc": "Cuando en un proyecto de grandes dimensiones no se pueden resolver ciertos aspectos con los enfoques ágiles, como la predictibilidad, la comercialización, la calidad y la visibilidad" }
             ],
             "correct": [{ "op": "D" }],
             "just": "Hay ocasiones que las metodologías y enfoques ágiles comunes no se pueden usar en proyectos de dimensiones importante, y suele ocurrir en grandes organizaciones, por lo que se aplican los frameworks de escalado ágil."
