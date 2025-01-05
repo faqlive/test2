@@ -11,8 +11,8 @@
         { "op": "C", "desc": "Al ser un panel de tareas, se añaden las tarjetas para comprobar el trabajo diario del equipo." },
         { "op": "D", "desc": "Las tareas y características útiles para poder hacer las entregas del producto." }
         ],
-        "correct": [{ "op": "A" }],
-        "just": "El Roadmap presenta la estructura en iteraciones del producto, y sobre la hoja de ruta se señalarán dónde se espera que se realicen las entregas)."
+        "correct": [{ "op": "B" }],
+        "just": "(Distinto a la plataforma)El Roadmap presenta la estructura en iteraciones del producto, y sobre la hoja de ruta se señalarán dónde se espera que se realicen las entregas)."
     },
     {
         "id": 2,

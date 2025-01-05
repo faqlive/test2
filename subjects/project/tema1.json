@@ -16,7 +16,7 @@
         },
         {
             "id": 2,
-            "enunciado": "En la gestión de proyectos en la realidad, ¿cuál de las razones siguientes no se puede asegurar?",
+            "enunciado": "En la gestión de proyectos en la realidad, ¿cuál de las razones siguientes NO se puede asegurar?",
             "options": [
                 { "op": "A", "desc": "Los equipos de desarrollo descubren la forma más efectiva de ejecutar el trabajo cuando se realiza la ejecución." },
                 { "op": "B", "desc": "Los clientes o usuarios no saben lo que quieren hasta que no ven el software funcionando." },

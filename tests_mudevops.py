@@ -1,4 +1,3 @@
-from calendar import c
 import os
 import json
 import random
@@ -129,6 +128,10 @@ def topic_menu(subject_path):
                 topic = topics[topic_choice - 1]
                 file_path = os.path.join(subject_path, f"{files[topic_choice - 1]}")
                 topic = load_question(file_path)
+                if not topic:
+                    print(f"Error al cargar el tema {topic_choice}")
+                    return None
+                utility.clear_console()
                 print(f"El tema seleccionado es: TEMA{topic_choice} - {topic["name"]}")
                 return topic["preguntas"]
             else:
@@ -154,14 +157,13 @@ def ask_questions(all_questions):
 
     if not all_questions:
         print("❌ No hay preguntas disponibles.")
-        return
-    
+
     random.shuffle(all_questions)
     score = 0
     total = len(all_questions)
-
+    fail_question = []
     for idx , question  in enumerate(all_questions, start=1):
-        print(f"Pregunta {idx} de {total}: ")        
+        print(f"Pregunta {idx} de {total}: ")
         # Mostrar tema si se están repasando todos
         if all_questions and "tema" in question:
             print(Style.DIM + f"(Tema: {question['tema']})" + Style.RESET_ALL)
@@ -182,6 +184,7 @@ def ask_questions(all_questions):
                 score += 1
             else:
                 print(f"❌ Incorrecto. La respuesta correcta era: {', '.join(correct_answers)}")
+                fail_question.append(question)
 
             # Mostrar justificación si existe
             if "just" in question:
@@ -216,6 +219,7 @@ def ask_questions(all_questions):
                 for element, correct_option in correct_relations.items():
                     correct = next((o for o in question["options"] if o["op"] == correct_option), None)
                     print(f"    {element:<15} <->   {correct["op"]} - {correct['desc']}")
+                fail_question.append(question)
 
             # Mostrar justificación si existe
             if "just" in question:
@@ -225,7 +229,14 @@ def ask_questions(all_questions):
 
     # Mostrar puntaje final
     print(f"Tu puntuación final: {score}/{total} ({(score / total) * 100:.2f}%)\n")
-
+    if (score != total):
+        print(f"❌ Preguntas falladas: {len(fail_question)}")
+        print("¿Deseas volver a responder falladas?")
+        show_fail = input("Ingresa 's' o para volver a responder las preguntas falladas o 'n' para volver al menú principal: ")
+        if show_fail.lower() == "s":
+            ask_questions(fail_question)
+        else:
+            return       
 
 
 
