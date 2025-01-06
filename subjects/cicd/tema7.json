@@ -35,8 +35,8 @@
                 { "op": "C", "desc": "Los trabajos se definen en un formulario web donde se escribe el código a ejecutar." },
                 { "op": "D", "desc": "Todas las anteriores." }
             ],
-            "correct": [{ "op": "A" }],
-            "just": "El código de un pipeline debe definirse en un Jenkinsfile para facilitar la gestión del flujo."
+            "correct": [{ "op": "D" }],
+            "just": "Aunque es preferible versionar el código de construcción con un Jenkisfile en el propio repositorio, Jenkins ofrece también las otras opciones."
         },
         {
             "id": 4,
@@ -59,8 +59,8 @@
                 { "op": "C", "desc": "Para almacenar el resultado de una compilación, una construcción o de un informe de pruebas, junto a los detalles de la ejecución." },
                 { "op": "D", "desc": "Todas las anteriores." }
             ],
-            "correct": [{ "op": "D" }],
-            "just": "Archivar artefactos asegura el acceso a los resultados y facilita la trazabilidad del trabajo."
+            "correct": [{ "op": "C" }],
+            "just": "Para almacenar paquetes definitivos es habitual usar un repositorio de artefactos externo, pero la funcionalidad de Jenkins puede ser útil en entornos pequeños."
         },
         {
             "id": 6,

@@ -28,7 +28,7 @@
         },
         {
             "id": 3,
-            "enunciado": "¿Cuándo no hace falta compilar un software?",
+            "enunciado": "¿Cuándo NO hace falta compilar un software?",
             "options": [
                 { "op": "A", "desc": "Siempre es necesario compilar el software." },
                 { "op": "B", "desc": "Cuando se trata de Java, ya que el bytecode no es realmente una compilación." },
