@@ -59,8 +59,8 @@
                 { "op": "C", "desc": "Sí, feature branching puede implementarse en cualquier tipo de sistema de control de versiones centralizado o distribuido." },
                 { "op": "D", "desc": "B y C." }
             ],
-            "correct": [{ "op": "D" }],
-            "just": "Feature branching puede implementarse sin pull requests, aunque son útiles en GitHub."
+            "correct": [{ "op": "C" }],
+            "just": "GitHub ofrece todas las funcionalidades de un servidor de Git y, por tanto, soporta un flujo que funcione sobre Git."
         },
         {
             "id": 6,
@@ -100,8 +100,8 @@
                 { "op": "C", "desc": "El origen es fork/repo:new-feature y el destino es repo:new-feature." },
                 { "op": "D", "desc": "El origen es repo:new-feature y el destino es fork/repo:master." }
             ],
-            "correct": [{ "op": "B" }],
-            "just": "En sistemas distribuidos, el origen es el fork y el destino es el repositorio principal."
+            "correct": [{ "op": "C" }],
+            "just": "La rama de trabajo existe en el fork, no en el repositorio principal. El destino es la rama principal del repositorio original"
         },
         {
             "id": 9,
@@ -124,8 +124,8 @@
                 { "op": "C", "desc": "Por convenio, en master no se añaden commits que no se hayan planificado para una versión concreta." },
                 { "op": "D", "desc": "Por convenio, las ramas de características nuevas se fusionan sobre master justo antes de preparar la nueva versión. Se fusionan todas juntas, por lo que master está listo para producción." }
             ],
-            "correct": [{ "op": "B" }],
-            "just": "En Gitflow, cada fusión a master suele etiquetarse como una nueva versión del proyecto."
+            "correct": [{ "op": "C" }],
+            "just": "El trabajo de preparación de la versión se ha llevado a cabo en las ramas release-* o hotfix-*. Una rama release-* puede tener commits que no estén listos para producción, pero cuando su HEAD está lista, se fusiona sobre master, por lo que esta también estará lista para producción.ñ"
         }
     ]
 }
