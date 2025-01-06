@@ -11,8 +11,8 @@
                 { "op": "C", "desc": "Mercurial." },
                 { "op": "D", "desc": "SVN." }
             ],
-            "correct": [{ "op": "B" }, { "op": "C" }],
-            "just": "Bitbucket soporta Git y Mercurial como sistemas de control de versiones distribuidos."
+            "correct": [ { "op": "C" }],
+            "just": "Bitbucket ofrecía compatibilidad con Mercurial, pero dejó de ofrecerla en 2020."
         },
         {
             "id": 2,

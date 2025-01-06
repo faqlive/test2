@@ -72,7 +72,7 @@
                 { "op": "D", "desc": "Todas las anteriores." }
             ],
             "correct": [{ "op": "D" }],
-            "just": "La directiva artifacts permite almacenar resultados clave del pipeline para uso posterior o acceso por parte de los usuarios."
+            "just": "GitLab es capaz de interpretar algunos artefactos, como los informes JUnit, mientras que otros se almacenan para poder ser descargados. Además, como los trabajos se ejecutan en runners diferentes, es necesario mover los archivos generados (por ejemplo, compilados) de un trabajo a otro mediante esta directiva."
         },
         {
             "id": 7,
