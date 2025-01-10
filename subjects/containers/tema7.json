@@ -4,7 +4,7 @@
     "preguntas": [
         {
             "id": 1,
-            "enunciado": "¿Cuál de las siguientes afirmaciones no es correcta?",
+            "enunciado": "¿Cuál de las siguientes afirmaciones NO es correcta?",
             "options": [
                 { "op": "A", "desc": "Los contenedores de un Pod deben estar en el mismo nodo." },
                 { "op": "B", "desc": "Un Pod puede alojar uno o más contenedores." },
@@ -12,16 +12,16 @@
                 { "op": "D", "desc": "Cada contenedor de un mismo Pod tendrá su propia dirección IP." }
             ],
             "correct": [{ "op": "D" }],
-            "just": "Todos los contenedores de un Pod comparten la misma dirección IP y puertos."
+            "just": "Un Pod se desplegará por completo en un mismo nodo y todos sus contenedores compartirán la misma dirección IP y puertos, estando asociados al mismo hostname."
         },
         {
             "id": 2,
             "enunciado": "Relacione los siguientes conceptos:",
             "options": [
                 { "op": "A", "desc": "Abstracción que permite dividir un clúster de Kubernetes en múltiples clústeres virtuales." },
-                { "op": "B", "desc": "Añaden información adiciona a los recursos del cluster, no necesariamente estructurada." },
-                { "op": "C", "desc": "Pares clave/valor asocuadas a un recuro. Se utilizarán para seleccionar coleciones de objetos." },
-                { "op": "D", "desc": "Unidad mínima de despliegue formada por una colección de contenedores más sus volúmenes." }
+                { "op": "B", "desc": "Añaden información adicional a los recursos del clúster, no necesariamente estructurada." },
+                { "op": "C", "desc": "Pares clave/valor asociadas a un recurso. Se utilizarán para seleccionar colecciones de objetos." },
+                { "op": "D", "desc": "Unidad mínima de despliegue formada por una colección de contenedores mas sus volúmenes." }
             ],
             "correct": [
                 { "ele": "Namespace", "op": "A" },
@@ -86,7 +86,7 @@
         },
         {
             "id": 7,
-            "enunciado": "En Kubernetes podemos comprobar que los contenedores de un Pod están funcionando correctamente definiendo una prueba de vida o liveness probe. ¿Cuál de los siguientes no es un método válido?",
+            "enunciado": "En Kubernetes podemos comprobar que los contenedores de un Pod están funcionando correctamente definiendo una prueba de vida o liveness probe. ¿Cuál de los siguientes NO es un método válido?",
             "options": [
                 { "op": "A", "desc": "Mediante la ejecución de un comando (exec)." },
                 { "op": "B", "desc": "Realizando una llamada HTTP (httpGet)." },

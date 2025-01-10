@@ -42,16 +42,16 @@
             "id": 4,
             "enunciado": "Relaciona los siguientes comandos de Docker con su acción:",
             "options": [
-                { "op": "A", "desc": "docker-compose up - Inicia y crea contenedores para los servicios definidos." },
-                { "op": "B", "desc": "docker-compose build - Construye imágenes para los servicios." },
-                { "op": "C", "desc": "docker-compose down - Detiene y elimina servicios y recursos asociados." },
-                { "op": "D", "desc": "docker-compose ps - Lista los contenedores y servicios en ejecución." }
+                { "op": "A", "desc": "Crea una imagen a partir de un TAR de una imagen." },
+                { "op": "B", "desc": "Genera un TAR a partir del sistema de ficheros de un contenedor." },
+                { "op": "C", "desc": "Genera un TAR a partir de una imagen." },
+                { "op": "D", "desc": "Crea una imagen a partir de un TAR del sistema de ficheros de un contenedor." }
             ],
             "correct": [
-                { "ele": "docker-compose up", "op": "A" },
-                { "ele": "docker-compose build", "op": "B" },
-                { "ele": "docker-compose down", "op": "C" },
-                { "ele": "docker-compose ps", "op": "D" }
+                { "ele": "docker export", "op": "B" },
+                { "ele": "docker import", "op": "D" },
+                { "ele": "docker save", "op": "C" },
+                { "ele": "docker load", "op": "A" }
             ],
             "just": "Cada comando de Docker Compose tiene una función específica para la gestión de servicios."
         },

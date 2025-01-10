@@ -40,8 +40,8 @@
                 { "op": "C", "desc": "Es posible establecer dinámicamente variables de entorno y argumentos del comando de inicio con los valores almacenados en el ConfigMap." },
                 { "op": "D", "desc": "Las variables de entorno establecidas a partir de un ConfigMap se actualizarán automáticamente cuando se hagan cambios en este último." }
             ],
-            "correct": [{ "op": "D" }],
-            "just": "Las variables de entorno no se actualizan automáticamente; es necesario reiniciar el Pod para aplicar los cambios."
+            "correct": [{ "op": "B" }],
+            "just": "Si al configurar un Pod con un ConfigMap lo hicimos estableciendo variables de entorno o argumentos de la línea de comandos, no podremos actualizar el contenedor en ejecución cuando los valores del ConfigMap sean modificados. Sería necesario recrear el Pod para hacer efectiva la nueva configuración."
         },
         {
             "id": 4,

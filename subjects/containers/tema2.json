@@ -108,7 +108,7 @@
                 { "op": "D", "desc": "Permite añadir a la imagen un comando que se ejecutará más adelante, al usar la imagen generada como base en otra construcción." }
             ],
             "correct": [{ "op": "D" }],
-            "just": "ONBUILD añade un comando que se ejecutará al construir imágenes basadas en esta."
+            "just": "La instrucción ONBUILD nos permite incluir, en la imagen que usaremos como plantilla o base, un comando que será ejecutado más adelante, cuando la imagen que estamos generando sea usada posteriormente como imagen base de otra referenciándola con la instrucción FROM."
         },
         {
             "id": 10,

@@ -69,7 +69,7 @@
         },
         {
             "id": 6,
-            "enunciado": "Si ejecutamos un contenedor de la siguiente manera:\n```docker run --link contenedorA:aliasA alpine sh```",
+            "enunciado": "Si ejecutamos un contenedor de la siguiente manera:\n```docker run --name B --link A:aliasA alpine sh```",
             "options": [
                 { "op": "A", "desc": "El contenedor B podrá llegar al A por su nombre y alias, pero no por su IP." },
                 { "op": "B", "desc": "El contenedor B podrá llegar al A por su IP, nombre y alias." },
@@ -89,28 +89,28 @@
                 { "op": "D", "desc": "No es posible, el contenedor ya está en ejecución." }
             ],
             "correct": [{ "op": "A" }],
-            "just": "El comando docker network connect permite conectar un contenedor a una red en ejecución."
+            "just": "El comando docker network connect permite conectar una red a un contenedor. Si quisiéramos conectar un contenedor a una red cuando lo ejecutamos con docker run utilizaríamos la opción --network. El comando docker network link no existe."
         },
         {
             "id": 8,
             "enunciado": "Relaciona los siguientes conceptos:",
             "options": [
-                { "op": "A", "desc": "Montará el volumen de Docker en la ruta especificada." },
-                { "op": "B", "desc": "Montará un bind mount en el contenedor." },
-                { "op": "C", "desc": "Creará un tmpfs mount y lo montará en la ruta especificada." },
-                { "op": "D", "desc": "Dará un error por no haber indicado el tipo de almacenamiento." }
+                { "op": "A", "desc": "Gestionado por Docker, solo accesible desde el host por comandos de Docker." },
+                { "op": "B", "desc": "Los procesos del sistema anfitrión pueden modificarlos." },
+                { "op": "C", "desc": "El almacenamiento se encuentra en la memoria del host." },
+                { "op": "D", "desc": "El almacenamiento se encuentra en cualquier parte del sistema de ficheros del host." }
             ],
             "correct": [
                 { "ele": "Docker Volume", "op": "A" },
                 { "ele": "Bind Mount", "op": "B" },
                 { "ele": "Tmpfs Mount", "op": "C" },
-                { "ele": "Error", "op": "D" }
+                { "ele": "Bind Mount", "op": "D" }
             ],
             "just": "Cada tipo de almacenamiento tiene un propósito específico para diferentes escenarios."
         },
         {
             "id": 9,
-            "enunciado": "Si ejecutamos un contenedor de la siguiente manera:\n```docker run -v mis-datos:/datos alpine sh```",
+            "enunciado": "Si ejecutamos un contenedor de la siguiente manera:\n```docker run --mount sourece=mis-datos:/datos appimagen```",
             "options": [
                 { "op": "A", "desc": "Montará el volumen de Docker llamado «mis-datos» en la ruta /datos del contenedor." },
                 { "op": "B", "desc": "Montará el bind mount llamado «mis-datos» en la ruta /datos del host." },
@@ -118,7 +118,7 @@
                 { "op": "D", "desc": "Dará un error por no haber indicado el tipo de almacenamiento." }
             ],
             "correct": [{ "op": "A" }],
-            "just": "La opción -v permite montar un volumen de Docker en el contenedor."
+            "just": "Ejecutará un contenedor montando un volumen de Docker llamado mis-datos en la ruta /datos del contenedor. Si el volumen no existe, creará uno vacío."
         },
         {
             "id": 10,
@@ -129,8 +129,8 @@
                 { "op": "C", "desc": "docker exec" },
                 { "op": "D", "desc": "Todas las anteriores." }
             ],
-            "correct": [{ "op": "A" }],
-            "just": "El comando docker top muestra información sobre los procesos en ejecución de un contenedor."
+            "correct": [{ "op": "D" }],
+            "just": "El comando docker top nos muestra los procesos en ejecución en un contenedor.El comando docker stats nos muestra en vivo el uso de recursos de los contenedores, incluyendo el numero de procesos del contenedor.El comando docker exec podría utilizarse para ejecutar un comando que muestre información de los procesos, por ejemplo, docker exec ps."
         }
     ]
 }
